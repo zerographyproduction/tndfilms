@@ -1,7 +1,7 @@
 // app/about/page.js
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import TeamDetailed from '@/components/TeamDetailed';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import TeamDetailed from '../components/TeamDetailed';
 
 export default function AboutPage() {
   return (

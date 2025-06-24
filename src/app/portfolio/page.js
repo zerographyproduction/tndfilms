@@ -1,7 +1,7 @@
 // app/portfolio/page.js
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import PortfolioDetailed from '@/components/PortfolioDetailed';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import PortfolioDetailed from '../components/PortfolioDetailed';
 
 export default function PortfolioPage() {
   return (
