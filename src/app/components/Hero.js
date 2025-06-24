@@ -11,7 +11,7 @@ export default function Hero() {
       title: 'Transform Visions Into',
       subtitle: 'Cinematic Reality',
       description:
-        'We craft visual narratives that captivate, inspire, and drive meaningful connections between brands and audiences.',
+        'We craft visual narratives that captivate, inspire, and drive meaningful connections between brands and audiences. ',
     },
     {
       title: 'Stories That',
