@@ -55,13 +55,12 @@ export default function Navbar() {
       <div className='max-w-7xl mx-auto px-6 lg:px-12'>
         <div className='flex justify-between items-center h-20'>
           <Link href='/'>
-            <motion.div
-              className={`text-3xl font-light tracking-wide cursor-pointer transition-colors duration-500 ${
-                scrolled || !isHomePage ? 'text-gray-900' : 'text-white drop-shadow-lg'
-              }`}
-              whileHover={{ scale: 1.05 }}
-            >
-              TND<span className='text-red-500'>.</span>
+            <motion.div className='cursor-pointer' whileHover={{ scale: 1.05 }}>
+              <img
+                src='/logo.png'
+                alt='T n D Films Pvt. Ltd. Logo'
+                className='h-14 w-auto'
+              />
             </motion.div>
           </Link>
 
@@ -138,7 +137,9 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 transition-colors duration-500 ${
-              scrolled || !isHomePage ? 'text-gray-900' : 'text-white drop-shadow-lg'
+              scrolled || !isHomePage
+                ? 'text-gray-900'
+                : 'text-white drop-shadow-lg'
             }`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}

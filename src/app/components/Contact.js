@@ -70,7 +70,7 @@ export default function Contact() {
     {
       name: 'Kuldeep Chauhan',
       email: 'Kuldeepchauhan@tndfilms.com',
-      phone: '+91 9540998320',
+      phone: '+91 9013218028',
       role: 'Post-Production Head',
       icon: <User size={20} />,
       description: 'Editing, color grading, and post-production services',
@@ -86,7 +86,7 @@ export default function Contact() {
     {
       name: 'Vipin Kumar Pal',
       email: 'Vipinkumarpal@tndfilms.com',
-      phone: '+91 9013218028',
+      phone: '+91 9540998320',
       role: 'Director of Photography',
       icon: <User size={20} />,
       description: 'Cinematography and visual direction',
@@ -112,12 +112,6 @@ export default function Contact() {
       title: 'Social Media',
       description: 'Connect with us on social platforms',
       action: '@tndfilms',
-    },
-    {
-      icon: <Calendar size={24} />,
-      title: 'Schedule Meeting',
-      description: 'Book a consultation call',
-      action: 'Book Now',
     },
   ];
 
@@ -150,41 +144,51 @@ export default function Contact() {
       {/* Contact Methods */}
       <section className='py-16'>
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16'>
-            {contactMethods.map((method, index) => (
-              <motion.div
-                key={method.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`text-center p-6 border border-gray-200 hover:border-red-500/30 transition-all duration-300 hover:shadow-lg ${
-                  method.preferred ? 'bg-red-50 border-red-200' : 'bg-white'
-                }`}
-              >
-                <div
-                  className={`w-16 h-16 border-2 rounded-full flex items-center justify-center mx-auto mb-4 ${
-                    method.preferred
-                      ? 'bg-red-500 border-red-500 text-white'
-                      : 'bg-gray-50 border-gray-200 text-red-500'
+          <div className='grid md:grid-cols-3 gap-8 mb-16'>
+            {contactMethods.map((method, index) => {
+              const getHref = () => {
+                if (method.title === 'Email') return `mailto:${method.action}`;
+                if (method.title === 'Phone') return `tel:${method.action.replace(/\s/g, '')}`;
+                if (method.title === 'Social Media') return 'https://instagram.com/tndfilms';
+                return '#';
+              };
+
+              return (
+                <motion.a
+                  key={method.title}
+                  href={getHref()}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className={`text-center p-6 border border-gray-200 hover:border-red-500/30 transition-all duration-300 hover:shadow-lg cursor-pointer block ${
+                    method.preferred ? 'bg-red-50 border-red-200' : 'bg-white'
                   }`}
                 >
-                  {method.icon}
-                </div>
-                <h3 className='text-lg font-light mb-2 text-gray-900'>
-                  {method.title}
-                </h3>
-                <p className='text-sm text-gray-600 mb-3'>
-                  {method.description}
-                </p>
-                <p
-                  className={`text-sm font-mono ${
-                    method.preferred ? 'text-red-600' : 'text-gray-700'
-                  }`}
-                >
-                  {method.action}
-                </p>
-              </motion.div>
-            ))}
+                  <div
+                    className={`w-16 h-16 border-2 rounded-full flex items-center justify-center mx-auto mb-4 ${
+                      method.preferred
+                        ? 'bg-red-500 border-red-500 text-white'
+                        : 'bg-gray-50 border-gray-200 text-red-500'
+                    }`}
+                  >
+                    {method.icon}
+                  </div>
+                  <h3 className='text-lg font-light mb-2 text-gray-900'>
+                    {method.title}
+                  </h3>
+                  <p className='text-sm text-gray-600 mb-3'>
+                    {method.description}
+                  </p>
+                  <p
+                    className={`text-sm font-mono ${
+                      method.preferred ? 'text-red-600' : 'text-gray-700'
+                    }`}
+                  >
+                    {method.action}
+                  </p>
+                </motion.a>
+              );
+            })}
           </div>
         </div>
       </section>

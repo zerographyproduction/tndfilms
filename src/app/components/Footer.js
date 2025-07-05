@@ -58,7 +58,7 @@ export default function Footer() {
     {
       name: 'Kuldeep Chauhan',
       email: 'Kuldeepchauhan@tndfilms.com',
-      phone: '+91 9540998320',
+      phone: '+91 9013218028',
       role: 'Post-Production Head',
     },
     {
@@ -70,7 +70,7 @@ export default function Footer() {
     {
       name: 'Vipin Kumar Pal',
       email: 'Vipinkumarpal@tndfilms.com',
-      phone: '+91 9013218028',
+      phone: '+91 9540998320',
       role: 'Director of Photography',
     },
   ];
@@ -89,9 +89,16 @@ export default function Footer() {
               viewport={{ once: true }}
               className='lg:col-span-1'
             >
-              <h3 className='text-4xl font-light mb-6 tracking-wide text-gray-900'>
-                TND<span className='text-red-500'>.</span>
-              </h3>
+              <div className='mb-6 flex items-center space-x-3'>
+                <img
+                  src='/1.png'
+                  alt='T n D Films Pvt. Ltd. Logo'
+                  className='h-12 w-auto'
+                />
+                <div className='text-2xl font-light text-gray-900'>
+                  T n D Films Pvt. Ltd.
+                </div>
+              </div>
               <p className='text-gray-600 mb-8 leading-relaxed text-lg'>
                 Transforming visions into reality through the art of video
                 production. We bring your stories to life with creativity,
@@ -136,7 +143,7 @@ export default function Footer() {
                 {services.map((service) => (
                   <li key={service}>
                     <a
-                      href='#services'
+                      href='/services'
                       className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-sm group flex items-center'
                     >
                       <span className='w-2 h-2 bg-gray-300 rounded-full mr-3 group-hover:bg-red-500 transition-colors duration-300'></span>
@@ -216,9 +223,15 @@ export default function Footer() {
                   </h5>
                   <div className='space-y-3'>
                     {teamContacts.slice(1).map((contact) => (
-                      <div key={contact.email} className='border-b border-gray-100 pb-2 last:border-b-0'>
+                      <div
+                        key={contact.email}
+                        className='border-b border-gray-100 pb-2 last:border-b-0'
+                      >
                         <div className='text-xs text-gray-700 font-medium mb-1'>
-                          {contact.name.split(' ')[0]} - {contact.role.replace(' Head', '').replace(' of Photography', '')}
+                          {contact.name.split(' ')[0]} -{' '}
+                          {contact.role
+                            .replace(' Head', '')
+                            .replace(' of Photography', '')}
                         </div>
                         <div className='space-y-1'>
                           <a
@@ -254,8 +267,8 @@ export default function Footer() {
           <div className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
             <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8'>
               <p className='text-gray-500 text-sm font-mono tracking-wider'>
-                &copy; {new Date().getFullYear()} TND Films. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} T n D Films Pvt. Ltd. All
+                rights reserved.
               </p>
               <div className='flex space-x-6'>
                 <a

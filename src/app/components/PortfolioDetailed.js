@@ -1,5 +1,5 @@
 'use client';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useRef, useState } from 'react';
 import {
   Play,
@@ -16,105 +16,329 @@ export default function EnhancedPortfolio() {
 
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [showVideoOverlay, setShowVideoOverlay] = useState(false);
 
-  // Real projects from PDF
-  const portfolioItems = [
+  // Video portfolio data
+  const VIDEO_ITEMS = [
     {
-      title: 'IMI Bhubaneswar: Your Journey Begins Here',
-      category: 'Corporate Video',
+      title: '25 Years of Partnership | Gates Foundation',
+      videoId: 'T_bIUw7GdTU',
+      category: 'brands',
+      description: 'Strategic partnership celebration film',
       year: '2024',
-      client: 'IMI Bhubaneswar',
-      description:
-        'A comprehensive institutional video showcasing academic excellence, campus life, and the transformative journey of students at IMI Bhubaneswar.',
-      videoUrl: 'https://example.com/imi-bhubaneswar',
+      client: 'Gates Foundation',
       featured: true,
     },
     {
-      title: "What's it like to step back in time?",
-      category: 'Documentary',
+      title: 'BMW Films',
+      videoId: 'wTjB4bLzHKo',
+      category: 'brands',
+      description: 'Premium motorcycle brand campaign',
       year: '2024',
-      client: 'Cultural Heritage Project',
-      description:
-        'Exploring the rich heritage of pipe organ music and craftsmanship, capturing the artistry of traditional instrument making.',
-      videoUrl: 'https://example.com/pipe-organ',
-      tags: ['#pipeorgan', '#christianmusic', '#organist'],
+      client: 'BMW',
       featured: true,
     },
     {
-      title: 'IMI Delhi 41st Annual Convocation',
-      category: 'Event Coverage',
+      title: 'Premium Automotive',
+      videoId: '1ZVsxIGs1Kg',
+      category: 'brands',
+      description: 'Luxury car brand showcase',
       year: '2024',
-      client: 'IMI Delhi',
-      description:
-        'Ceremonial coverage celebrating academic achievements and milestone moments from the prestigious convocation ceremony.',
-      videoUrl: 'https://example.com/imi-delhi-convocation',
+      client: 'Automotive Brand',
     },
     {
-      title: 'IMI Insights Podcast Series',
-      category: 'Digital Content',
+      title: 'Corporate Identity',
+      videoId: 'lyBQYLtnKdM',
+      category: 'brands',
+      description: 'Corporate brand storytelling',
       year: '2024',
-      client: 'IMI',
-      description:
-        'Episode 1 featuring Prof Himadri Das, DG, IMI - Professional podcast production with high-quality audio and visual elements.',
-      videoUrl: 'https://example.com/imi-insights',
+      client: 'Corporate Client',
     },
     {
-      title: 'IMI New Delhi Virtual Campus Tour',
-      category: 'Virtual Experience',
+      title: 'MamaEarth Campaign',
+      videoId: 'eHpSFNNhn2s',
+      category: 'brands',
+      description: 'Natural skincare brand film',
       year: '2024',
-      client: 'IMI New Delhi',
-      description:
-        'Immersive virtual tour showcasing the campus facilities, academic spaces, and student life at IMI New Delhi.',
-      videoUrl: 'https://example.com/virtual-tour',
-    },
-    {
-      title: 'Welcome Batch of 2023-25',
-      category: 'Corporate Video',
-      year: '2024',
-      client: 'IMI',
-      description:
-        'Welcome video for new students joining the 2023-25 batch, showcasing the journey ahead.',
-      videoUrl: 'https://example.com/welcome-batch',
-    },
-    {
-      title: 'IRMA: The Campus That Cares',
-      category: 'Brand Video',
-      year: '2024',
-      client: 'IRMA Anand',
-      description:
-        'A heartwarming brand video showcasing IRMA as a nurturing home away from home for students pursuing excellence in rural management.',
-      videoUrl: 'https://example.com/irma-campus',
+      client: 'MamaEarth',
       featured: true,
     },
     {
-      title: 'Welcome to the Milk Capital of India',
-      category: 'Documentary',
+      title: 'IDBI Federal Marathon',
+      videoId: 'Ll846ArEzAQ',
+      category: 'events',
+      description: 'Major sports event coverage',
       year: '2024',
-      client: 'IRMA Anand',
-      description:
-        'Life and culture in Anand through the lens of the academic community and local heritage, exploring what makes this city special.',
-      videoUrl: 'https://example.com/milk-capital',
+      client: 'IDBI Federal',
     },
     {
-      title: 'IRMA: A Tribute to Shyam Benegal',
-      category: 'Tribute Video',
+      title: 'Corporate Event',
+      videoId: 'R_-MOeWMfvU',
+      category: 'events',
+      description: 'Professional event documentation',
       year: '2024',
-      client: 'IRMA Students',
-      description:
-        'A heartfelt tribute to legendary filmmaker Shyam Benegal, created by IRMA students showcasing his impact on Indian cinema.',
-      videoUrl: 'https://example.com/shyam-benegal-tribute',
+      client: 'Corporate Client',
     },
     {
-      title: 'Ending Gender-Based Violence',
-      category: 'Social Impact',
+      title: 'Product Launch',
+      videoId: 'PmX_y3ApaDs',
+      category: 'brands',
+      description: 'New product unveiling event',
       year: '2024',
-      client: 'RYTHM Foundation & Plan International',
-      description:
-        'Impactful social documentary addressing critical contemporary issues in collaboration with RYTHM Foundation and Plan International.',
-      videoUrl: 'https://example.com/gender-violence',
-      featured: true,
+      client: 'Product Brand',
+    },
+    {
+      title: 'Music Production',
+      videoId: 'xVWPOQwVlNE',
+      category: 'music',
+      description: 'Hip-hop music video',
+      year: '2024',
+      client: 'Music Artist',
+    },
+    {
+      title: 'Corporate Film',
+      videoId: '4P_0BSWME5E',
+      category: 'brands',
+      description: 'Business showcase video',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Marketing Campaign',
+      videoId: '8rmFk1dHb_M',
+      category: 'brands',
+      description: 'Brand marketing film',
+      year: '2024',
+      client: 'Marketing Brand',
+    },
+    {
+      title: 'Product Campaign',
+      videoId: 'BoUIN4WyCO0',
+      category: 'brands',
+      description: 'Product promotional video',
+      year: '2024',
+      client: 'Product Brand',
+    },
+    {
+      title: 'Brand Event',
+      videoId: 'HGBksIItYQs',
+      category: 'events',
+      description: 'Corporate event highlights',
+      year: '2024',
+      client: 'Event Client',
+    },
+    {
+      title: 'Corporate Series',
+      videoId: 'CdBX0NTjlII',
+      category: 'brands',
+      description: 'Business documentary series',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Innovation Showcase',
+      videoId: 'ycD5rQc-_EU',
+      category: 'brands',
+      description: 'Technology innovation film',
+      year: '2024',
+      client: 'Tech Company',
+    },
+    {
+      title: 'Brand Campaign',
+      videoId: 'ea2oVP1U4Fw',
+      category: 'brands',
+      description: 'Strategic brand campaign',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Music Video Project',
+      videoId: 'RTCcswAXtn0',
+      category: 'music',
+      description: 'Professional music video',
+      year: '2024',
+      client: 'Music Artist',
+    },
+    {
+      title: 'Corporate Vision',
+      videoId: '9hIyf0FyYZ0',
+      category: 'brands',
+      description: 'Company vision film',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Strategic Initiative',
+      videoId: 'N3uvC_gRTlc',
+      category: 'brands',
+      description: 'Business strategy showcase',
+      year: '2024',
+      client: 'Strategic Client',
+    },
+    {
+      title: 'Music Production',
+      videoId: 'o21H1tiTKOM',
+      category: 'music',
+      description: 'Professional music video',
+      year: '2024',
+      client: 'Music Artist',
+    },
+    {
+      title: 'Brand Campaign',
+      videoId: 'N2auTayZ978',
+      category: 'brands',
+      description: 'Marketing campaign film',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Corporate Event',
+      videoId: 'dSOrly9zAkk',
+      category: 'events',
+      description: 'Business event coverage',
+      year: '2024',
+      client: 'Event Client',
+    },
+    {
+      title: 'Great Wall Motors',
+      videoId: '70l-Cs1iMLw',
+      category: 'brands',
+      description: 'Automotive brand campaign',
+      year: '2024',
+      client: 'Great Wall Motors',
+    },
+    {
+      title: 'Marketing Initiative',
+      videoId: 'MoQCWKwzqxs',
+      category: 'brands',
+      description: 'Strategic marketing film',
+      year: '2024',
+      client: 'Marketing Client',
+    },
+    {
+      title: 'Brand Experience',
+      videoId: 'DV1tXKLrKPM',
+      category: 'brands',
+      description: 'Experiential marketing film',
+      year: '2024',
+      client: 'Experience Brand',
+    },
+    {
+      title: 'Travel Series',
+      videoId: 'zp4iIAx0qVc',
+      category: 'travel',
+      description: 'Travel documentary series',
+      year: '2024',
+      client: 'Travel Brand',
+    },
+    {
+      title: 'Corporate Vision',
+      videoId: 'ZN2Ktk-2At0',
+      category: 'brands',
+      description: 'Company vision film',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Brand Story',
+      videoId: 'Ox8Vvx8ENU0',
+      category: 'brands',
+      description: 'Corporate narrative',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Marketing Campaign',
+      videoId: 'dOFntcrHfdk',
+      category: 'brands',
+      description: 'Strategic campaign film',
+      year: '2024',
+      client: 'Marketing Client',
+    },
+    {
+      title: 'Brand Initiative',
+      videoId: '5mpwROnf8_k',
+      category: 'brands',
+      description: 'Corporate initiative film',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Innovation Story',
+      videoId: '0_tEdB59LhY',
+      category: 'brands',
+      description: 'Technology innovation film',
+      year: '2024',
+      client: 'Tech Company',
+    },
+    {
+      title: 'Travel Documentary',
+      videoId: 'jxDc7icF-Lg',
+      category: 'travel',
+      description: 'Travel series episode',
+      year: '2024',
+      client: 'Travel Brand',
+    },
+    {
+      title: 'Brand Campaign',
+      videoId: 's7xQTc3aP8U',
+      category: 'brands',
+      description: 'Marketing campaign',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Brand Story',
+      videoId: 'p9zWIfGkFuo',
+      category: 'brands',
+      description: 'Corporate storytelling',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Corporate Film',
+      videoId: 'DmQqS1dIh3U',
+      category: 'brands',
+      description: 'Business showcase',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Brand Campaign',
+      videoId: 'VUh78cxA_04',
+      category: 'brands',
+      description: 'Marketing initiative',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Corporate Vision',
+      videoId: 'nWRGCuiJMy8',
+      category: 'brands',
+      description: 'Company showcase',
+      year: '2024',
+      client: 'Corporate Client',
+    },
+    {
+      title: 'Brand Story',
+      videoId: 'BSg4EjWPq8E',
+      category: 'brands',
+      description: 'Corporate narrative',
+      year: '2024',
+      client: 'Brand Client',
+    },
+    {
+      title: 'Marketing Campaign',
+      videoId: '5WpZLFnn9UQ',
+      category: 'brands',
+      description: 'Strategic campaign',
+      year: '2024',
+      client: 'Marketing Client',
     },
   ];
+
+  const portfolioItems = VIDEO_ITEMS;
 
   const instagramFilters = [
     'https://www.instagram.com/reel/DAk6IaSSu4N/',
@@ -128,15 +352,19 @@ export default function EnhancedPortfolio() {
 
   const categories = [
     'All',
-    'Corporate Video',
-    'Documentary',
-    'Brand Video',
-    'Event Coverage',
-    'Digital Content',
-    'Virtual Experience',
-    'Tribute Video',
-    'Social Impact',
+    'brands',
+    'events',
+    'music',
+    'travel',
   ];
+
+  const categoryLabels = {
+    'All': 'All Works',
+    'brands': 'Brand Films',
+    'events': 'Events',
+    'music': 'Music Videos',
+    'travel': 'Travel',
+  };
 
   const filteredProjects =
     activeFilter === 'All'
@@ -145,6 +373,16 @@ export default function EnhancedPortfolio() {
 
   const featuredProjects = portfolioItems.filter((item) => item.featured);
 
+  const handleVideoClick = (video) => {
+    setSelectedVideo(video);
+    setShowVideoOverlay(true);
+  };
+
+  const closeVideoOverlay = () => {
+    setShowVideoOverlay(false);
+    setSelectedVideo(null);
+  };
+
   return (
     <div className='bg-white min-h-screen' ref={ref}>
       {/* Hero Section */}
@@ -152,7 +390,7 @@ export default function EnhancedPortfolio() {
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className='text-center mb-16'
           >
@@ -171,7 +409,7 @@ export default function EnhancedPortfolio() {
           {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className='grid md:grid-cols-4 gap-8 mb-16 max-w-4xl mx-auto'
           >
@@ -180,7 +418,7 @@ export default function EnhancedPortfolio() {
                 {portfolioItems.length}+
               </div>
               <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-                Projects
+                Videos
               </div>
             </div>
             <div className='text-center'>
@@ -212,7 +450,7 @@ export default function EnhancedPortfolio() {
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className='mb-16'
           >
@@ -227,22 +465,37 @@ export default function EnhancedPortfolio() {
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className='group cursor-pointer'
+                onClick={() => handleVideoClick(project)}
               >
                 <div className='bg-white border border-gray-200 hover:border-red-500/30 transition-all duration-500 shadow-xl hover:shadow-2xl overflow-hidden'>
-                  <div className='aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden group-hover:from-red-50 group-hover:to-red-100 transition-all duration-500'>
+                  <div className='aspect-video relative overflow-hidden group-hover:scale-105 transition-all duration-500'>
+                    {/* YouTube Thumbnail */}
+                    <img
+                      src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                      alt={project.title}
+                      className='w-full h-full object-cover'
+                      onError={(e) => {
+                        // Fallback to medium quality thumbnail if maxres fails
+                        e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                      }}
+                    />
+                    
+                    {/* Play Button Overlay */}
                     <motion.div
-                      className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 bg-black/20 flex items-center justify-center'
+                      className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                       whileHover={{ scale: 1.05 }}
                     >
-                      <Play size={64} className='text-white drop-shadow-lg' />
-                    </motion.div>
-                    <div className='absolute inset-0 flex items-center justify-center'>
-                      <div className='w-20 h-20 border-4 border-gray-300 rounded-full flex items-center justify-center'>
-                        <Play size={32} className='text-gray-400 ml-1' />
+                      <div className='w-20 h-20 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                        <Play size={32} className='text-white ml-1' fill="white" />
                       </div>
+                    </motion.div>
+
+                    {/* Always visible subtle play indicator */}
+                    <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
+                      <Play size={16} className='text-white ml-0.5' fill="white" />
                     </div>
                   </div>
 
@@ -293,7 +546,7 @@ export default function EnhancedPortfolio() {
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className='mb-16'
           >
@@ -306,7 +559,7 @@ export default function EnhancedPortfolio() {
           {/* Filters and Controls */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className='mb-12'
           >
@@ -323,7 +576,7 @@ export default function EnhancedPortfolio() {
                         : 'bg-white text-gray-600 border-gray-200 hover:border-red-500/30 hover:text-red-500'
                     }`}
                   >
-                    {category}
+                    {categoryLabels[category] || category}
                   </button>
                 ))}
               </div>
@@ -376,6 +629,7 @@ export default function EnhancedPortfolio() {
                     ? 'grid lg:grid-cols-3 gap-8 items-center'
                     : ''
                 }`}
+                onClick={() => handleVideoClick(project)}
               >
                 <div
                   className={`bg-white border border-gray-200 hover:border-red-500/30 transition-all duration-500 shadow-lg hover:shadow-2xl overflow-hidden ${
@@ -385,30 +639,34 @@ export default function EnhancedPortfolio() {
                   }`}
                 >
                   <div
-                    className={`aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden group-hover:from-red-50 group-hover:to-red-100 transition-all duration-500 ${
+                    className={`aspect-video relative overflow-hidden group-hover:scale-105 transition-all duration-500 ${
                       viewMode === 'list' ? 'lg:col-span-1' : ''
                     }`}
                   >
+                    {/* YouTube Thumbnail */}
+                    <img
+                      src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                      alt={project.title}
+                      className='w-full h-full object-cover'
+                      onError={(e) => {
+                        // Fallback to medium quality thumbnail if maxres fails
+                        e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                      }}
+                    />
+                    
+                    {/* Play Button Overlay */}
                     <motion.div
-                      className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 bg-black/20 flex items-center justify-center'
+                      className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                       whileHover={{ scale: 1.05 }}
                     >
-                      <Play
-                        size={viewMode === 'list' ? 32 : 48}
-                        className='text-white drop-shadow-lg'
-                      />
-                    </motion.div>
-                    <div className='absolute inset-0 flex items-center justify-center'>
-                      <div
-                        className={`border-4 border-gray-300 rounded-full flex items-center justify-center ${
-                          viewMode === 'list' ? 'w-12 h-12' : 'w-16 h-16'
-                        }`}
-                      >
-                        <Play
-                          size={viewMode === 'list' ? 16 : 24}
-                          className='text-gray-400 ml-1'
-                        />
+                      <div className='w-16 h-16 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                        <Play size={24} className='text-white ml-1' fill="white" />
                       </div>
+                    </motion.div>
+
+                    {/* Always visible subtle play indicator */}
+                    <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
+                      <Play size={16} className='text-white ml-0.5' fill="white" />
                     </div>
                   </div>
 
@@ -479,12 +737,13 @@ export default function EnhancedPortfolio() {
         </div>
       </section>
 
-      {/* Instagram Filters Section */}
+      {/* Instagram Filters Section - Commented Out */}
+      {/*
       <section className='py-24 lg:py-32'>
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className='text-center mb-16'
           >
@@ -508,7 +767,7 @@ export default function EnhancedPortfolio() {
                 rel='noopener noreferrer'
                 className='aspect-square bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 p-1 rounded-lg group'
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, rotate: 3 }}
               >
@@ -523,13 +782,14 @@ export default function EnhancedPortfolio() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Call to Action */}
       <section className='py-16 bg-gray-50'>
         <div className='max-w-4xl mx-auto px-6 text-center'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <h3 className='text-3xl font-light mb-6 text-gray-900'>
@@ -560,6 +820,60 @@ export default function EnhancedPortfolio() {
           </motion.div>
         </div>
       </section>
+
+      {/* Video Overlay */}
+      <AnimatePresence>
+        {showVideoOverlay && selectedVideo && (
+        <motion.div
+          className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={closeVideoOverlay}
+        >
+          <motion.div
+            className='relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden'
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeVideoOverlay}
+              className='absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-300'
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+
+            {/* YouTube Video */}
+            <iframe
+              src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0`}
+              title={selectedVideo.title}
+              className='w-full h-full'
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+
+            {/* Video Info */}
+            <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6'>
+              <h3 className='text-white text-xl font-light mb-2'>{selectedVideo.title}</h3>
+              <div className='flex items-center gap-4 text-sm text-white/80'>
+                <span className='bg-red-500 px-2 py-1 rounded text-white text-xs'>
+                  {categoryLabels[selectedVideo.category] || selectedVideo.category}
+                </span>
+                <span>{selectedVideo.client}</span>
+                <span>{selectedVideo.year}</span>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

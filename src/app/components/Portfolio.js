@@ -11,22 +11,25 @@ export default function PortfolioPreview() {
   // Featured projects for homepage preview
   const featuredProjects = [
     {
-      title: 'IMI Bhubaneswar: Your Journey Begins Here',
-      category: 'Corporate Video',
+      title: '25 Years of Partnership | Gates Foundation',
+      category: 'Brand Films',
       year: '2024',
-      client: 'IMI Bhubaneswar',
+      client: 'Gates Foundation',
+      videoId: 'T_bIUw7GdTU',
     },
     {
-      title: 'Ending Gender-Based Violence',
-      category: 'Social Impact',
+      title: 'BMW Films',
+      category: 'Brand Films',
       year: '2024',
-      client: 'RYTHM Foundation',
+      client: 'BMW',
+      videoId: 'wTjB4bLzHKo',
     },
     {
-      title: 'IRMA: The Campus That Cares',
-      category: 'Brand Video',
+      title: 'MamaEarth Campaign',
+      category: 'Brand Films',
       year: '2024',
-      client: 'IRMA Anand',
+      client: 'MamaEarth',
+      videoId: 'eHpSFNNhn2s',
     },
   ];
 
@@ -60,19 +63,31 @@ export default function PortfolioPreview() {
               className='group cursor-pointer'
             >
               <div className='bg-white border border-gray-200 hover:border-red-500/30 transition-all duration-500 shadow-lg hover:shadow-2xl overflow-hidden'>
-                <div className='aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden group-hover:from-red-50 group-hover:to-red-100 transition-all duration-500'>
+                <div className='aspect-video relative overflow-hidden group-hover:scale-105 transition-all duration-500'>
+                  {/* YouTube Thumbnail */}
+                  <img
+                    src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                    alt={project.title}
+                    className='w-full h-full object-cover'
+                    onError={(e) => {
+                      // Fallback to medium quality thumbnail if maxres fails
+                      e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                    }}
+                  />
+                  
+                  {/* Play Button Overlay */}
                   <motion.div
-                    className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 bg-black/20 flex items-center justify-center'
+                    className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                     whileHover={{ scale: 1.05 }}
                   >
-                    <Play size={32} className='text-white drop-shadow-lg' />
+                    <div className='w-16 h-16 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                      <Play size={24} className='text-white ml-1' fill="white" />
+                    </div>
                   </motion.div>
 
-                  {/* Video Placeholder Design */}
-                  <div className='absolute inset-0 flex items-center justify-center'>
-                    <div className='w-12 h-12 border-4 border-gray-300 rounded-full flex items-center justify-center'>
-                      <Play size={16} className='text-gray-400 ml-1' />
-                    </div>
+                  {/* Always visible subtle play indicator */}
+                  <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
+                    <Play size={16} className='text-white ml-0.5' fill="white" />
                   </div>
                 </div>
 
@@ -107,9 +122,9 @@ export default function PortfolioPreview() {
           className='grid md:grid-cols-4 gap-8 mb-12 p-8 bg-white border border-gray-200 shadow-lg'
         >
           <div className='text-center'>
-            <div className='text-3xl font-light text-red-500 mb-2'>50+</div>
+            <div className='text-3xl font-light text-red-500 mb-2'>40+</div>
             <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-              Projects Completed
+              Videos Produced
             </div>
           </div>
           <div className='text-center'>
