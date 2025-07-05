@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Play, ArrowRight, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,9 +41,20 @@ export default function Hero() {
       id='home'
       className='min-h-screen flex items-center justify-center relative overflow-hidden bg-white'
     >
-      {/* Background Elements */}
+      {/* Background Video */}
       <div className='absolute inset-0'>
-        <div className='absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-red-50/30' />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className='absolute inset-0 w-full h-full object-cover'
+        >
+          <source src='/Travel_1.mp4' type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+        <div className='absolute inset-0 bg-black/40' />
+        <div className='absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-red-900/20' />
         <motion.div
           className='absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl'
           animate={{
@@ -77,13 +89,13 @@ export default function Hero() {
             transition={{ duration: 1 }}
             className='mb-12'
           >
-            <h1 className='text-6xl md:text-8xl lg:text-9xl font-light mb-8 leading-none text-gray-900'>
+            <h1 className='text-6xl md:text-8xl lg:text-9xl font-light mb-8 leading-none text-white drop-shadow-2xl'>
               {heroSlides[currentSlide].title}
-              <span className='block text-gray-500 mt-4'>
+              <span className='block text-red-400 mt-4'>
                 {heroSlides[currentSlide].subtitle}
               </span>
             </h1>
-            <p className='text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light'>
+            <p className='text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg'>
               {heroSlides[currentSlide].description}
             </p>
           </motion.div>
@@ -95,26 +107,30 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className='flex flex-col sm:flex-row gap-6 justify-center items-center'
         >
-          <motion.button
-            className='group bg-red-500 hover:bg-red-600 text-white px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide shadow-lg hover:shadow-xl'
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Play size={20} />
-            Watch Our Work
-          </motion.button>
+          <Link href='/portfolio'>
+            <motion.button
+              className='group bg-red-500 hover:bg-red-600 text-white px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide shadow-lg hover:shadow-xl'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Play size={20} />
+              Watch Our Work
+            </motion.button>
+          </Link>
 
-          <motion.button
-            className='group border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-50 px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide'
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Start Your Project
-            <ArrowRight
-              size={20}
-              className='group-hover:translate-x-1 transition-transform'
-            />
-          </motion.button>
+          <Link href='/#contact'>
+            <motion.button
+              className='group border-2 border-white hover:border-red-500 text-white hover:text-red-500 hover:bg-red-50 px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Start Your Project
+              <ArrowRight
+                size={20}
+                className='group-hover:translate-x-1 transition-transform'
+              />
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Slide Indicators */}
@@ -124,7 +140,7 @@ export default function Hero() {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-12 h-1 transition-all duration-300 ${
-                index === currentSlide ? 'bg-red-500' : 'bg-gray-300'
+                index === currentSlide ? 'bg-red-500' : 'bg-white/50'
               }`}
             />
           ))}
@@ -133,16 +149,23 @@ export default function Hero() {
 
       {/* Scroll Indicator */}
       <motion.div
-        className='absolute bottom-8 left-1/2 transform -translate-x-1/2'
+        className='absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
+        onClick={() => {
+          const servicesSection = document.querySelector('#services');
+          if (servicesSection) {
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
+          className='hover:text-white transition-colors duration-300'
         >
-          <ChevronDown size={32} className='text-gray-400' />
+          <ChevronDown size={32} className='text-white/70' />
         </motion.div>
       </motion.div>
     </section>

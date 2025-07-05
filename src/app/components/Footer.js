@@ -8,13 +8,26 @@ import {
   Phone,
   MapPin,
   ArrowRight,
+  User,
 } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <Instagram size={20} />, href: '#', label: 'Instagram' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
-    { icon: <Facebook size={20} />, href: '#', label: 'Facebook' },
+    {
+      icon: <Instagram size={20} />,
+      href: 'https://instagram.com/tndfilms',
+      label: 'Instagram',
+    },
+    {
+      icon: <Linkedin size={20} />,
+      href: 'https://linkedin.com/company/tndfilms',
+      label: 'LinkedIn',
+    },
+    {
+      icon: <Facebook size={20} />,
+      href: 'https://facebook.com/tndfilms',
+      label: 'Facebook',
+    },
   ];
 
   const services = [
@@ -27,12 +40,39 @@ export default function Footer() {
   ];
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Team', href: '#team' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Contact', href: '/#contact' },
+  ];
+
+  // Team contacts with updated info
+  const teamContacts = [
+    {
+      name: 'General Inquiries',
+      email: 'Info@tndfilms.com',
+      phone: '+91 9013218028',
+      role: 'Main Contact',
+    },
+    {
+      name: 'Kuldeep Chauhan',
+      email: 'Kuldeepchauhan@tndfilms.com',
+      phone: '+91 9540998320',
+      role: 'Post-Production Head',
+    },
+    {
+      name: 'Nitin Kumar Pal',
+      email: 'Nitinkumarpal@tndfilms.com',
+      phone: '+91 9899591626',
+      role: 'Creative Director',
+    },
+    {
+      name: 'Vipin Kumar Pal',
+      email: 'Vipinkumarpal@tndfilms.com',
+      phone: '+91 9013218028',
+      role: 'Director of Photography',
+    },
   ];
 
   return (
@@ -47,37 +87,16 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className='lg:col-span-2'
+              className='lg:col-span-1'
             >
               <h3 className='text-4xl font-light mb-6 tracking-wide text-gray-900'>
                 TND<span className='text-red-500'>.</span>
               </h3>
-              <p className='text-gray-600 mb-8 leading-relaxed text-lg max-w-md'>
+              <p className='text-gray-600 mb-8 leading-relaxed text-lg'>
                 Transforming visions into reality through the art of video
                 production. We bring your stories to life with creativity,
                 passion, and technical excellence.
               </p>
-
-              {/* Newsletter Signup */}
-              {/* <div className='mb-8'>
-                <h4 className='text-sm font-mono text-gray-500 tracking-wider mb-4 uppercase'>
-                  Stay Updated
-                </h4>
-                <div className='flex'>
-                  <input
-                    type='email'
-                    placeholder='your.email@example.com'
-                    className='flex-1 px-4 py-3 border border-gray-200 focus:border-red-500 focus:outline-none text-gray-700 rounded-none'
-                  />
-                  <motion.button
-                    className='px-6 py-3 bg-red-500 hover:bg-red-600 text-white border-2 border-red-500 hover:border-red-600 transition-all duration-300'
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <ArrowRight size={20} />
-                  </motion.button>
-                </div>
-              </div> */}
 
               {/* Social Links */}
               <div>
@@ -89,6 +108,8 @@ export default function Footer() {
                     <motion.a
                       key={social.label}
                       href={social.href}
+                      target='_blank'
+                      rel='noopener noreferrer'
                       className='w-12 h-12 bg-gray-50 border border-gray-200 hover:border-red-500 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500 hover:bg-red-50 transition-all duration-300'
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
@@ -126,7 +147,7 @@ export default function Footer() {
               </ul>
             </motion.div>
 
-            {/* Quick Links & Contact */}
+            {/* Quick Links */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -136,7 +157,7 @@ export default function Footer() {
               <h4 className='text-lg font-light text-gray-900 mb-6 tracking-wide'>
                 Quick Links
               </h4>
-              <ul className='space-y-3 mb-8'>
+              <ul className='space-y-3'>
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <a
@@ -149,30 +170,73 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </motion.div>
 
-              {/* Contact Info */}
-              <div className='space-y-3'>
-                <h4 className='text-sm font-mono text-gray-500 tracking-wider mb-4 uppercase'>
-                  Contact
-                </h4>
+            {/* Contact Info */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h4 className='text-lg font-light text-gray-900 mb-6 tracking-wide'>
+                Contact
+              </h4>
+              <div className='space-y-4'>
+                {/* Main Contact */}
                 <div className='flex items-center space-x-3'>
-                  <Mail size={16} className='text-red-500' />
+                  <Mail size={16} className='text-red-500 flex-shrink-0' />
                   <a
-                    href='mailto:tndfilms.info@gmail.com'
+                    href='mailto:Info@tndfilms.com'
                     className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-sm'
                   >
-                    tndfilms.info@gmail.com
+                    Info@tndfilms.com
                   </a>
                 </div>
+
                 <div className='flex items-center space-x-3'>
-                  <Phone size={16} className='text-red-500' />
-                  <span className='text-gray-600 text-sm'>
-                    +91 XXX XXX XXXX
-                  </span>
+                  <Phone size={16} className='text-red-500 flex-shrink-0' />
+                  <a
+                    href='tel:+919013218028'
+                    className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-sm'
+                  >
+                    +91 9013218028
+                  </a>
                 </div>
+
                 <div className='flex items-center space-x-3'>
-                  <MapPin size={16} className='text-red-500' />
+                  <MapPin size={16} className='text-red-500 flex-shrink-0' />
                   <span className='text-gray-600 text-sm'>India</span>
+                </div>
+
+                {/* Team Contacts */}
+                <div className='pt-4 border-t border-gray-200'>
+                  <h5 className='text-sm font-mono text-gray-500 tracking-wider mb-3 uppercase'>
+                    Team Contacts
+                  </h5>
+                  <div className='space-y-3'>
+                    {teamContacts.slice(1).map((contact) => (
+                      <div key={contact.email} className='border-b border-gray-100 pb-2 last:border-b-0'>
+                        <div className='text-xs text-gray-700 font-medium mb-1'>
+                          {contact.name.split(' ')[0]} - {contact.role.replace(' Head', '').replace(' of Photography', '')}
+                        </div>
+                        <div className='space-y-1'>
+                          <a
+                            href={`mailto:${contact.email}`}
+                            className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-xs block'
+                          >
+                            {contact.email}
+                          </a>
+                          <a
+                            href={`tel:${contact.phone.replace(/\s/g, '')}`}
+                            className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-xs block'
+                          >
+                            {contact.phone}
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
