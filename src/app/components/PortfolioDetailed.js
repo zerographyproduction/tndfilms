@@ -177,7 +177,7 @@ export default function EnhancedPortfolio() {
       client: 'Strategic Client',
     },
     {
-      title: 'Music Production',
+      title: 'Music Production Vol. 2',
       videoId: 'o21H1tiTKOM',
       category: 'music',
       description: 'Professional music video',
@@ -185,7 +185,7 @@ export default function EnhancedPortfolio() {
       client: 'Music Artist',
     },
     {
-      title: 'Brand Campaign',
+      title: 'Brand Campaign Series',
       videoId: 'N2auTayZ978',
       category: 'brands',
       description: 'Marketing campaign film',
@@ -193,7 +193,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Corporate Event',
+      title: 'Corporate Event Coverage',
       videoId: 'dSOrly9zAkk',
       category: 'events',
       description: 'Business event coverage',
@@ -233,7 +233,7 @@ export default function EnhancedPortfolio() {
       client: 'Travel Brand',
     },
     {
-      title: 'Corporate Vision',
+      title: 'Corporate Vision 2.0',
       videoId: 'ZN2Ktk-2At0',
       category: 'brands',
       description: 'Company vision film',
@@ -249,7 +249,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Marketing Campaign',
+      title: 'Marketing Campaign Pro',
       videoId: 'dOFntcrHfdk',
       category: 'brands',
       description: 'Strategic campaign film',
@@ -281,7 +281,7 @@ export default function EnhancedPortfolio() {
       client: 'Travel Brand',
     },
     {
-      title: 'Brand Campaign',
+      title: 'Brand Campaign Premium',
       videoId: 's7xQTc3aP8U',
       category: 'brands',
       description: 'Marketing campaign',
@@ -289,7 +289,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Brand Story',
+      title: 'Brand Story Narrative',
       videoId: 'p9zWIfGkFuo',
       category: 'brands',
       description: 'Corporate storytelling',
@@ -297,7 +297,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Corporate Film',
+      title: 'Corporate Film Showcase',
       videoId: 'DmQqS1dIh3U',
       category: 'brands',
       description: 'Business showcase',
@@ -305,7 +305,7 @@ export default function EnhancedPortfolio() {
       client: 'Corporate Client',
     },
     {
-      title: 'Brand Campaign',
+      title: 'Brand Campaign Initiative',
       videoId: 'VUh78cxA_04',
       category: 'brands',
       description: 'Marketing initiative',
@@ -313,7 +313,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Corporate Vision',
+      title: 'Corporate Vision Showcase',
       videoId: 'nWRGCuiJMy8',
       category: 'brands',
       description: 'Company showcase',
@@ -321,7 +321,7 @@ export default function EnhancedPortfolio() {
       client: 'Corporate Client',
     },
     {
-      title: 'Brand Story',
+      title: 'Brand Story Documentary',
       videoId: 'BSg4EjWPq8E',
       category: 'brands',
       description: 'Corporate narrative',
@@ -329,7 +329,7 @@ export default function EnhancedPortfolio() {
       client: 'Brand Client',
     },
     {
-      title: 'Marketing Campaign',
+      title: 'Marketing Campaign Strategic',
       videoId: '5WpZLFnn9UQ',
       category: 'brands',
       description: 'Strategic campaign',
