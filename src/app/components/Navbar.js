@@ -57,9 +57,9 @@ export default function Navbar() {
           <Link href='/'>
             <motion.div className='cursor-pointer' whileHover={{ scale: 1.05 }}>
               <img
-                src='/logo.png'
+                src={scrolled || !isHomePage ? '/2.png' : '/1.png'}
                 alt='T n D Films Pvt. Ltd. Logo'
-                className='h-14 w-auto'
+                className='h-14 w-auto transition-all duration-300'
               />
             </motion.div>
           </Link>
