@@ -8,7 +8,7 @@ const ClientLogos = () => {
     { src: 'Honda_Logo.svg.png', alt: 'Honda', needsBorder: false },
     { src: 'Samsung_logo_blue.png', alt: 'Samsung', needsBorder: false },
     { src: 'maruti-suzuki-logo-maruiti-icon-free-free-vector.jpg', alt: 'Maruti Suzuki', needsBorder: false },
-    { src: 'Rajputana_Customs_New_LOGO_1200x1200.png', alt: 'Rajputana Customs', needsBorder: true },
+    { src: 'Rajputana_Customs.png', alt: 'Rajputana Customs', needsBorder: true },
     { src: 'HCL-TBI-partnership-logo.png', alt: 'HCL TBI', needsBorder: false },
     { src: 'piagio.png', alt: 'Piaggio', needsBorder: false },
     { src: 'Itel_Mobile_Logo.jpg', alt: 'Itel Mobile', needsBorder: false },
@@ -80,7 +80,7 @@ const ClientLogos = () => {
               }`}
             >
               <Image
-                src={`/website/CompanyLogo/${logo.src}`}
+                src={`/Website/CompanyLogo/${logo.src}`}
                 alt={logo.alt}
                 width={120}
                 height={80}
