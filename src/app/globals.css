@@ -1,5 +1,18 @@
 @import 'tailwindcss';
 
+:root {
+  --red-50: #FFF7F3;
+  --red-100: #FFEDE6;
+  --red-200: #FED7CC;
+  --red-300: #FEB79E;
+  --red-400: #FE916B;
+  --red-500: #FEA47F;
+  --red-600: #FD6A2D;
+  --red-700: #E44A11;
+  --red-800: #BD3A0F;
+  --red-900: #9A3412;
+}
+
 html,
 body {
   margin: 0;

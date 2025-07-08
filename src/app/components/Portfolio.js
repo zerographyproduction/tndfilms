@@ -80,7 +80,7 @@ export default function PortfolioPreview() {
                     className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                     whileHover={{ scale: 1.05 }}
                   >
-                    <div className='w-16 h-16 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                    <div className='w-16 h-16 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
                       <Play size={24} className='text-white ml-1' fill="white" />
                     </div>
                   </motion.div>
@@ -93,7 +93,7 @@ export default function PortfolioPreview() {
 
                 <div className='p-6'>
                   <div className='flex justify-between items-center mb-3'>
-                    <span className='text-red-500 text-sm bg-red-50 border border-red-200 px-3 py-1 rounded-full font-mono tracking-wider'>
+                    <span className='text-red-500 text-sm bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-mono tracking-wider'>
                       {project.category}
                     </span>
                     <span className='text-gray-400 text-xs font-mono tracking-wider'>
@@ -155,7 +155,7 @@ export default function PortfolioPreview() {
         >
           <Link href='/portfolio'>
             <motion.button
-              className='group flex items-center gap-3 bg-red-500 hover:bg-red-600 text-white px-8 py-3 transition-all duration-300 shadow-lg hover:shadow-xl mx-auto'
+              className='group flex items-center gap-3 bg-red-500 hover:bg-red-500/80 text-white px-8 py-3 transition-all duration-300 shadow-lg hover:shadow-xl mx-auto'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

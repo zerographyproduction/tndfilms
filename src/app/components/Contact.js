@@ -149,7 +149,7 @@ export default function Contact() {
               const getHref = () => {
                 if (method.title === 'Email') return `mailto:${method.action}`;
                 if (method.title === 'Phone') return `tel:${method.action.replace(/\s/g, '')}`;
-                if (method.title === 'Social Media') return 'https://instagram.com/tndfilms';
+                if (method.title === 'Social Media') return 'https://instagram.com/tndfilmspvtltd';
                 return '#';
               };
 
@@ -317,7 +317,7 @@ export default function Contact() {
                     {[
                       {
                         label: 'Instagram',
-                        href: 'https://instagram.com/tndfilms',
+                        href: 'https://instagram.com/tndfilmspvtltd',
                         icon: <Instagram size={20} />,
                       },
                       {

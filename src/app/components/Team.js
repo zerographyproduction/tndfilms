@@ -123,8 +123,8 @@ export default function Team() {
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className='bg-gray-50 border border-gray-200 p-8 shadow-xl hover:shadow-2xl transition-all duration-300'>
                   <div className='text-center mb-8'>
-                    <div className='w-24 h-24 bg-gradient-to-br from-red-500/20 to-red-600/10 border-2 border-red-500/30 rounded-full flex items-center justify-center mx-auto mb-6'>
-                      <div className='text-red-600'>{member.icon}</div>
+                    <div className='w-24 h-24 bg-gradient-to-br from-red-500/20 to-red-500/10 border-2 border-red-500/30 rounded-full flex items-center justify-center mx-auto mb-6'>
+                      <div className='text-red-500/80'>{member.icon}</div>
                     </div>
                     <h3 className='text-3xl font-light mb-2 text-gray-900'>
                       {member.name}
@@ -209,7 +209,7 @@ export default function Team() {
                 transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
                 className='text-center group'
               >
-                <div className='w-16 h-16 bg-red-50 border-2 border-red-500/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
+                <div className='w-16 h-16 bg-red-500/10 border-2 border-red-500/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
                   <span className='text-lg font-mono text-red-500 tracking-wider'>
                     {process.step}
                   </span>
@@ -233,7 +233,7 @@ export default function Team() {
           className='text-center mt-16'
         >
           <motion.button
-            className='bg-red-500 hover:bg-red-600 text-white px-10 py-4 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
+            className='bg-red-500 hover:bg-red-500/80 text-white px-10 py-4 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

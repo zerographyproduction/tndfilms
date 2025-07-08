@@ -488,7 +488,7 @@ export default function EnhancedPortfolio() {
                       className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                       whileHover={{ scale: 1.05 }}
                     >
-                      <div className='w-20 h-20 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                      <div className='w-20 h-20 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
                         <Play size={32} className='text-white ml-1' fill="white" />
                       </div>
                     </motion.div>
@@ -501,7 +501,7 @@ export default function EnhancedPortfolio() {
 
                   <div className='p-8'>
                     <div className='flex justify-between items-center mb-4'>
-                      <span className='text-red-500 text-sm bg-red-50 border border-red-200 px-3 py-1 rounded-full font-mono tracking-wider'>
+                      <span className='text-red-500 text-sm bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-mono tracking-wider'>
                         {project.category}
                       </span>
                       <span className='text-gray-400 text-sm font-mono tracking-wider'>
@@ -659,7 +659,7 @@ export default function EnhancedPortfolio() {
                       className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                       whileHover={{ scale: 1.05 }}
                     >
-                      <div className='w-16 h-16 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                      <div className='w-16 h-16 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
                         <Play size={24} className='text-white ml-1' fill="white" />
                       </div>
                     </motion.div>
@@ -677,7 +677,7 @@ export default function EnhancedPortfolio() {
                   >
                     <div className='flex justify-between items-start mb-3'>
                       <div className='flex items-center gap-3'>
-                        <span className='text-red-500 text-sm bg-red-50 border border-red-200 px-3 py-1 rounded-full font-mono tracking-wider'>
+                        <span className='text-red-500 text-sm bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-mono tracking-wider'>
                           {project.category}
                         </span>
                         <span className='text-gray-400 text-xs font-mono tracking-wider'>
@@ -802,7 +802,7 @@ export default function EnhancedPortfolio() {
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
               <motion.a
                 href='/#contact'
-                className='bg-red-500 hover:bg-red-600 text-white px-8 py-3 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
+                className='bg-red-500 hover:bg-red-500/80 text-white px-8 py-3 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -810,7 +810,7 @@ export default function EnhancedPortfolio() {
               </motion.a>
               <motion.a
                 href='/services'
-                className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-50 px-8 py-3 font-light tracking-wide transition-all duration-300'
+                className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-500/10 px-8 py-3 font-light tracking-wide transition-all duration-300'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

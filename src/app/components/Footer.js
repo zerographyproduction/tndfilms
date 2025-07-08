@@ -15,7 +15,7 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: <Instagram size={20} />,
-      href: 'https://instagram.com/tndfilms',
+      href: 'https://instagram.com/tndfilmspvtltd',
       label: 'Instagram',
     },
     {

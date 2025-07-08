@@ -246,7 +246,7 @@ export default function Services() {
                 transition={{ duration: 0.6, delay: 1 + index * 0.1 }}
                 className='text-center group'
               >
-                <div className='w-16 h-16 bg-red-50 border border-red-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
+                <div className='w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
                   <div className='text-red-500'>{capability.icon}</div>
                 </div>
                 <h4 className='text-lg font-light mb-3 text-gray-900'>
@@ -288,7 +288,7 @@ export default function Services() {
               </Link>
               <Link href='/portfolio'>
                 <motion.button
-                  className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-50 px-8 py-3 font-light tracking-wide transition-all duration-300'
+                  className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-500/10 px-8 py-3 font-light tracking-wide transition-all duration-300'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

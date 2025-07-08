@@ -54,7 +54,7 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         <div className='absolute inset-0 bg-black/40' />
-        <div className='absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-red-900/20' />
+        <div className='absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-red-500/20' />
         <motion.div
           className='absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl'
           animate={{
@@ -91,7 +91,7 @@ export default function Hero() {
           >
             <h1 className='text-6xl md:text-8xl lg:text-9xl font-light mb-8 leading-none text-white drop-shadow-2xl'>
               {heroSlides[currentSlide].title}
-              <span className='block text-red-400 mt-4'>
+              <span className='block text-red-500/70 mt-4'>
                 {heroSlides[currentSlide].subtitle}
               </span>
             </h1>
@@ -120,7 +120,7 @@ export default function Hero() {
 
           <Link href='/#contact'>
             <motion.button
-              className='group border-2 border-white hover:border-red-500 text-white hover:text-red-500 hover:bg-red-50 px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide'
+              className='group border-2 border-white hover:border-red-500 text-white hover:text-red-500 hover:bg-red-500/10 px-10 py-4 flex items-center gap-3 transition-all duration-300 font-light tracking-wide'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

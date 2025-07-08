@@ -238,7 +238,7 @@ export default function About() {
                 transition={{ duration: 0.8, delay: 0.4 + index * 0.2 }}
                 className='text-center p-8 bg-gray-50 border border-gray-200 hover:border-red-500/30 transition-all duration-300'
               >
-                <div className='w-16 h-16 bg-red-50 border border-red-200 rounded-full flex items-center justify-center mx-auto mb-6'>
+                <div className='w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6'>
                   <div className='text-red-500'>{value.icon}</div>
                 </div>
                 <h3 className='text-xl font-light mb-4 text-gray-900'>
@@ -401,7 +401,7 @@ export default function About() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className='text-center group'
               >
-                <div className='w-16 h-16 bg-red-50 border-2 border-red-500/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
+                <div className='w-16 h-16 bg-red-500/10 border-2 border-red-500/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-100 transition-colors duration-300'>
                   <span className='text-lg font-mono text-red-500 tracking-wider'>
                     {process.step}
                   </span>
@@ -439,7 +439,7 @@ export default function About() {
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
               <motion.a
                 href='/#contact'
-                className='bg-red-500 hover:bg-red-600 text-white px-8 py-3 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
+                className='bg-red-500 hover:bg-red-500/80 text-white px-8 py-3 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -447,7 +447,7 @@ export default function About() {
               </motion.a>
               <motion.a
                 href='/portfolio'
-                className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-50 px-8 py-3 font-light tracking-wide transition-all duration-300'
+                className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-500/10 px-8 py-3 font-light tracking-wide transition-all duration-300'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
