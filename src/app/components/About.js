@@ -47,7 +47,7 @@ export default function About() {
       photo: '/nitin-pal.png',
       icon: <Video size={32} />,
       description:
-        "As our Creative Director, Nitin Kumar Pal brings a wealth of experience and groundbreaking innovation to every project at T n D Films Pvt. Ltd. With over a decade in the film and advertising industry, Nitin has honed his ability to sculpt compelling narratives and conceptualize visionary content that captivates and persuades. A true master of strategic storytelling, Nitin plays a pivotal role in shaping the artistic and conceptual direction of our productions. His expertise encompasses a wide array of sophisticated mediums, from intricate brand documentaries to impactful digital campaign series, ensuring each piece of content possesses unparalleled originality and strategic resonance. Nitin's creative leadership, coupled with his unwavering commitment to excellence, is a driving force behind T n D Films Pvt. Ltd.'s success in transforming abstract ideas into visually stunning and emotionally resonant experiences.",
+        "As our Creative Director, Nitin Kumar Pal brings a wealth of experience and groundbreaking innovation to every project at TND Films Pvt. Ltd. With over a decade in the film and advertising industry, Nitin has honed his ability to sculpt compelling narratives and conceptualize visionary content that captivates and persuades. A true master of strategic storytelling, Nitin plays a pivotal role in shaping the artistic and conceptual direction of our productions. His expertise encompasses a wide array of sophisticated mediums, from intricate brand documentaries to impactful digital campaign series, ensuring each piece of content possesses unparalleled originality and strategic resonance. Nitin's creative leadership, coupled with his unwavering commitment to excellence, is a driving force behind TND Films Pvt. Ltd.'s success in transforming abstract ideas into visually stunning and emotionally resonant experiences.",
       specialties: [
         'Strategic Storytelling',
         'Brand Documentaries',
@@ -68,7 +68,7 @@ export default function About() {
       photo: '/kuldeep.png',
       icon: <Edit size={32} />,
       description:
-        "Kuldeep Chauhan, our meticulous Post-Production Head and the foundational vision behind T n D Films Pvt. Ltd., brings a decade of expertise to the transformative art of editing. With 10 years of intensive experience in the industry, Kuldeep has a proven track record of sculpting raw footage into polished, high-impact narratives that not only resonate with audiences but command their attention. His meticulous attention to every nuance, advanced technical proficiency, and innovative creative approach ensure that every project achieves its absolute highest potential in the editing suite. Whether it's refining the visual flow of signature brand films or finessing the intricate details of luxury product showcases, Kuldeep's work adds the crucial final touch that elevates each piece to cinematic excellence. As the leader of our post-production artistry, Kuldeep combines his deep industry knowledge with cutting-edge techniques, making him an indispensable architect of T n D Films Pvt. Ltd.'s unparalleled quality.",
+        "Kuldeep Chauhan, our meticulous Post-Production Head and the foundational vision behind TND Films Pvt. Ltd., brings a decade of expertise to the transformative art of editing. With 10 years of intensive experience in the industry, Kuldeep has a proven track record of sculpting raw footage into polished, high-impact narratives that not only resonate with audiences but command their attention. His meticulous attention to every nuance, advanced technical proficiency, and innovative creative approach ensure that every project achieves its absolute highest potential in the editing suite. Whether it's refining the visual flow of signature brand films or finessing the intricate details of luxury product showcases, Kuldeep's work adds the crucial final touch that elevates each piece to cinematic excellence. As the leader of our post-production artistry, Kuldeep combines his deep industry knowledge with cutting-edge techniques, making him an indispensable architect of TND Films Pvt. Ltd.'s unparalleled quality.",
       specialties: [
         'Advanced Editing',
         'Color Grading',
@@ -157,10 +157,10 @@ export default function About() {
             </h1>
             <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
             <p className='text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-12'>
-              At the heart of T n D Films Pvt. Ltd. is a collective of seasoned professionals,
-              each a master of their craft, dedicated to bringing your brand's
-              most ambitious visions to life through unparalleled video
-              production.
+              At the heart of TND Films Pvt. Ltd. is a collective of seasoned
+              professionals, each a master of their craft, dedicated to bringing
+              your brand's most ambitious visions to life through unparalleled
+              video production.
             </p>
           </motion.div>
         </div>
@@ -180,18 +180,19 @@ export default function About() {
               </h2>
               <div className='w-24 h-1 bg-red-500 mb-6' />
               <p className='text-lg text-gray-700 leading-relaxed mb-6'>
-                T n D Films Pvt. Ltd. is a premier video production company dedicated to
-                bringing your stories to life through the power of visual
-                storytelling. With a passion for creativity and a commitment to
-                excellence, we specialize in producing high-quality videos
-                across a diverse range of genres and formats.
+                TND Films Pvt. Ltd. is a premier video production company
+                dedicated to bringing your stories to life through the power of
+                visual storytelling. With a passion for creativity and a
+                commitment to excellence, we specialize in producing
+                high-quality videos across a diverse range of genres and
+                formats.
               </p>
               <p className='text-gray-600 leading-relaxed mb-8'>
                 From conceptualization to post-production, we handle every
                 aspect of video production, delivering content that captivates
-                and engages your audience. At T n D Films Pvt. Ltd., we believe that every
-                story deserves to be told, and we are here to help you tell
-                yours in the most compelling way possible.
+                and engages your audience. At TND Films Pvt. Ltd., we believe
+                that every story deserves to be told, and we are here to help
+                you tell yours in the most compelling way possible.
               </p>
             </motion.div>
 
@@ -289,8 +290,8 @@ export default function About() {
                   <div className='bg-white border border-gray-200 p-8 shadow-xl hover:shadow-2xl transition-all duration-300'>
                     <div className='text-center mb-8'>
                       <div className='w-24 h-24 rounded-full overflow-hidden mx-auto mb-6 border-2 border-red-500/30 shadow-lg'>
-                        <img 
-                          src={member.photo} 
+                        <img
+                          src={member.photo}
                           alt={member.name}
                           className='w-full h-full object-cover'
                         />

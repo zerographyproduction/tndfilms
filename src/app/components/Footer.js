@@ -9,24 +9,36 @@ import {
   MapPin,
   ArrowRight,
   User,
+  Youtube,
+  Twitter,
 } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
     {
       icon: <Instagram size={20} />,
-      href: 'https://instagram.com/tndfilmspvtltd',
+      href: 'https://www.instagram.com/tndfilmspvtltd/',
       label: 'Instagram',
     },
     {
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/company/tndfilms',
+      href: 'https://www.linkedin.com/in/tndfilms/',
       label: 'LinkedIn',
     },
     {
       icon: <Facebook size={20} />,
-      href: 'https://facebook.com/tndfilms',
+      href: 'https://www.facebook.com/tndfilmspvtltd/',
       label: 'Facebook',
+    },
+    {
+      icon: <Youtube size={20} />,
+      href: 'https://www.youtube.com/channel/UCJm4S75MEYNqxZBFzoEOJsg',
+      label: 'YouTube',
+    },
+    {
+      icon: <Twitter size={20} />,
+      href: 'https://x.com/tndfilms',
+      label: 'X',
     },
   ];
 
@@ -92,11 +104,11 @@ export default function Footer() {
               <div className='mb-6 flex items-center space-x-3'>
                 <img
                   src='/1.png'
-                  alt='T n D Films Pvt. Ltd. Logo'
+                  alt='TND Films Pvt. Ltd. Logo'
                   className='h-12 w-auto'
                 />
                 <div className='text-2xl font-light text-gray-900'>
-                  T n D Films Pvt. Ltd.
+                  TND Films Pvt. Ltd.
                 </div>
               </div>
               <p className='text-gray-600 mb-8 leading-relaxed text-lg'>
@@ -267,8 +279,8 @@ export default function Footer() {
           <div className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
             <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8'>
               <p className='text-gray-500 text-sm font-mono tracking-wider'>
-                &copy; {new Date().getFullYear()} T n D Films Pvt. Ltd. All
-                rights reserved.
+                &copy; {new Date().getFullYear()} TND Films Pvt. Ltd. All rights
+                reserved.
               </p>
               <div className='flex space-x-6'>
                 <a
