@@ -120,29 +120,26 @@ export default function Services() {
   ];
 
   return (
-    <section id='services' className='py-32 lg:py-40 bg-white' ref={ref}>
-      <div className='max-w-7xl mx-auto px-6 lg:px-12'>
+    <section id='services' className='py-16 lg:py-24 bg-gray-50' ref={ref}>
+      <div className='max-w-6xl mx-auto px-6 lg:px-12'>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
-          className='text-center mb-20'
+          className='text-center mb-12'
         >
-          <h2 className='text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 text-gray-900'>
-            Our
-            <span className='block text-gray-500'>Services</span>
+          <h2 className='text-2xl md:text-3xl font-normal leading-tight mb-4 text-gray-900 tracking-wide'>
+            Our Services
           </h2>
-          <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
-          <p className='text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed'>
-            From concept to completion, we offer comprehensive video production
-            services tailored to meet your unique creative and business
-            objectives. Every project is crafted with meticulous attention to
-            detail and strategic storytelling.
+          <div className='w-16 h-0.5 bg-red-500 mx-auto mb-6' />
+          <p className='text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed'>
+            From concept to completion, we offer comprehensive video production services 
+            tailored to meet your unique creative and business objectives.
           </p>
         </motion.div>
 
         {/* Main Services Grid */}
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16'>
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -151,24 +148,21 @@ export default function Services() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className='group cursor-pointer'
             >
-              <div className='bg-white border border-gray-200 hover:border-red-500/30 p-8 h-full transition-all duration-500 shadow-lg hover:shadow-2xl group-hover:-translate-y-2 relative overflow-hidden'>
-                {/* Decorative Elements */}
-                <div className='absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-red-500/5 to-transparent'></div>
-                <div className='absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-gray-500/5 to-transparent'></div>
+              <div className='bg-white border-0 hover:shadow-lg p-6 h-full transition-all duration-300 relative overflow-hidden'>
 
                 <div className='relative'>
                   <motion.div
-                    className='text-red-500 mb-6 group-hover:scale-110 transition-transform duration-300'
-                    whileHover={{ rotate: 5 }}
+                    className='text-gray-600 mb-4 group-hover:text-gray-900 transition-transform duration-300'
+                    whileHover={{ scale: 1.05 }}
                   >
                     {service.icon}
                   </motion.div>
 
-                  <h3 className='text-2xl font-light mb-4 text-gray-900 group-hover:text-red-500 transition-colors duration-300'>
+                  <h3 className='text-lg font-medium mb-3 text-gray-900 group-hover:text-gray-700 transition-colors duration-300'>
                     {service.title}
                   </h3>
 
-                  <p className='text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6'>
+                  <p className='text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4'>
                     {service.description}
                   </p>
 

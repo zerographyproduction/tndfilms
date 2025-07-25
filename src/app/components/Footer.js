@@ -103,7 +103,7 @@ export default function Footer() {
             >
               <div className='mb-6 flex items-center space-x-3'>
                 <img
-                  src='/1.png'
+                  src='/tndblack.png'
                   alt='TND Films Pvt. Ltd. Logo'
                   className='h-12 w-auto'
                 />

@@ -9,6 +9,8 @@ import {
   Grid,
   List,
 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function EnhancedPortfolio() {
   const ref = useRef(null);
@@ -18,9 +20,82 @@ export default function EnhancedPortfolio() {
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [showVideoOverlay, setShowVideoOverlay] = useState(false);
+  const router = useRouter();
 
   // Video portfolio data
   const VIDEO_ITEMS = [
+    {
+      title: "Attuned With AT | Ft. Rajiv Makhni | Coming Soon",
+      videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
+      category: 'podcast',
+      description: "Podcast Film - End-to-End production of tech talk show featuring India's leading tech voice, Rajiv Makhni",
+      year: '2024',
+      client: 'itel india',
+      featured: true,
+    },
+    {
+      title: "Wilderness Quest – Adventure Short",
+      videoId: '1ZVsxIGs1Kg',
+      category: 'adventure',
+      description: "Adventure Film - Thrilling visual journey into raw nature and extreme adventure with Jumpin Heights",
+      year: '2024',
+      client: 'Jumpin Heights',
+      featured: true,
+    },
+    {
+      title: "Super Guru 4G – Entertainment Ki Duniya Ka Baap",
+      videoId: 'lyBQYLtnKdM',
+      category: 'brand',
+      description: "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
+      year: '2024',
+      client: 'itel India',
+      featured: true,
+    },
+    {
+      title: "Unleash the power of technology with itel's Pad One",
+      videoId: 'PmX_y3ApaDs', // Replace with actual video ID
+      category: 'product',
+      description: "Product Film - Sleek & informative product video showcasing itel Pad One, shot entirely in studio",
+      year: '2024',
+      client: 'itel India',
+      featured: false,
+    },
+    {
+      title: "7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video",
+      videoId: 'xVWPOQwVlNE', // Replace with actual video ID
+      category: 'documentary',
+      description: "Documentary AdFilm - Celebration of 7-year gaming milestone with India's gaming community",
+      year: '2024',
+      client: '@UnGraduateGamer',
+      featured: false,
+    },
+    {
+      title: "VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K",
+      videoId: '9hIyf0FyYZ0', // Replace with actual video ID
+      category: 'documentary',
+      description: "Documentary Film - Cinematic exploration of Banke Bihari Temple's divine atmosphere in Vrindavan",
+      year: '2021',
+      client: 'The Vagabond Films',
+      featured: true,
+    },
+    {
+      title: "Skiing in Munsiyari",
+      videoId: '9xFB1qmpF3k',
+      category: 'adventure',
+      description: "Documentary Adventure Film - Breathtaking skiing through snow-clad slopes of Munsiyari, Uttarakhand",
+      year: '2024',
+      client: 'TRAVNAT FILMS',
+      featured: false,
+    },
+    {
+      title: "Mountain Dew Real Heroes presents The Fall - India's First Frozen Waterfall Ascent",
+      videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
+      category: 'documentary',
+      description: "Documentary Adventure Film - India's first adventure documentary shot at a frozen waterfall in extreme Himalayan conditions",
+      year: '2024',
+      client: 'Mountain Dew India',
+      featured: true,
+    },
     {
       title: '25 Years of Partnership | Gates Foundation',
       videoId: 'T_bIUw7GdTU',
@@ -352,6 +427,11 @@ export default function EnhancedPortfolio() {
 
   const categories = [
     'All',
+    'podcast',
+    'adventure', 
+    'brand',
+    'product',
+    'documentary',
     'brands',
     'events',
     'music',
@@ -359,11 +439,16 @@ export default function EnhancedPortfolio() {
   ];
 
   const categoryLabels = {
-    'All': 'All Works',
-    'brands': 'Brand Films',
-    'events': 'Events',
-    'music': 'Music Videos',
-    'travel': 'Travel',
+    All: 'All Works',
+    podcast: 'Podcasts',
+    adventure: 'Adventure Films',
+    brand: 'Brand Films',
+    product: 'Product Videos',
+    documentary: 'Documentaries',
+    brands: 'Brand Films',
+    events: 'Events',
+    music: 'Music Videos',
+    travel: 'Travel',
   };
 
   const filteredProjects =
@@ -374,8 +459,15 @@ export default function EnhancedPortfolio() {
   const featuredProjects = portfolioItems.filter((item) => item.featured);
 
   const handleVideoClick = (video) => {
-    setSelectedVideo(video);
-    setShowVideoOverlay(true);
+    // Create slug from title
+    const slug = video.title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+      .trim();
+
+    router.push(`/portfolio/${slug}`);
   };
 
   const closeVideoOverlay = () => {
@@ -446,21 +538,21 @@ export default function EnhancedPortfolio() {
       </section>
 
       {/* Featured Projects */}
-      <section className='py-24 lg:py-32'>
-        <div className='max-w-7xl mx-auto px-6 lg:px-12'>
+      <section className='py-16 lg:py-24 bg-gray-50'>
+        <div className='max-w-6xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className='mb-16'
+            className='mb-12'
           >
-            <h2 className='text-3xl md:text-4xl font-light mb-6 text-gray-900 text-center'>
-              Featured Projects
+            <h2 className='text-2xl md:text-3xl font-normal mb-4 text-gray-900 text-center tracking-wide'>
+              Featured Work
             </h2>
-            <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
+            <div className='w-16 h-0.5 bg-red-500 mx-auto mb-6' />
           </motion.div>
 
-          <div className='grid lg:grid-cols-2 gap-12 mb-20'>
+          <div className='grid lg:grid-cols-2 gap-8 mb-16'>
             {featuredProjects.slice(0, 2).map((project, index) => (
               <motion.div
                 key={project.title}
@@ -468,73 +560,89 @@ export default function EnhancedPortfolio() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className='group cursor-pointer'
-                onClick={() => handleVideoClick(project)}
               >
-                <div className='bg-white border border-gray-200 hover:border-red-500/30 transition-all duration-500 shadow-xl hover:shadow-2xl overflow-hidden'>
-                  <div className='aspect-video relative overflow-hidden group-hover:scale-105 transition-all duration-500'>
-                    {/* YouTube Thumbnail */}
-                    <img
-                      src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
-                      alt={project.title}
-                      className='w-full h-full object-cover'
-                      onError={(e) => {
-                        // Fallback to medium quality thumbnail if maxres fails
-                        e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
-                      }}
-                    />
-                    
-                    {/* Play Button Overlay */}
-                    <motion.div
-                      className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      <div className='w-20 h-20 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
-                        <Play size={32} className='text-white ml-1' fill="white" />
-                      </div>
-                    </motion.div>
+                <Link
+                  href={`/portfolio/${project.title
+                    .toLowerCase()
+                    .replace(/[^\w\s-]/g, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/-+/g, '-')
+                    .trim()}`}
+                >
+                  <div className='bg-white border-0 hover:shadow-lg transition-all duration-300 overflow-hidden'>
+                    <div className='aspect-[16/10] relative overflow-hidden group-hover:scale-[1.02] transition-all duration-300'>
+                      {/* YouTube Thumbnail */}
+                      <img
+                        src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                        alt={project.title}
+                        className='w-full h-full object-cover'
+                        onError={(e) => {
+                          // Fallback to medium quality thumbnail if maxres fails
+                          e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                        }}
+                      />
 
-                    {/* Always visible subtle play indicator */}
-                    <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
-                      <Play size={16} className='text-white ml-0.5' fill="white" />
+                      {/* Play Button Overlay */}
+                      <motion.div
+                        className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        <div className='w-20 h-20 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                          <Play
+                            size={32}
+                            className='text-white ml-1'
+                            fill='white'
+                          />
+                        </div>
+                      </motion.div>
+
+                      {/* Always visible subtle play indicator */}
+                      <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
+                        <Play
+                          size={16}
+                          className='text-white ml-0.5'
+                          fill='white'
+                        />
+                      </div>
+                    </div>
+
+                    <div className='p-6'>
+                      <div className='flex justify-between items-center mb-4'>
+                        <span className='text-gray-600 text-xs uppercase tracking-wider bg-gray-100 px-2 py-1'>
+                          {project.category}
+                        </span>
+                        <span className='text-gray-400 text-xs'>
+                          {project.year}
+                        </span>
+                      </div>
+
+                      <h3 className='text-xl font-medium text-gray-900 mb-3 group-hover:text-gray-700 transition-colors duration-300 leading-snug'>
+                        {project.title}
+                      </h3>
+
+                      <p className='text-xs text-gray-500 mb-4 uppercase tracking-wide'>
+                        {project.client}
+                      </p>
+
+                      <p className='text-sm text-gray-600 leading-relaxed mb-6'>
+                        {project.description}
+                      </p>
+
+                      {project.tags && (
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                          {project.tags.map((tag, i) => (
+                            <span
+                              key={i}
+                              className='text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded'
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
-
-                  <div className='p-8'>
-                    <div className='flex justify-between items-center mb-4'>
-                      <span className='text-red-500 text-sm bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-mono tracking-wider'>
-                        {project.category}
-                      </span>
-                      <span className='text-gray-400 text-sm font-mono tracking-wider'>
-                        {project.year}
-                      </span>
-                    </div>
-
-                    <h3 className='text-2xl font-light text-gray-900 mb-3 group-hover:text-red-500 transition-colors duration-300 leading-tight'>
-                      {project.title}
-                    </h3>
-
-                    <p className='text-sm text-gray-500 mb-4 font-mono'>
-                      Client: {project.client}
-                    </p>
-
-                    <p className='text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6'>
-                      {project.description}
-                    </p>
-
-                    {project.tags && (
-                      <div className='flex flex-wrap gap-2 mb-4'>
-                        {project.tags.map((tag, i) => (
-                          <span
-                            key={i}
-                            className='text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded'
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -542,18 +650,18 @@ export default function EnhancedPortfolio() {
       </section>
 
       {/* All Projects Section */}
-      <section className='py-24 lg:py-32 bg-gray-50'>
-        <div className='max-w-7xl mx-auto px-6 lg:px-12'>
+      <section className='py-16 lg:py-24 bg-white'>
+        <div className='max-w-6xl mx-auto px-6 lg:px-12'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className='mb-16'
+            className='mb-12'
           >
-            <h2 className='text-3xl md:text-4xl font-light mb-6 text-gray-900 text-center'>
+            <h2 className='text-2xl md:text-3xl font-normal mb-4 text-gray-900 text-center tracking-wide'>
               All Projects
             </h2>
-            <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
+            <div className='w-16 h-0.5 bg-red-500 mx-auto mb-6' />
           </motion.div>
 
           {/* Filters and Controls */}
@@ -561,19 +669,19 @@ export default function EnhancedPortfolio() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className='mb-12'
+            className='mb-10'
           >
-            <div className='flex flex-col lg:flex-row justify-between items-center gap-6'>
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
               {/* Category Filters */}
-              <div className='flex flex-wrap gap-3'>
+              <div className='flex flex-wrap justify-center gap-2'>
                 {categories.map((category) => (
                   <button
                     key={category}
                     onClick={() => setActiveFilter(category)}
-                    className={`px-4 py-2 text-sm font-mono tracking-wider transition-all duration-300 border ${
+                    className={`px-4 py-2 text-xs uppercase tracking-wider transition-all duration-300 border-0 ${
                       activeFilter === category
-                        ? 'bg-red-500 text-white border-red-500'
-                        : 'bg-white text-gray-600 border-gray-200 hover:border-red-500/30 hover:text-red-500'
+                        ? 'bg-gray-900 text-white'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
                     {categoryLabels[category] || category}
@@ -582,26 +690,26 @@ export default function EnhancedPortfolio() {
               </div>
 
               {/* View Mode Toggle */}
-              <div className='flex items-center gap-2 bg-white border border-gray-200 p-1 rounded'>
+              <div className='flex items-center gap-1 bg-gray-100 p-1 rounded'>
                 <button
                   onClick={() => setViewMode('grid')}
                   className={`p-2 rounded transition-colors duration-300 ${
                     viewMode === 'grid'
-                      ? 'bg-red-500 text-white'
-                      : 'text-gray-400 hover:text-gray-600'
+                      ? 'bg-white text-gray-900 shadow-sm'
+                      : 'text-gray-500 hover:text-gray-700'
                   }`}
                 >
-                  <Grid size={16} />
+                  <Grid size={14} />
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
                   className={`p-2 rounded transition-colors duration-300 ${
                     viewMode === 'list'
-                      ? 'bg-red-500 text-white'
-                      : 'text-gray-400 hover:text-gray-600'
+                      ? 'bg-white text-gray-900 shadow-sm'
+                      : 'text-gray-500 hover:text-gray-700'
                   }`}
                 >
-                  <List size={16} />
+                  <List size={14} />
                 </button>
               </div>
             </div>
@@ -612,8 +720,8 @@ export default function EnhancedPortfolio() {
             layout
             className={
               viewMode === 'grid'
-                ? 'grid md:grid-cols-2 lg:grid-cols-3 gap-8'
-                : 'space-y-8'
+                ? 'grid md:grid-cols-2 lg:grid-cols-3 gap-6'
+                : 'space-y-6'
             }
           >
             {filteredProjects.map((project, index) => (
@@ -629,108 +737,124 @@ export default function EnhancedPortfolio() {
                     ? 'grid lg:grid-cols-3 gap-8 items-center'
                     : ''
                 }`}
-                onClick={() => handleVideoClick(project)}
               >
-                <div
-                  className={`bg-white border border-gray-200 hover:border-red-500/30 transition-all duration-500 shadow-lg hover:shadow-2xl overflow-hidden ${
-                    viewMode === 'list'
-                      ? 'lg:col-span-3 grid lg:grid-cols-3 gap-0'
-                      : ''
-                  }`}
+                <Link
+                  href={`/portfolio/${project.title
+                    .toLowerCase()
+                    .replace(/[^\w\s-]/g, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/-+/g, '-')
+                    .trim()}`}
                 >
                   <div
-                    className={`aspect-video relative overflow-hidden group-hover:scale-105 transition-all duration-500 ${
-                      viewMode === 'list' ? 'lg:col-span-1' : ''
+                    className={`bg-white border-0 hover:shadow-lg transition-all duration-300 overflow-hidden ${
+                      viewMode === 'list'
+                        ? 'lg:col-span-3 grid lg:grid-cols-3 gap-0'
+                        : ''
                     }`}
                   >
-                    {/* YouTube Thumbnail */}
-                    <img
-                      src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
-                      alt={project.title}
-                      className='w-full h-full object-cover'
-                      onError={(e) => {
-                        // Fallback to medium quality thumbnail if maxres fails
-                        e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
-                      }}
-                    />
-                    
-                    {/* Play Button Overlay */}
-                    <motion.div
-                      className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-                      whileHover={{ scale: 1.05 }}
+                    <div
+                      className={`aspect-[4/3] relative overflow-hidden group-hover:scale-[1.02] transition-all duration-300 ${
+                        viewMode === 'list' ? 'lg:col-span-1' : ''
+                      }`}
                     >
-                      <div className='w-16 h-16 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
-                        <Play size={24} className='text-white ml-1' fill="white" />
-                      </div>
-                    </motion.div>
-
-                    {/* Always visible subtle play indicator */}
-                    <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
-                      <Play size={16} className='text-white ml-0.5' fill="white" />
-                    </div>
-                  </div>
-
-                  <div
-                    className={`p-6 ${
-                      viewMode === 'list' ? 'lg:col-span-2' : ''
-                    }`}
-                  >
-                    <div className='flex justify-between items-start mb-3'>
-                      <div className='flex items-center gap-3'>
-                        <span className='text-red-500 text-sm bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-mono tracking-wider'>
-                          {project.category}
-                        </span>
-                        <span className='text-gray-400 text-xs font-mono tracking-wider'>
-                          {project.year}
-                        </span>
-                      </div>
-                      <ExternalLink
-                        size={16}
-                        className='text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+                      {/* YouTube Thumbnail */}
+                      <img
+                        src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                        alt={project.title}
+                        className='w-full h-full object-cover'
+                        onError={(e) => {
+                          // Fallback to medium quality thumbnail if maxres fails
+                          e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                        }}
                       />
+
+                      {/* Play Button Overlay */}
+                      <motion.div
+                        className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        <div className='w-16 h-16 bg-red-500 hover:bg-red-500/80 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'>
+                          <Play
+                            size={24}
+                            className='text-white ml-1'
+                            fill='white'
+                          />
+                        </div>
+                      </motion.div>
+
+                      {/* Always visible subtle play indicator */}
+                      <div className='absolute top-4 right-4 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center'>
+                        <Play
+                          size={16}
+                          className='text-white ml-0.5'
+                          fill='white'
+                        />
+                      </div>
                     </div>
 
-                    <h3
-                      className={`font-light text-gray-900 mb-2 group-hover:text-red-500 transition-colors duration-300 leading-tight ${
-                        viewMode === 'list' ? 'text-xl' : 'text-lg'
+                    <div
+                      className={`p-4 ${
+                        viewMode === 'list' ? 'lg:col-span-2' : ''
                       }`}
                     >
-                      {project.title}
-                    </h3>
-
-                    <p className='text-sm text-gray-500 mb-3 font-mono'>
-                      Client: {project.client}
-                    </p>
-
-                    <p
-                      className={`text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4 ${
-                        viewMode === 'list' ? 'text-base' : 'text-sm'
-                      }`}
-                    >
-                      {project.description}
-                    </p>
-
-                    {project.tags && (
-                      <div className='flex flex-wrap gap-2 mb-4'>
-                        {project.tags.map((tag, i) => (
-                          <span
-                            key={i}
-                            className='text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded'
-                          >
-                            {tag}
+                      <div className='flex justify-between items-start mb-3'>
+                        <div className='flex items-center gap-2'>
+                          <span className='text-gray-600 text-xs uppercase tracking-wider bg-gray-100 px-2 py-1'>
+                            {project.category}
                           </span>
-                        ))}
+                          <span className='text-gray-400 text-xs'>
+                            {project.year}
+                          </span>
+                        </div>
+                        <ExternalLink
+                          size={14}
+                          className='text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+                        />
                       </div>
-                    )}
 
-                    <motion.div
-                      className='inline-flex items-center text-sm font-mono tracking-wider text-gray-400 group-hover:text-red-500 transition-colors duration-300'
-                      whileHover={{ x: 5 }}
-                    >
-                      VIEW PROJECT →
-                    </motion.div>
+                      <h3
+                        className={`font-medium text-gray-900 mb-2 group-hover:text-gray-700 transition-colors duration-300 leading-snug ${
+                          viewMode === 'list' ? 'text-lg' : 'text-base'
+                        }`}
+                      >
+                        {project.title}
+                      </h3>
+
+                      <p className='text-xs text-gray-500 mb-3 uppercase tracking-wide'>
+                        {project.client}
+                      </p>
+
+                      <p
+                        className={`text-gray-600 leading-relaxed mb-4 ${
+                          viewMode === 'list' ? 'text-sm' : 'text-xs'
+                        }`}
+                      >
+                        {project.description}
+                      </p>
+
+                      {project.tags && (
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                          {project.tags.map((tag, i) => (
+                            <span
+                              key={i}
+                              className='text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded'
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      <motion.div
+                        className='inline-flex items-center text-xs uppercase tracking-wider text-gray-400 group-hover:text-gray-900 transition-colors duration-300 mt-2'
+                        whileHover={{ x: 3 }}
+                      >
+                        View Project →
+                      </motion.div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -785,34 +909,34 @@ export default function EnhancedPortfolio() {
       */}
 
       {/* Call to Action */}
-      <section className='py-16 bg-gray-50'>
+      <section className='py-12 bg-gray-900 text-white'>
         <div className='max-w-4xl mx-auto px-6 text-center'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className='text-3xl font-light mb-6 text-gray-900'>
+            <h3 className='text-xl font-normal mb-4 text-white'>
               Ready to Create Your Next Project?
             </h3>
-            <p className='text-gray-600 mb-8 leading-relaxed'>
+            <p className='text-gray-300 text-sm mb-6 leading-relaxed max-w-2xl mx-auto'>
               Let's collaborate to create compelling visual narratives that
-              resonate with your audience and achieve your goals.
+              resonate with your audience.
             </p>
-            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+            <div className='flex flex-col sm:flex-row gap-3 justify-center'>
               <motion.a
                 href='/#contact'
-                className='bg-red-500 hover:bg-red-500/80 text-white px-8 py-3 font-light tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl'
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className='bg-red-500 hover:bg-red-600 text-white px-6 py-2 text-sm font-medium tracking-wide transition-all duration-300'
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Start Your Project
               </motion.a>
               <motion.a
                 href='/services'
-                className='border-2 border-gray-800 hover:border-red-500 text-gray-800 hover:text-red-500 hover:bg-red-500/10 px-8 py-3 font-light tracking-wide transition-all duration-300'
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className='border border-gray-600 hover:border-white text-gray-300 hover:text-white px-6 py-2 text-sm font-medium tracking-wide transition-all duration-300'
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 View Services
               </motion.a>
@@ -824,54 +948,64 @@ export default function EnhancedPortfolio() {
       {/* Video Overlay */}
       <AnimatePresence>
         {showVideoOverlay && selectedVideo && (
-        <motion.div
-          className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={closeVideoOverlay}
-        >
           <motion.div
-            className='relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden'
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            onClick={(e) => e.stopPropagation()}
+            className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeVideoOverlay}
           >
-            {/* Close Button */}
-            <button
-              onClick={closeVideoOverlay}
-              className='absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-300'
+            <motion.div
+              className='relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden'
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </button>
+              {/* Close Button */}
+              <button
+                onClick={closeVideoOverlay}
+                className='absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-300'
+              >
+                <svg
+                  width='20'
+                  height='20'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                >
+                  <line x1='18' y1='6' x2='6' y2='18'></line>
+                  <line x1='6' y1='6' x2='18' y2='18'></line>
+                </svg>
+              </button>
 
-            {/* YouTube Video */}
-            <iframe
-              src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0`}
-              title={selectedVideo.title}
-              className='w-full h-full'
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+              {/* YouTube Video */}
+              <iframe
+                src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0`}
+                title={selectedVideo.title}
+                className='w-full h-full'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              />
 
-            {/* Video Info */}
-            <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6'>
-              <h3 className='text-white text-xl font-light mb-2'>{selectedVideo.title}</h3>
-              <div className='flex items-center gap-4 text-sm text-white/80'>
-                <span className='bg-red-500 px-2 py-1 rounded text-white text-xs'>
-                  {categoryLabels[selectedVideo.category] || selectedVideo.category}
-                </span>
-                <span>{selectedVideo.client}</span>
-                <span>{selectedVideo.year}</span>
+              {/* Video Info */}
+              <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6'>
+                <h3 className='text-white text-xl font-light mb-2'>
+                  {selectedVideo.title}
+                </h3>
+                <div className='flex items-center gap-4 text-sm text-white/80'>
+                  <span className='bg-red-500 px-2 py-1 rounded text-white text-xs'>
+                    {categoryLabels[selectedVideo.category] ||
+                      selectedVideo.category}
+                  </span>
+                  <span>{selectedVideo.client}</span>
+                  <span>{selectedVideo.year}</span>
+                </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
         )}
       </AnimatePresence>
     </div>
