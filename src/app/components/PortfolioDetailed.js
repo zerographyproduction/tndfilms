@@ -25,28 +25,31 @@ export default function EnhancedPortfolio() {
   // Video portfolio data
   const VIDEO_ITEMS = [
     {
-      title: "Attuned With AT | Ft. Rajiv Makhni | Coming Soon",
+      title: 'Attuned With AT | Ft. Rajiv Makhni | Coming Soon',
       videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
       category: 'podcast',
-      description: "Podcast Film - End-to-End production of tech talk show featuring India's leading tech voice, Rajiv Makhni",
+      description:
+        "Podcast Film - End-to-End production of tech talk show featuring India's leading tech voice, Rajiv Makhni",
       year: '2024',
       client: 'itel india',
       featured: true,
     },
     {
-      title: "Wilderness Quest – Adventure Short",
+      title: 'Wilderness Quest – Adventure Short',
       videoId: '1ZVsxIGs1Kg',
       category: 'adventure',
-      description: "Adventure Film - Thrilling visual journey into raw nature and extreme adventure with Jumpin Heights",
+      description:
+        'Adventure Film - Thrilling visual journey into raw nature and extreme adventure with Jumpin Heights',
       year: '2024',
       client: 'Jumpin Heights',
       featured: true,
     },
     {
-      title: "Super Guru 4G – Entertainment Ki Duniya Ka Baap",
+      title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
       videoId: 'lyBQYLtnKdM',
       category: 'brand',
-      description: "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
+      description:
+        "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
       year: '2024',
       client: 'itel India',
       featured: true,
@@ -55,43 +58,50 @@ export default function EnhancedPortfolio() {
       title: "Unleash the power of technology with itel's Pad One",
       videoId: 'PmX_y3ApaDs', // Replace with actual video ID
       category: 'product',
-      description: "Product Film - Sleek & informative product video showcasing itel Pad One, shot entirely in studio",
+      description:
+        'Product Film - Sleek & informative product video showcasing itel Pad One, shot entirely in studio',
       year: '2024',
       client: 'itel India',
       featured: false,
     },
     {
-      title: "7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video",
+      title:
+        '7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video',
       videoId: 'xVWPOQwVlNE', // Replace with actual video ID
       category: 'documentary',
-      description: "Documentary AdFilm - Celebration of 7-year gaming milestone with India's gaming community",
+      description:
+        "Documentary AdFilm - Celebration of 7-year gaming milestone with India's gaming community",
       year: '2024',
       client: '@UnGraduateGamer',
       featured: false,
     },
     {
-      title: "VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K",
+      title: 'VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K',
       videoId: '9hIyf0FyYZ0', // Replace with actual video ID
       category: 'documentary',
-      description: "Documentary Film - Cinematic exploration of Banke Bihari Temple's divine atmosphere in Vrindavan",
+      description:
+        "Documentary Film - Cinematic exploration of Banke Bihari Temple's divine atmosphere in Vrindavan",
       year: '2021',
       client: 'The Vagabond Films',
       featured: true,
     },
     {
-      title: "Skiing in Munsiyari",
+      title: 'Skiing in Munsiyari',
       videoId: '9xFB1qmpF3k',
       category: 'adventure',
-      description: "Documentary Adventure Film - Breathtaking skiing through snow-clad slopes of Munsiyari, Uttarakhand",
+      description:
+        'Documentary Adventure Film - Breathtaking skiing through snow-clad slopes of Munsiyari, Uttarakhand',
       year: '2024',
       client: 'TRAVNAT FILMS',
       featured: false,
     },
     {
-      title: "Mountain Dew Real Heroes presents The Fall - India's First Frozen Waterfall Ascent",
+      title:
+        "Mountain Dew Real Heroes presents The Fall - India's First Frozen Waterfall Ascent",
       videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
       category: 'documentary',
-      description: "Documentary Adventure Film - India's first adventure documentary shot at a frozen waterfall in extreme Himalayan conditions",
+      description:
+        "Documentary Adventure Film - India's first adventure documentary shot at a frozen waterfall in extreme Himalayan conditions",
       year: '2024',
       client: 'Mountain Dew India',
       featured: true,
@@ -428,7 +438,7 @@ export default function EnhancedPortfolio() {
   const categories = [
     'All',
     'podcast',
-    'adventure', 
+    'adventure',
     'brand',
     'product',
     'documentary',
@@ -862,7 +872,7 @@ export default function EnhancedPortfolio() {
       </section>
 
       {/* Instagram Filters Section - Commented Out */}
-      {/*
+
       <section className='py-24 lg:py-32'>
         <div className='max-w-7xl mx-auto px-6 lg:px-12'>
           <motion.div
@@ -906,7 +916,6 @@ export default function EnhancedPortfolio() {
           </div>
         </div>
       </section>
-      */}
 
       {/* Call to Action */}
       <section className='py-12 bg-gray-900 text-white'>
