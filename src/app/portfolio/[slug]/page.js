@@ -20,7 +20,7 @@ import Footer from '../../components/Footer';
 const VIDEO_ITEMS = [
   {
     title: 'Attuned With AT | Ft. Rajiv Makhni | Coming Soon',
-    videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
+    videoId: 'wTjB4bLzHKo', // Replace with actual video ID when available
     category: 'podcast',
     description:
       "Podcast Film - End-to-End production of tech talk show featuring India's leading tech voice, Rajiv Makhni",
@@ -37,7 +37,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'Wilderness Quest – Adventure Short',
-    videoId: '1ZVsxIGs1Kg',
+    videoId: 'YFcB5XlFPF0',
     category: 'adventure',
     description:
       'Adventure Film - Thrilling visual journey into raw nature and extreme adventure with Jumpin Heights',
@@ -57,30 +57,72 @@ const VIDEO_ITEMS = [
     ],
   },
   {
-    title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
-    videoId: 'lyBQYLtnKdM',
-    category: 'brand',
+    title: 'Wilderness Adventure – Epic Journey',
+    videoId: 'FCIu2yfWHtc',
+    category: 'adventure',
     description:
-      "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
+      'Adventure Film - Epic wilderness journey showcasing extreme outdoor experiences',
     year: '2024',
-    client: 'itel India',
-    featured: true,
-    subtitle: 'Brand Campaign Film',
-    scope:
-      'Story Development • Pre-Production • Cinematography • Post-Production',
+    client: 'Jumpin Heights',
+    featured: false,
+    subtitle: 'Adventure Film',
+    scope: 'Cinematography & Post-Production',
     fullDescription:
-      "For the launch of itel's Super Guru 4G, TND Films crafted a visual story that celebrated the power of entertainment in the palm of your hand—even with a feature phone.\n\nPre-Production: We developed a concept that wasn't just about specs—but about emotion. Our narrative showcased how even a simple device can become a gateway to entertainment, connection, and joy for everyday users. We scripted the storyline, visualized scenes, locked locations, cast talent, and scheduled the shoot—all while ensuring the brand voice remained loud and clear.\n\nProduction: Shot across vibrant everyday settings, we brought realism and energy to each frame—capturing family interactions, joyful reactions, and moments where the Super Guru 4G transformed boring routines into entertainment-packed experiences. We used dynamic camerawork, natural lighting, and subtle direction to keep it authentic and engaging.\n\nPost-Production: Editing was fast-paced and punchy—mirroring the phone's promise of quick, smooth 4G access. We enhanced the visuals with color grading that emphasized warmth and vibrancy. Sound design added life with cheerful music and real-world ambiance.",
+      'An epic wilderness adventure capturing the raw beauty and extreme challenges of outdoor exploration. This film showcases the untamed landscapes and adrenaline-pumping activities that define the adventure experience.',
     tags: [
-      'Brand Campaign',
-      'itel',
-      '4G Technology',
-      'Entertainment',
-      'Feature Phone',
+      'Adventure',
+      'Wilderness',
+      'Extreme Sports',
+      'Nature',
+      'Cinematography',
     ],
   },
   {
+    title: 'Wilderness Extreme – Mountain Adventure',
+    videoId: 'SrEH_a3L7qg',
+    category: 'adventure',
+    description:
+      'Adventure Film - Mountain adventure capturing extreme outdoor challenges',
+    year: '2024',
+    client: 'Jumpin Heights',
+    featured: false,
+    subtitle: 'Adventure Film',
+    scope: 'Cinematography & Post-Production',
+    fullDescription:
+      'A thrilling mountain adventure film that captures the essence of extreme outdoor challenges in pristine wilderness settings. From rugged terrain to breathtaking vistas, this film showcases the spirit of adventure.',
+    tags: [
+      'Adventure',
+      'Mountain',
+      'Extreme Sports',
+      'Nature',
+      'Cinematography',
+    ],
+  },
+  // {
+  //   title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
+  //   videoId: 'lyBQYLtnKdM',
+  //   category: 'brand',
+  //   description:
+  //     "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
+  //   year: '2024',
+  //   client: 'itel India',
+  //   featured: true,
+  //   subtitle: 'Brand Campaign Film',
+  //   scope:
+  //     'Story Development • Pre-Production • Cinematography • Post-Production',
+  //   fullDescription:
+  //     "For the launch of itel's Super Guru 4G, TND Films crafted a visual story that celebrated the power of entertainment in the palm of your hand—even with a feature phone.\n\nPre-Production: We developed a concept that wasn't just about specs—but about emotion. Our narrative showcased how even a simple device can become a gateway to entertainment, connection, and joy for everyday users. We scripted the storyline, visualized scenes, locked locations, cast talent, and scheduled the shoot—all while ensuring the brand voice remained loud and clear.\n\nProduction: Shot across vibrant everyday settings, we brought realism and energy to each frame—capturing family interactions, joyful reactions, and moments where the Super Guru 4G transformed boring routines into entertainment-packed experiences. We used dynamic camerawork, natural lighting, and subtle direction to keep it authentic and engaging.\n\nPost-Production: Editing was fast-paced and punchy—mirroring the phone's promise of quick, smooth 4G access. We enhanced the visuals with color grading that emphasized warmth and vibrancy. Sound design added life with cheerful music and real-world ambiance.",
+  //   tags: [
+  //     'Brand Campaign',
+  //     'itel',
+  //     '4G Technology',
+  //     'Entertainment',
+  //     'Feature Phone',
+  //   ],
+  // },
+  {
     title: "Unleash the power of technology with itel's Pad One",
-    videoId: 'PmX_y3ApaDs', // Replace with actual video ID
+    videoId: 'Ll846ArEzAQ',
     category: 'product',
     description:
       'Product Film - Sleek & informative product video showcasing itel Pad One, shot entirely in studio',
@@ -96,7 +138,7 @@ const VIDEO_ITEMS = [
   {
     title:
       '7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video',
-    videoId: 'xVWPOQwVlNE',
+    videoId: 'R_-MOeWMfvU',
     category: 'documentary',
     description:
       "Documentary AdFilm - Celebration of 7-year gaming milestone with India's gaming community",
@@ -108,7 +150,7 @@ const VIDEO_ITEMS = [
     dop: 'Vipin Kumar Pal',
     productionLead: 'Nitin Kumar Pal',
     fullDescription:
-      "From lighting design to framing and motion shots, every frame was crafted to reflect the fast-paced, high-stakes world of competitive gaming. The duo executed smooth camera movements, cinematic angles, and rich lighting setups that elevated the narrative and brought visual depth to the story.\n\nThis project stands as a tribute to India's gaming community and the passion that drives creators like @UnGraduateGamer—with every shot designed to inspire and energize.\n\nThe entire shoot and execution of this project was successfully carried out by Vipin Kumar Pal and Nitin Kumar Pal.\n\nVipin Kumar Pal, as the Director of Photography (DOP), led the visual storytelling of the film—handling the primary camera, shot composition, cinematography, and overall visual tone. His expertise ensured every frame was captured with cinematic precision and artistic depth.\n\nNitin Kumar Pal managed the production lighting setup and operated the second camera unit, playing a vital role in maintaining consistency across multi-cam shots and ensuring optimal lighting conditions throughout the shoot. His support in technical execution and production management helped streamline the entire shooting process.\n\nTogether, they executed the full production on-ground—managing both creative and technical responsibilities to deliver a high-quality visual output.",
+      "TND Films collaborated with Free Fire INDIA to create a celebratory documentary film honoring the 7-year gaming milestone of @UnGraduateGamer. This project captured the fast-paced, high-stakes world of competitive gaming through cinematic storytelling that reflects the passion driving India's gaming community.\n\nFrom lighting design to framing and motion shots, every frame was crafted to reflect the fast-paced, high-stakes world of competitive gaming. The duo executed smooth camera movements, cinematic angles, and rich lighting setups that elevated the narrative and brought visual depth to the story.\n\nThis project stands as a tribute to India's gaming community and the passion that drives creators like @UnGraduateGamer—with every shot designed to inspire and energize.\n\nTeam Credits:\nVipin Kumar Pal served as Director of Photography (DOP), leading the visual storytelling of the film—handling the primary camera, shot composition, cinematography, and overall visual tone. His expertise ensured every frame was captured with cinematic precision and artistic depth.\n\nNitin Kumar Pal managed the production lighting setup and operated the second camera unit, playing a vital role in maintaining consistency across multi-cam shots and ensuring optimal lighting conditions throughout the shoot. His support in technical execution and production management helped streamline the entire shooting process.\n\nTogether, they executed the full production on-ground—managing both creative and technical responsibilities to deliver a high-quality visual output that celebrates gaming excellence and community spirit.",
     tags: [
       'Gaming',
       'Documentary',
@@ -120,7 +162,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K',
-    videoId: '9hIyf0FyYZ0',
+    videoId: 'fGZPdgu2ZJY',
     category: 'documentary',
     description:
       "Documentary Film - Cinematic exploration of Banke Bihari Temple's divine atmosphere in Vrindavan",
@@ -405,7 +447,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: '25 Years of Partnership | Gates Foundation',
-    videoId: 'T_bIUw7GdTU',
+    videoId: 'LOCAL:/GATES%20FOUNDATION.mp4',
     category: 'brands',
     description: 'Strategic partnership celebration film',
     year: '2024',
@@ -470,14 +512,14 @@ const VIDEO_ITEMS = [
     year: '2024',
     client: 'Product Brand',
   },
-  {
-    title: 'Music Production',
-    videoId: 'xVWPOQwVlNE',
-    category: 'music',
-    description: 'Hip-hop music video',
-    year: '2024',
-    client: 'Music Artist',
-  },
+  // {
+  //   title: 'Music Production',
+  //   videoId: 'xVWPOQwVlNE',
+  //   category: 'music',
+  //   description: 'Hip-hop music video',
+  //   year: '2024',
+  //   client: 'Music Artist',
+  // },
   {
     title: 'Corporate Film',
     videoId: '4P_0BSWME5E',
@@ -550,14 +592,14 @@ const VIDEO_ITEMS = [
     year: '2024',
     client: 'Corporate Client',
   },
-  {
-    title: 'Strategic Initiative',
-    videoId: 'N3uvC_gRTlc',
-    category: 'brands',
-    description: 'Business strategy showcase',
-    year: '2024',
-    client: 'Strategic Client',
-  },
+  // {
+  //   title: 'Strategic Initiative',
+  //   videoId: 'N3uvC_gRTlc',
+  //   category: 'brands',
+  //   description: 'Business strategy showcase',
+  //   year: '2024',
+  //   client: 'Strategic Client',
+  // },
   {
     title: 'Music Production Vol. 2',
     videoId: 'o21H1tiTKOM',
@@ -582,14 +624,14 @@ const VIDEO_ITEMS = [
     year: '2024',
     client: 'Event Client',
   },
-  {
-    title: 'Great Wall Motors',
-    videoId: '70l-Cs1iMLw',
-    category: 'brands',
-    description: 'Automotive brand campaign',
-    year: '2024',
-    client: 'Great Wall Motors',
-  },
+  // {
+  //   title: 'Great Wall Motors',
+  //   videoId: '70l-Cs1iMLw',
+  //   category: 'brands',
+  //   description: 'Automotive brand campaign',
+  //   year: '2024',
+  //   client: 'Great Wall Motors',
+  // },
   {
     title: 'Marketing Initiative',
     videoId: 'MoQCWKwzqxs',
@@ -710,14 +752,14 @@ const VIDEO_ITEMS = [
     year: '2024',
     client: 'Brand Client',
   },
-  {
-    title: 'Marketing Campaign Strategic',
-    videoId: '5WpZLFnn9UQ',
-    category: 'brands',
-    description: 'Strategic campaign',
-    year: '2024',
-    client: 'Marketing Client',
-  },
+  // {
+  //   title: 'Marketing Campaign Strategic',
+  //   videoId: '5WpZLFnn9UQ',
+  //   category: 'brands',
+  //   description: 'Strategic campaign',
+  //   year: '2024',
+  //   client: 'Marketing Client',
+  // },
 ];
 
 // Helper function to create slug from title
@@ -792,29 +834,65 @@ export default function VideoDetailPage() {
           >
             <div className='aspect-[16/10] bg-black shadow-lg overflow-hidden max-w-4xl mx-auto'>
               {isVideoPlaying ? (
-                <iframe
-                  width='100%'
-                  height='100%'
-                  src={`https://www.youtube.com/embed/${video.videoId}?autoplay=1`}
-                  title={video.title}
-                  frameBorder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                  allowFullScreen
-                  className='w-full h-full'
-                />
+                video.videoId.startsWith('LOCAL:') ? (
+                  <video
+                    width='100%'
+                    height='100%'
+                    controls
+                    autoPlay
+                    className='w-full h-full'
+                  >
+                    <source
+                      src={video.videoId.replace('LOCAL:', '')}
+                      type='video/mp4'
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <iframe
+                    width='100%'
+                    height='100%'
+                    src={`https://www.youtube.com/embed/${video.videoId}?autoplay=1`}
+                    title={video.title}
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                    allowFullScreen
+                    className='w-full h-full'
+                  />
+                )
               ) : (
                 <div
                   className='relative w-full h-full group cursor-pointer'
                   onClick={() => setIsVideoPlaying(true)}
                 >
-                  <img
-                    src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
-                    alt={video.title}
-                    className='w-full h-full object-cover'
-                    onError={(e) => {
-                      e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
-                    }}
-                  />
+                  {video.videoId.startsWith('LOCAL:') ? (
+                    <div className='w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center'>
+                      <div className='text-center text-white'>
+                        <div className='mb-4'>
+                          <Play
+                            size={64}
+                            className='mx-auto text-white/80'
+                            fill='white'
+                          />
+                        </div>
+                        <h3 className='text-xl font-medium mb-2'>
+                          {video.title}
+                        </h3>
+                        <p className='text-gray-300 text-sm'>
+                          Click to play video
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
+                      alt={video.title}
+                      className='w-full h-full object-cover'
+                      onError={(e) => {
+                        e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
+                      }}
+                    />
+                  )}
                   <div className='absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors duration-300'>
                     <motion.div
                       className='w-20 h-20 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-colors duration-300'
@@ -998,6 +1076,15 @@ export default function VideoDetailPage() {
 
                 {/* Client Page Link */}
                 {(() => {
+                  // Hide client page link for 7 year gamer video
+                  if (
+                    video.title?.includes(
+                      '7 Year Win Streak with @UnGraduateGamer'
+                    )
+                  ) {
+                    return null;
+                  }
+
                   const clientLower = video.client?.toLowerCase();
                   let clientSlug, clientName;
 

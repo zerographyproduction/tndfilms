@@ -152,11 +152,6 @@ export default function Hero() {
           transition={{ duration: 10, repeat: Infinity }}
         />
 
-        {/* Geometric Shapes */}
-        <div className='absolute top-32 left-16 w-2 h-2 bg-red-500 rounded-full opacity-60'></div>
-        <div className='absolute top-64 right-32 w-3 h-3 bg-gray-800 rounded-full opacity-40'></div>
-        <div className='absolute bottom-48 left-32 w-1 h-20 bg-red-500/30'></div>
-        <div className='absolute bottom-32 right-48 w-16 h-1 bg-gray-800/20'></div>
 
         {/* Navigation Arrows */}
         <button

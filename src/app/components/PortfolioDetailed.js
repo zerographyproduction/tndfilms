@@ -26,7 +26,7 @@ export default function EnhancedPortfolio() {
   const VIDEO_ITEMS = [
     {
       title: 'Attuned With AT | Ft. Rajiv Makhni | Coming Soon',
-      videoId: 'T_bIUw7GdTU', // Replace with actual video ID when available
+      videoId: 'wTjB4bLzHKo', // Replace with actual video ID when available
       category: 'podcast',
       description:
         "Podcast Film - End-to-End production of tech talk show featuring India's leading tech voice, Rajiv Makhni",
@@ -44,16 +44,16 @@ export default function EnhancedPortfolio() {
       client: 'Jumpin Heights',
       featured: true,
     },
-    {
-      title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
-      videoId: 'lyBQYLtnKdM',
-      category: 'brand',
-      description:
-        "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
-      year: '2024',
-      client: 'itel India',
-      featured: true,
-    },
+    // {
+    //   title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
+    //   videoId: 'lyBQYLtnKdM',
+    //   category: 'brand',
+    //   description:
+    //     "Brand Campaign Film - Visual story celebrating entertainment power of itel's Super Guru 4G feature phone",
+    //   year: '2024',
+    //   client: 'itel India',
+    //   featured: true,
+    // },
     {
       title: "Unleash the power of technology with itel's Pad One",
       videoId: 'PmX_y3ApaDs', // Replace with actual video ID
@@ -173,14 +173,14 @@ export default function EnhancedPortfolio() {
       year: '2024',
       client: 'Product Brand',
     },
-    {
-      title: 'Music Production',
-      videoId: 'xVWPOQwVlNE',
-      category: 'music',
-      description: 'Hip-hop music video',
-      year: '2024',
-      client: 'Music Artist',
-    },
+    // {
+    //   title: 'Music Production',
+    //   videoId: 'xVWPOQwVlNE',
+    //   category: 'music',
+    //   description: 'Hip-hop music video',
+    //   year: '2024',
+    //   client: 'Music Artist',
+    // },
     {
       title: 'Corporate Film',
       videoId: '4P_0BSWME5E',
@@ -253,14 +253,14 @@ export default function EnhancedPortfolio() {
       year: '2024',
       client: 'Corporate Client',
     },
-    {
-      title: 'Strategic Initiative',
-      videoId: 'N3uvC_gRTlc',
-      category: 'brands',
-      description: 'Business strategy showcase',
-      year: '2024',
-      client: 'Strategic Client',
-    },
+    // {
+    //   title: 'Strategic Initiative',
+    //   videoId: 'N3uvC_gRTlc',
+    //   category: 'brands',
+    //   description: 'Business strategy showcase',
+    //   year: '2024',
+    //   client: 'Strategic Client',
+    // },
     {
       title: 'Music Production Vol. 2',
       videoId: 'o21H1tiTKOM',
@@ -285,14 +285,14 @@ export default function EnhancedPortfolio() {
       year: '2024',
       client: 'Event Client',
     },
-    {
-      title: 'Great Wall Motors',
-      videoId: '70l-Cs1iMLw',
-      category: 'brands',
-      description: 'Automotive brand campaign',
-      year: '2024',
-      client: 'Great Wall Motors',
-    },
+    // {
+    //   title: 'Great Wall Motors',
+    //   videoId: '70l-Cs1iMLw',
+    //   category: 'brands',
+    //   description: 'Automotive brand campaign',
+    //   year: '2024',
+    //   client: 'Great Wall Motors',
+    // },
     {
       title: 'Marketing Initiative',
       videoId: 'MoQCWKwzqxs',
@@ -413,26 +413,74 @@ export default function EnhancedPortfolio() {
       year: '2024',
       client: 'Brand Client',
     },
-    {
-      title: 'Marketing Campaign Strategic',
-      videoId: '5WpZLFnn9UQ',
-      category: 'brands',
-      description: 'Strategic campaign',
-      year: '2024',
-      client: 'Marketing Client',
-    },
+    // {
+    //   title: 'Marketing Campaign Strategic',
+    //   videoId: '5WpZLFnn9UQ',
+    //   category: 'brands',
+    //   description: 'Strategic campaign',
+    //   year: '2024',
+    //   client: 'Marketing Client',
+    // },
   ];
 
   const portfolioItems = VIDEO_ITEMS;
 
   const instagramFilters = [
-    'https://www.instagram.com/reel/DAk6IaSSu4N/',
-    'https://www.instagram.com/reel/C8hDgP2pxZs/',
-    'https://www.instagram.com/p/Cwu5h3LPrym/',
-    'https://www.instagram.com/reel/DGFIKZXzYLP/',
-    'https://www.instagram.com/reel/DBTtUu8Rmic/',
-    'https://www.instagram.com/reel/DIgauwFSs2U/',
-    'https://www.instagram.com/p/DITr9jSNXYY/',
+    {
+      url: 'https://www.instagram.com/reel/C8hDgP2pxZs/?igsh=MTB6am5rcm9rZXBvcw%3D%3D',
+      title: 'ankit_baiyanpuria & HONDA',
+      type: 'Shoot & Edit',
+    },
+    {
+      url: 'https://www.instagram.com/p/Cwu5h3LPrym/',
+      title: 'Maruti Suzuki Campaign',
+      type: 'Edit Project',
+    },
+    {
+      url: 'https://www.instagram.com/p/DITr9jSNXYY/',
+      title: 'Creative Content',
+      type: 'Shoot & Edit',
+    },
+    {
+      url: 'https://www.instagram.com/reel/DA_Xs39JPZ1/',
+      title: 'M&S Campaign',
+      type: 'Edit Project',
+    },
+    {
+      url: 'https://www.instagram.com/reel/DBB3nGttqgk/',
+      title: 'M&S Campaign Vol. 2',
+      type: 'Edit Project',
+    },
+    {
+      url: 'https://www.instagram.com/reel/C69Ap1yRsSo/',
+      title: 'Tecno India',
+      type: 'Shoot & Edit',
+    },
+    {
+      url: 'https://www.instagram.com/reel/CpeillJo51C/',
+      title: 'Creative Shoot',
+      type: 'Shoot',
+    },
+    {
+      url: 'https://www.instagram.com/reel/CfTN9AHIOCn/',
+      title: 'Brand Content',
+      type: 'Shoot & Edit',
+    },
+    {
+      url: 'https://www.instagram.com/reel/CfWZSUNI8Jc/',
+      title: 'Social Media Content',
+      type: 'Creative',
+    },
+    {
+      url: 'https://www.instagram.com/reel/CfdXarGB6eT/',
+      title: 'Digital Campaign',
+      type: 'Creative',
+    },
+    {
+      url: 'https://www.instagram.com/reel/CfLNSjeoXNq/',
+      title: 'Brand Showcase',
+      type: 'Creative',
+    },
   ];
 
   const categories = [
@@ -488,78 +536,144 @@ export default function EnhancedPortfolio() {
   return (
     <div className='bg-white min-h-screen' ref={ref}>
       {/* Hero Section */}
-      <section className='py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-white'>
-        <div className='max-w-7xl mx-auto px-6 lg:px-12'>
+      <section className='py-32 lg:py-40 bg-gradient-to-br from-slate-50 via-white to-gray-50 relative overflow-hidden'>
+        {/* Background Pattern */}
+        <div className='absolute inset-0 opacity-5'>
+          <div className='absolute top-1/4 left-1/4 w-96 h-96 bg-red-500 rounded-full blur-3xl'></div>
+          <div className='absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500 rounded-full blur-3xl'></div>
+        </div>
+
+        <div className='max-w-7xl mx-auto px-6 lg:px-12 relative z-10'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className='text-center mb-16'
+            className='text-center mb-20'
           >
-            <h1 className='text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 text-gray-900'>
-              Our
-              <span className='block text-red-500'>Work</span>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, delay: 0.2 }}
+              className='mb-8'
+            >
+              <span className='inline-block px-4 py-2 bg-red-50 text-red-600 text-sm font-medium rounded-full border border-red-200 mb-6'>
+                Portfolio Showcase
+              </span>
+            </motion.div>
+            <h1 className='text-6xl md:text-7xl lg:text-8xl font-light leading-[0.9] mb-10 text-gray-900'>
+              Our Visual
+              <span className='block bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent'>
+                Stories
+              </span>
             </h1>
-            <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
-            <p className='text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed'>
-              A comprehensive showcase of our video production expertise,
-              spanning corporate communications, documentaries, brand
-              storytelling, and social impact campaigns.
-            </p>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: '6rem' }}
+              transition={{ duration: 1, delay: 0.8 }}
+              className='h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mb-10'
+            />
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className='text-xl md:text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed font-light'
+            >
+              Crafting compelling visual narratives that resonate, inspire, and
+              drive impact across
+              <span className='text-gray-800 font-medium'>
+                {' '}
+                documentaries, brand stories, and digital campaigns
+              </span>
+            </motion.p>
           </motion.div>
 
-          {/* Stats */}
+          {/* Enhanced Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className='grid md:grid-cols-4 gap-8 mb-16 max-w-4xl mx-auto'
+            transition={{ duration: 1, delay: 1 }}
+            className='grid md:grid-cols-4 gap-8 max-w-5xl mx-auto'
           >
-            <div className='text-center'>
-              <div className='text-3xl font-light text-red-500 mb-2'>
-                {portfolioItems.length}+
-              </div>
-              <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-                Videos
-              </div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-light text-red-500 mb-2'>
-                {categories.length - 1}
-              </div>
-              <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-                Categories
-              </div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-light text-red-500 mb-2'>15+</div>
-              <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-                Clients
-              </div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-light text-red-500 mb-2'>2024</div>
-              <div className='text-sm text-gray-600 font-mono tracking-wider uppercase'>
-                Latest Work
-              </div>
-            </div>
+            {[
+              {
+                value: portfolioItems.length + '+',
+                label: 'Projects Delivered',
+                icon: '🎬',
+              },
+              {
+                value: (categories.length - 1).toString(),
+                label: 'Specializations',
+                icon: '🎯',
+              },
+              { value: '25+', label: 'Happy Clients', icon: '🤝' },
+              { value: '2024', label: 'Latest Work', icon: '✨' },
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
+                className='text-center group'
+              >
+                <div className='bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2'>
+                  <div className='text-3xl mb-3'>{stat.icon}</div>
+                  <div className='text-4xl font-light text-gray-900 mb-2 group-hover:text-red-500 transition-colors duration-300'>
+                    {stat.value}
+                  </div>
+                  <div className='text-sm text-gray-600 font-medium tracking-wide'>
+                    {stat.label}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
 
       {/* Featured Projects */}
-      <section className='py-16 lg:py-24 bg-gray-50'>
-        <div className='max-w-6xl mx-auto px-6 lg:px-12'>
+      <section className='py-20 lg:py-32 bg-gradient-to-b from-gray-50 to-white relative'>
+        {/* Subtle background pattern */}
+        <div className='absolute inset-0 opacity-5'>
+          <div className='absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_1px_1px,rgb(0,0,0)_1px,transparent_0)] bg-[length:50px_50px]'></div>
+        </div>
+
+        <div className='max-w-6xl mx-auto px-6 lg:px-12 relative z-10'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className='mb-12'
+            className='text-center mb-16'
           >
-            <h2 className='text-2xl md:text-3xl font-normal mb-4 text-gray-900 text-center tracking-wide'>
-              Featured Work
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className='inline-block px-4 py-2 bg-red-50 text-red-600 text-sm font-medium rounded-full border border-red-200 mb-6'
+            >
+              Spotlight
+            </motion.span>
+            <h2 className='text-3xl md:text-4xl font-light mb-6 text-gray-900 tracking-wide'>
+              Featured
+              <span className='block text-red-500 font-medium'>Work</span>
             </h2>
-            <div className='w-16 h-0.5 bg-red-500 mx-auto mb-6' />
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: '4rem' }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className='h-0.5 bg-red-500 mx-auto mb-8'
+            />
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className='text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-light'
+            >
+              Our most impactful projects showcasing
+              <span className='text-gray-800 font-medium'>
+                {' '}
+                creative excellence and storytelling mastery
+              </span>
+            </motion.p>
           </motion.div>
 
           <div className='grid lg:grid-cols-2 gap-8 mb-16'>
@@ -579,8 +693,8 @@ export default function EnhancedPortfolio() {
                     .replace(/-+/g, '-')
                     .trim()}`}
                 >
-                  <div className='bg-white border-0 hover:shadow-lg transition-all duration-300 overflow-hidden'>
-                    <div className='aspect-[16/10] relative overflow-hidden group-hover:scale-[1.02] transition-all duration-300'>
+                  <div className='bg-white rounded-3xl border border-gray-100 hover:shadow-2xl hover:shadow-gray-900/10 transition-all duration-500 overflow-hidden hover:-translate-y-3 hover:scale-[1.02] backdrop-blur-sm'>
+                    <div className='aspect-[16/10] relative overflow-hidden rounded-t-3xl'>
                       {/* YouTube Thumbnail */}
                       <img
                         src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
@@ -616,25 +730,28 @@ export default function EnhancedPortfolio() {
                       </div>
                     </div>
 
-                    <div className='p-6'>
-                      <div className='flex justify-between items-center mb-4'>
-                        <span className='text-gray-600 text-xs uppercase tracking-wider bg-gray-100 px-2 py-1'>
+                    <div className='p-8'>
+                      <div className='flex justify-between items-center mb-5'>
+                        <span className='text-gray-700 text-sm font-medium uppercase tracking-wider bg-gradient-to-r from-gray-100 to-gray-50 px-4 py-2 rounded-full border border-gray-200'>
                           {project.category}
                         </span>
-                        <span className='text-gray-400 text-xs'>
+                        <span className='text-gray-500 text-sm font-medium'>
                           {project.year}
                         </span>
                       </div>
 
-                      <h3 className='text-xl font-medium text-gray-900 mb-3 group-hover:text-gray-700 transition-colors duration-300 leading-snug'>
+                      <h3 className='text-2xl font-semibold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 leading-tight'>
                         {project.title}
                       </h3>
 
-                      <p className='text-xs text-gray-500 mb-4 uppercase tracking-wide'>
-                        {project.client}
-                      </p>
+                      <div className='flex items-center gap-2 mb-4'>
+                        <div className='w-2 h-2 bg-red-500 rounded-full'></div>
+                        <p className='text-sm text-gray-600 font-medium uppercase tracking-wide'>
+                          {project.client}
+                        </p>
+                      </div>
 
-                      <p className='text-sm text-gray-600 leading-relaxed mb-6'>
+                      <p className='text-base text-gray-600 leading-relaxed mb-6 font-light'>
                         {project.description}
                       </p>
 
@@ -674,53 +791,63 @@ export default function EnhancedPortfolio() {
             <div className='w-16 h-0.5 bg-red-500 mx-auto mb-6' />
           </motion.div>
 
-          {/* Filters and Controls */}
+          {/* Enhanced Filters and Controls */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className='mb-10'
+            className='mb-12'
           >
             <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
               {/* Category Filters */}
-              <div className='flex flex-wrap justify-center gap-2'>
-                {categories.map((category) => (
-                  <button
+              <div className='flex flex-wrap justify-center gap-3'>
+                {categories.map((category, index) => (
+                  <motion.button
                     key={category}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 + index * 0.05 }}
                     onClick={() => setActiveFilter(category)}
-                    className={`px-4 py-2 text-xs uppercase tracking-wider transition-all duration-300 border-0 ${
+                    className={`px-6 py-3 text-sm font-medium tracking-wide transition-all duration-300 rounded-full border-2 hover:shadow-lg hover:-translate-y-1 ${
                       activeFilter === category
-                        ? 'bg-gray-900 text-white'
-                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        ? 'bg-red-500 text-white border-red-500 shadow-lg shadow-red-500/25'
+                        : 'bg-white text-gray-700 border-gray-200 hover:border-red-300 hover:text-red-600'
                     }`}
                   >
                     {categoryLabels[category] || category}
-                  </button>
+                    {activeFilter === category && (
+                      <span className='ml-2 inline-block w-2 h-2 bg-white rounded-full'></span>
+                    )}
+                  </motion.button>
                 ))}
               </div>
 
-              {/* View Mode Toggle */}
-              <div className='flex items-center gap-1 bg-gray-100 p-1 rounded'>
-                <button
+              {/* Enhanced View Mode Toggle */}
+              <div className='flex items-center gap-1 bg-white border-2 border-gray-200 p-1 rounded-full shadow-sm'>
+                <motion.button
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 rounded transition-colors duration-300 ${
+                  className={`p-3 rounded-full transition-all duration-300 ${
                     viewMode === 'grid'
-                      ? 'bg-white text-gray-900 shadow-sm'
-                      : 'text-gray-500 hover:text-gray-700'
+                      ? 'bg-red-500 text-white shadow-lg shadow-red-500/25'
+                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
                   }`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <Grid size={14} />
-                </button>
-                <button
+                  <Grid size={16} />
+                </motion.button>
+                <motion.button
                   onClick={() => setViewMode('list')}
-                  className={`p-2 rounded transition-colors duration-300 ${
+                  className={`p-3 rounded-full transition-all duration-300 ${
                     viewMode === 'list'
-                      ? 'bg-white text-gray-900 shadow-sm'
-                      : 'text-gray-500 hover:text-gray-700'
+                      ? 'bg-red-500 text-white shadow-lg shadow-red-500/25'
+                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
                   }`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <List size={14} />
-                </button>
+                  <List size={16} />
+                </motion.button>
               </div>
             </div>
           </motion.div>
@@ -757,7 +884,7 @@ export default function EnhancedPortfolio() {
                     .trim()}`}
                 >
                   <div
-                    className={`bg-white border-0 hover:shadow-lg transition-all duration-300 overflow-hidden ${
+                    className={`bg-white rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-gray-900/10 transition-all duration-500 overflow-hidden hover:-translate-y-2 ${
                       viewMode === 'list'
                         ? 'lg:col-span-3 grid lg:grid-cols-3 gap-0'
                         : ''
@@ -808,36 +935,41 @@ export default function EnhancedPortfolio() {
                         viewMode === 'list' ? 'lg:col-span-2' : ''
                       }`}
                     >
-                      <div className='flex justify-between items-start mb-3'>
-                        <div className='flex items-center gap-2'>
-                          <span className='text-gray-600 text-xs uppercase tracking-wider bg-gray-100 px-2 py-1'>
+                      <div className='flex justify-between items-start mb-4'>
+                        <div className='flex items-center gap-3'>
+                          <span className='text-gray-700 text-xs font-medium uppercase tracking-wider bg-gradient-to-r from-gray-100 to-gray-50 px-3 py-1.5 rounded-full border border-gray-200'>
                             {project.category}
                           </span>
-                          <span className='text-gray-400 text-xs'>
+                          <span className='text-gray-400 text-xs font-medium'>
                             {project.year}
                           </span>
                         </div>
-                        <ExternalLink
-                          size={14}
-                          className='text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-                        />
+                        <motion.div
+                          className='opacity-0 group-hover:opacity-100 transition-all duration-300'
+                          whileHover={{ scale: 1.1, rotate: 45 }}
+                        >
+                          <ExternalLink size={16} className='text-red-400' />
+                        </motion.div>
                       </div>
 
                       <h3
-                        className={`font-medium text-gray-900 mb-2 group-hover:text-gray-700 transition-colors duration-300 leading-snug ${
-                          viewMode === 'list' ? 'text-lg' : 'text-base'
+                        className={`font-semibold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight ${
+                          viewMode === 'list' ? 'text-xl' : 'text-lg'
                         }`}
                       >
                         {project.title}
                       </h3>
 
-                      <p className='text-xs text-gray-500 mb-3 uppercase tracking-wide'>
-                        {project.client}
-                      </p>
+                      <div className='flex items-center gap-2 mb-3'>
+                        <div className='w-2 h-2 bg-red-500 rounded-full'></div>
+                        <p className='text-sm text-gray-600 font-medium uppercase tracking-wide'>
+                          {project.client}
+                        </p>
+                      </div>
 
                       <p
-                        className={`text-gray-600 leading-relaxed mb-4 ${
-                          viewMode === 'list' ? 'text-sm' : 'text-xs'
+                        className={`text-gray-600 leading-relaxed mb-4 font-light ${
+                          viewMode === 'list' ? 'text-base' : 'text-sm'
                         }`}
                       >
                         {project.description}
@@ -857,10 +989,18 @@ export default function EnhancedPortfolio() {
                       )}
 
                       <motion.div
-                        className='inline-flex items-center text-xs uppercase tracking-wider text-gray-400 group-hover:text-gray-900 transition-colors duration-300 mt-2'
-                        whileHover={{ x: 3 }}
+                        className='inline-flex items-center text-sm font-medium tracking-wide text-gray-500 group-hover:text-red-600 transition-all duration-300 mt-3'
+                        whileHover={{ x: 5 }}
                       >
-                        View Project →
+                        <span>View Project</span>
+                        <motion.span
+                          className='ml-2'
+                          initial={{ x: 0 }}
+                          whileHover={{ x: 4 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          →
+                        </motion.span>
                       </motion.div>
                     </div>
                   </div>
@@ -873,44 +1013,105 @@ export default function EnhancedPortfolio() {
 
       {/* Instagram Filters Section - Commented Out */}
 
-      <section className='py-24 lg:py-32'>
-        <div className='max-w-7xl mx-auto px-6 lg:px-12'>
+      <section className='py-24 lg:py-32 bg-gradient-to-br from-pink-50 via-white to-orange-50 relative overflow-hidden'>
+        {/* Background Elements */}
+        <div className='absolute inset-0 opacity-10'>
+          <div className='absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-to-r from-pink-500 to-red-500 rounded-full blur-3xl'></div>
+          <div className='absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full blur-3xl'></div>
+        </div>
+
+        <div className='max-w-7xl mx-auto px-6 lg:px-12 relative z-10'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className='text-center mb-16'
+            className='text-center mb-20'
           >
-            <h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-6'>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className='mb-8'
+            >
+              <span className='inline-block px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white text-sm font-medium rounded-full shadow-lg mb-6'>
+                Social Content
+              </span>
+            </motion.div>
+            <h2 className='text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight'>
               Instagram
-              <span className='block text-red-500'>Filters & Reels</span>
+              <span className='block bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent font-medium'>
+                Filters & Reels
+              </span>
             </h2>
-            <div className='w-24 h-1 bg-red-500 mx-auto mb-8' />
-            <p className='text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed'>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: '6rem' }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className='h-1 bg-gradient-to-r from-pink-500 to-red-500 mx-auto mb-8'
+            />
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className='text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light'
+            >
               Creative content and interactive filters showcasing our
-              versatility in digital media and social platforms.
-            </p>
+              <span className='text-gray-900 font-medium'>
+                {' '}
+                versatility in digital media
+              </span>{' '}
+              and social platforms.
+            </motion.p>
           </motion.div>
 
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6'>
-            {instagramFilters.map((url, index) => (
+          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            {instagramFilters.map((item, index) => (
               <motion.a
                 key={index}
-                href={url}
+                href={item.url}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='aspect-square bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 p-1 rounded-lg group'
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05, rotate: 3 }}
+                className='aspect-square bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 p-0.5 rounded-2xl group relative overflow-hidden shadow-lg hover:shadow-xl'
+                initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, rotate: 2 }}
               >
-                <div className='w-full h-full bg-white rounded-md flex items-center justify-center group-hover:bg-gray-50 transition-colors duration-300'>
-                  <Instagram
-                    size={24}
-                    className='text-gray-400 group-hover:text-pink-500 transition-colors duration-300'
-                  />
+                <div className='w-full h-full bg-white rounded-2xl flex flex-col items-center justify-center p-3 group-hover:bg-gradient-to-br group-hover:from-pink-50 group-hover:to-orange-50 transition-all duration-300'>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                    className='mb-3'
+                  >
+                    <Instagram
+                      size={28}
+                      className='text-gray-400 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-red-500 group-hover:bg-clip-text transition-all duration-300'
+                    />
+                  </motion.div>
+
+                  {/* Content Info - Always Visible */}
+                  <div className='text-center'>
+                    <h4 className='text-xs font-semibold text-gray-800 mb-2 leading-tight line-clamp-2'>
+                      {item.title}
+                    </h4>
+                    <span className='text-xs text-red-600 font-medium px-2 py-1 bg-red-100 rounded-full'>
+                      {item.type}
+                    </span>
+                  </div>
                 </div>
+
+                {/* Hover overlay with gradient */}
+                <motion.div
+                  className='absolute inset-0 bg-gradient-to-br from-pink-500/10 to-red-500/10 rounded-2xl flex items-end justify-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                >
+                  <div className='bg-white/90 backdrop-blur-sm rounded-lg px-2 py-1'>
+                    <span className='text-gray-800 font-medium text-xs'>
+                      View Post
+                    </span>
+                  </div>
+                </motion.div>
               </motion.a>
             ))}
           </div>

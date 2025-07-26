@@ -63,7 +63,7 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Attuned With AT | Ft. Rajiv Makhni | Coming Soon',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'wTjB4bLzHKo',
         category: 'Podcast Film',
         slug: 'attuned-with-at-ft-rajiv-makhni-coming-soon',
       },
@@ -75,38 +75,38 @@ const CLIENT_DATA = {
       },
       {
         title: "Unleash the power of technology with itel's Pad One",
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'Ll846ArEzAQ',
         category: 'Product Film',
         slug: 'unleash-the-power-of-technology-with-itels-pad-one',
       },
       {
         title:
           'Power your gadgets with itel VoltX 65 GaN charger | 65W Fast Charging',
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'yW7DNblm2dg',
         category: 'Product Film',
         slug: 'power-your-gadgets-with-itel-voltx-65-gan-charger-65w-fast-charging',
       },
       {
         title: 'Unboxing the itel Buds Ace 2 TWS Earbuds | 50 hrs Playback',
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'YnkPGjlk71s',
         category: 'Product Film',
         slug: 'unboxing-the-itel-buds-ace-2-tws-earbuds-50-hrs-playback',
       },
       {
         title: 'itel | Jode Bharat Ka Har Dil | Cricket World Cup | 2mins',
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'W27wOTPahDk',
         category: 'Brand Campaign',
         slug: 'itel-jode-bharat-ka-har-dil-cricket-world-cup-2mins',
       },
       {
         title: 'itel | itel Smartphone | unboxing P40+',
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'QHD_BJmJtn0',
         category: 'Product Film',
         slug: 'itel-itel-smartphone-unboxing-p40',
       },
       {
         title: 'itel Smartwatch 2ES | Smartwatch | Fitness Watch',
-        videoId: 'PmX_y3ApaDs',
+        videoId: '4jN9Yb2MqK0',
         category: 'Product Film',
         slug: 'itel-smartwatch-2es-smartwatch-fitness-watch',
       },
@@ -119,10 +119,19 @@ const CLIENT_DATA = {
     ],
 
     btsImages: [
-      '/bts-itel-1.jpg',
-      '/bts-itel-2.jpg',
-      '/bts-itel-3.jpg',
-      '/bts-itel-4.jpg',
+      '/bts_itel/DSC_5169.jpg',
+      '/bts_itel/DSC_5193.jpg',
+      '/bts_itel/DSC_6379.jpg',
+      '/bts_itel/DSC_6414.jpg',
+      '/bts_itel/DSC_6417.jpg',
+      '/bts_itel/DSC_6449.jpg',
+      '/bts_itel/DSC_6556.jpg',
+      '/bts_itel/DSC_6561.jpg',
+      '/bts_itel/DSC_6621.jpg',
+      '/bts_itel/DSC_6622.jpg',
+      '/bts_itel/DSC_6744.jpg',
+      '/bts_itel/DSC_6763.jpg',
+      '/bts_itel/bts1.jpg',
     ],
   },
 
@@ -170,13 +179,13 @@ const CLIENT_DATA = {
     videos: [
       {
         title: '25 Years of Partnership | Gates Foundation',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'LOCAL:/GATES%20FOUNDATION.mp4',
         category: 'Partnership Film',
         slug: '25-years-of-partnership-gates-foundation',
       },
     ],
 
-    btsImages: ['/bts-gates-1.jpg', '/bts-gates-2.jpg'],
+    // btsImages: ['/bts-gates-1.jpg', '/bts-gates-2.jpg'],
   },
 
   'jumpin-heights': {
@@ -217,91 +226,108 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Wilderness Quest – Adventure Short',
-        videoId: '1ZVsxIGs1Kg',
+        videoId: 'YFcB5XlFPF0',
         category: 'Adventure Film',
         slug: 'wilderness-quest-adventure-short',
       },
+      {
+        title: 'Wilderness Adventure – Epic Journey',
+        videoId: 'FCIu2yfWHtc',
+        category: 'Adventure Film',
+        slug: 'wilderness-adventure-epic-journey',
+      },
+      {
+        title: 'Wilderness Extreme – Mountain Adventure',
+        videoId: 'SrEH_a3L7qg',
+        category: 'Adventure Film',
+        slug: 'wilderness-extreme-mountain-adventure',
+      },
     ],
 
-    btsImages: ['/bts-jumpin-1.jpg', '/bts-jumpin-2.jpg', '/bts-jumpin-3.jpg'],
+    // btsImages: ['/bts-jumpin-1.jpg', '/bts-jumpin-2.jpg', '/bts-jumpin-3.jpg'],
   },
 
   'tata-motors': {
     name: 'Tata Motors',
     subtitle: 'Global Customer Stories Campaign',
-    description: 'India\'s leading automotive manufacturer',
+    description: "India's leading automotive manufacturer",
     role: 'Director of Photography (DOP)',
-    overview: 'TND Films collaborated with Tata Motors on their ambitious "HeroStories" global campaign, capturing authentic customer journeys across different geographies. This powerful storytelling initiative showcased how Tata Motors vehicles enable mobility, progress, and reliability in people\'s lives—from rugged terrains to city landscapes.',
-    
+    overview:
+      'TND Films collaborated with Tata Motors on their ambitious "HeroStories" global campaign, capturing authentic customer journeys across different geographies. This powerful storytelling initiative showcased how Tata Motors vehicles enable mobility, progress, and reliability in people\'s lives—from rugged terrains to city landscapes.',
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Led the visual narrative for the extensive global campaign, capturing authentic customer stories across diverse environments.'
-      }
+        description:
+          'Led the visual narrative for the extensive global campaign, capturing authentic customer stories across diverse environments.',
+      },
     ],
 
     services: [
       'Global Campaign Cinematography',
-      'Customer Story Documentation', 
-      'Multi-location Production'
+      'Customer Story Documentation',
+      'Multi-location Production',
     ],
 
     highlights: [
       'Global Reach: Shot across multiple countries including Vietnam and Indonesia.',
       'Authentic Storytelling: Captured real customer experiences with natural, documentary-style approach.',
-      'Technical Excellence: Adapted to diverse environments with handheld and cinematic techniques.'
+      'Technical Excellence: Adapted to diverse environments with handheld and cinematic techniques.',
     ],
 
     videos: [
       {
-        title: "#HeroStories from Vietnam | Tata Super Ace | Cargo",
+        title: '#HeroStories from Vietnam | Tata Super Ace | Cargo',
         videoId: 'T_bIUw7GdTU',
         category: 'Global Campaign',
-        slug: 'herostories-from-vietnam-tata-super-ace-cargo'
-      }
+        slug: 'herostories-from-vietnam-tata-super-ace-cargo',
+      },
     ],
 
-    btsImages: ['/bts-tata-1.jpg', '/bts-tata-2.jpg']
+    // btsImages: ['/bts-tata-1.jpg', '/bts-tata-2.jpg'],
   },
 
   'the-better-india': {
     name: 'The Better India',
     subtitle: 'Stories of Change Across India',
-    description: 'India\'s leading positive news platform',
+    description: "India's leading positive news platform",
     role: 'Director of Photography (DOP)',
-    overview: 'TND Films partnered with The Better India on their impactful documentary series "Ingenious Indians," designed to spotlight powerful grassroots stories from across the nation. This ambitious project captures narratives that often go unheard yet drive real social change through innovation, sustainability, and community transformation.',
-    
+    overview:
+      'TND Films partnered with The Better India on their impactful documentary series "Ingenious Indians," designed to spotlight powerful grassroots stories from across the nation. This ambitious project captures narratives that often go unheard yet drive real social change through innovation, sustainability, and community transformation.',
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Shaped the visual identity of this pan-India project, traveling from remote villages to urban centers capturing authentic transformation stories.'
-      }
+        description:
+          'Shaped the visual identity of this pan-India project, traveling from remote villages to urban centers capturing authentic transformation stories.',
+      },
     ],
 
     services: [
       'Documentary Cinematography',
-      'Social Impact Storytelling', 
-      'Pan-India Production'
+      'Social Impact Storytelling',
+      'Pan-India Production',
     ],
 
     highlights: [
       'National Scope: Documented stories across diverse locations from rural villages to urban centers.',
       'Authentic Approach: Used naturalistic cinematography with available light and handheld techniques.',
-      'Social Impact: Elevated grassroots stories into compelling visual tributes to India\'s transformation.'
+      "Social Impact: Elevated grassroots stories into compelling visual tributes to India's transformation.",
     ],
 
     videos: [
       {
-        title: "How One Man 'Bridged' the Dreams of Millions! - Ingenious Indians EP 1",
+        title:
+          "How One Man 'Bridged' the Dreams of Millions! - Ingenious Indians EP 1",
         videoId: 'T_bIUw7GdTU',
         category: 'Documentary',
-        slug: 'how-one-man-bridged-the-dreams-of-millions-ingenious-indians-ep-1'
-      }
+        slug: 'how-one-man-bridged-the-dreams-of-millions-ingenious-indians-ep-1',
+      },
     ],
 
-    btsImages: ['/bts-better-india-1.jpg', '/bts-better-india-2.jpg']
+    // btsImages: ['/bts-better-india-1.jpg', '/bts-better-india-2.jpg'],
   },
 
   'free-fire-india': {
@@ -309,43 +335,47 @@ const CLIENT_DATA = {
     subtitle: 'Gaming Community Celebration',
     description: 'Leading mobile gaming platform',
     role: 'Production & Shoot Execution',
-    overview: 'TND Films collaborated with Free Fire INDIA to create a celebratory documentary film honoring the 7-year gaming milestone of @UnGraduateGamer. This project captured the fast-paced, high-stakes world of competitive gaming through cinematic storytelling that reflects the passion driving India\'s gaming community.',
-    
+    overview:
+      "TND Films collaborated with Free Fire INDIA to create a celebratory documentary film honoring the 7-year gaming milestone of @UnGraduateGamer. This project captured the fast-paced, high-stakes world of competitive gaming through cinematic storytelling that reflects the passion driving India's gaming community.",
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography (DOP)',
-        description: 'Led visual storytelling, handling primary camera, shot composition, and overall visual tone with cinematic precision.'
+        description:
+          'Led visual storytelling, handling primary camera, shot composition, and overall visual tone with cinematic precision.',
       },
       {
         name: 'Nitin Kumar Pal',
         role: 'Production Lead & Second Camera',
-        description: 'Managed production lighting setup and operated second camera unit, ensuring consistency across multi-cam shots.'
-      }
+        description:
+          'Managed production lighting setup and operated second camera unit, ensuring consistency across multi-cam shots.',
+      },
     ],
 
     services: [
       'Gaming Content Production',
-      'Documentary-Style Filming', 
-      'Multi-Camera Setup'
+      'Documentary-Style Filming',
+      'Multi-Camera Setup',
     ],
 
     highlights: [
       'Gaming Expertise: Specialized approach to capture the energy and intensity of competitive gaming.',
       'Technical Excellence: Multi-camera rigs with dynamic tracking shots and cinematic lighting.',
-      'Community Focus: Tribute to India\'s gaming community and content creator passion.'
+      "Community Focus: Tribute to India's gaming community and content creator passion.",
     ],
 
     videos: [
       {
-        title: "7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video",
-        videoId: 'xVWPOQwVlNE',
+        title:
+          '7 Year Win Streak with @UnGraduateGamer | 7th Anniversary | Full Video',
+        videoId: 'R_-MOeWMfvU',
         category: 'Documentary',
-        slug: '7-year-win-streak-with-ungraduategamer-7th-anniversary-full-video'
-      }
+        slug: '7-year-win-streak-with-ungraduategamer-7th-anniversary-full-video',
+      },
     ],
 
-    btsImages: ['/bts-freefire-1.jpg', '/bts-freefire-2.jpg']
+    // btsImages: ['/bts-freefire-1.jpg', '/bts-freefire-2.jpg'],
   },
 
   'the-vagabond-films': {
@@ -353,43 +383,74 @@ const CLIENT_DATA = {
     subtitle: 'Spiritual & Cultural Heritage Documentation',
     description: 'Documentary film production house',
     role: 'Pre-Production | Cinematography | Post-Production',
-    overview: 'TND Films has been the complete production partner for The Vagabond Films, handling all video content for their YouTube channel. Our collaboration focuses on documenting India\'s spiritual and cultural heritage through cinematic documentary films that capture the divine atmosphere and timeless traditions of sacred destinations.',
-    
+    overview:
+      "TND Films has been the complete production partner for The Vagabond Films, handling all video content for their YouTube channel. Our collaboration focuses on documenting India's spiritual and cultural heritage through cinematic documentary films that capture the divine atmosphere and timeless traditions of sacred destinations.",
+
     team: [
       {
         name: 'Nitin Kumar Pal',
         role: 'Director of Photography & Production Head',
-        description: 'Led cinematography and production across multiple documentary episodes in varied spiritual locations.'
+        description:
+          'Led cinematography and production across multiple documentary episodes in varied spiritual locations.',
       },
       {
         name: 'Kuldeep Chauhan',
-        role: 'Second Camera & Post Production Head', 
-        description: 'Managed second camera operations and complete post-production workflow for all episodes.'
-      }
+        role: 'Second Camera & Post Production Head',
+        description:
+          'Managed second camera operations and complete post-production workflow for all episodes.',
+      },
     ],
 
     services: [
       'Documentary Cinematography',
       'Spiritual Location Filming',
-      'Complete Post-Production'
+      'Complete Post-Production',
     ],
 
     highlights: [
       'Complete Channel Partnership: All videos on The Vagabond Films YouTube channel are shot and edited by our team.',
-      'Cultural Preservation: Documenting India\'s spiritual heritage with cinematic authenticity.',
-      'Technical Excellence: 4K production with atmospheric sound design and color grading.'
+      "Cultural Preservation: Documenting India's spiritual heritage with cinematic authenticity.",
+      'Technical Excellence: 4K production with atmospheric sound design and color grading.',
     ],
 
     videos: [
       {
-        title: "VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K",
-        videoId: '9hIyf0FyYZ0',
+        title: 'VRINDAVAN- CINEMATIC FILM | Banke Bihari Temple | 2021 | 4K',
+        videoId: 'fGZPdgu2ZJY',
         category: 'Documentary Film',
-        slug: 'vrindavan-cinematic-film-banke-bihari-temple-2021-4k'
-      }
+        slug: 'vrindavan-cinematic-film-banke-bihari-temple-2021-4k',
+      },
+      {
+        title: 'Vrindavan Spiritual Journey - Part 2',
+        videoId: 'Ox8Vvx8ENU0',
+        category: 'Documentary Film',
+        slug: 'vrindavan-spiritual-journey-part-2',
+      },
+      {
+        title: 'Vrindavan Divine Experience - Part 3',
+        videoId: 'ZN2Ktk-2At0',
+        category: 'Documentary Film',
+        slug: 'vrindavan-divine-experience-part-3',
+      },
+      {
+        title: 'Vrindavan Sacred Moments - Part 4',
+        videoId: 'DV1tXKLrKPM',
+        category: 'Documentary Film',
+        slug: 'vrindavan-sacred-moments-part-4',
+      },
+      {
+        title: 'Vrindavan Devotional Film - Part 5',
+        videoId: 'MoQCWKwzqxs',
+        category: 'Documentary Film',
+        slug: 'vrindavan-devotional-film-part-5',
+      },
     ],
 
-    btsImages: ['/bts-vagabond-1.jpg', '/bts-vagabond-2.jpg', '/bts-vagabond-3.jpg']
+    // btsImages: [
+    //   '/bts-vagabond-1.jpg',
+    //   '/bts-vagabond-2.jpg',
+    //   '/bts-vagabond-3.jpg',
+    // ],
   },
 
   'travnat-films': {
@@ -397,38 +458,40 @@ const CLIENT_DATA = {
     subtitle: 'Adventure & Nature Cinematography',
     description: 'Adventure travel and nature documentation',
     role: 'Cinematography (Production Shoot Only)',
-    overview: 'TND Films provides specialized cinematography services for TRAVNAT FILMS, focusing on adventure travel and nature-based storytelling. Our Director of Photography, Vipin Kumar Pal, leads all cinematographic work for their YouTube channel, capturing breathtaking adventures across India\'s diverse landscapes.',
-    
+    overview:
+      "TND Films provides specialized cinematography services for TRAVNAT FILMS, focusing on adventure travel and nature-based storytelling. Our Director of Photography, Vipin Kumar Pal, leads all cinematographic work for their YouTube channel, capturing breathtaking adventures across India's diverse landscapes.",
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Leads all cinematography for TRAVNAT FILMS with expertise in adventure and nature documentation.'
-      }
+        description:
+          'Leads all cinematography for TRAVNAT FILMS with expertise in adventure and nature documentation.',
+      },
     ],
 
     services: [
       'Adventure Cinematography',
       'Nature Documentation',
-      'Extreme Location Filming'
+      'Extreme Location Filming',
     ],
 
     highlights: [
-      'Channel Partnership: All videos on Travnat Films\' YouTube Channel are shot by Vipin Kumar Pal as DOP.',
+      "Channel Partnership: All videos on Travnat Films' YouTube Channel are shot by Vipin Kumar Pal as DOP.",
       'Adventure Expertise: Specialized in capturing extreme sports and alpine adventures.',
-      'Technical Innovation: Drone cinematography and handheld techniques for dynamic adventure footage.'
+      'Technical Innovation: Drone cinematography and handheld techniques for dynamic adventure footage.',
     ],
 
     videos: [
       {
-        title: "Skiing in Munsiyari",
+        title: 'Skiing in Munsiyari',
         videoId: '9xFB1qmpF3k',
         category: 'Adventure Film',
-        slug: 'skiing-in-munsiyari'
-      }
+        slug: 'skiing-in-munsiyari',
+      },
     ],
 
-    btsImages: ['/bts-travnat-1.jpg', '/bts-travnat-2.jpg']
+    btsImages: ['/bts-travnat-1.jpg', '/bts-travnat-2.jpg'],
   },
 
   'imi-bhubaneswar': {
@@ -436,43 +499,46 @@ const CLIENT_DATA = {
     subtitle: 'Campus Life & Institutional Branding',
     description: 'International Management Institute',
     role: 'Pre-Production | Camera | Editing',
-    overview: 'TND Films collaborated with IMI Bhubaneswar through freelance producer Kuldeep Chauhan to create authentic campus life documentation. This project showcased the vibrant student culture, academic excellence, and infrastructure of one of India\'s premier management institutes through engaging digital content.',
-    
+    overview:
+      "TND Films collaborated with IMI Bhubaneswar through freelance producer Kuldeep Chauhan to create authentic campus life documentation. This project showcased the vibrant student culture, academic excellence, and infrastructure of one of India's premier management institutes through engaging digital content.",
+
     team: [
       {
         name: 'Kuldeep Chauhan',
         role: 'Freelance Producer',
-        description: 'Handled complete production independently - from pre-production planning to final delivery.'
+        description:
+          'Handled complete production independently - from pre-production planning to final delivery.',
       },
       {
         name: 'Ripul Aggarwal',
         role: 'Creative Partner (AVR Events)',
-        description: 'Provided creative alignment and project coordination for streamlined execution.'
-      }
+        description:
+          'Provided creative alignment and project coordination for streamlined execution.',
+      },
     ],
 
     services: [
       'Campus Documentation',
       'Institutional Brand Films',
-      'Digital Content Creation'
+      'Digital Content Creation',
     ],
 
     highlights: [
       'Authentic Storytelling: Captured real student interactions and campus activities.',
       'Complete Production: Handled independently from concept to final export.',
-      'Multi-Platform Optimization: Content tailored for YouTube and social media platforms.'
+      'Multi-Platform Optimization: Content tailored for YouTube and social media platforms.',
     ],
 
     videos: [
       {
-        title: "IMI Bhubaneswar – Campus Life Video Production",
+        title: 'IMI Bhubaneswar – Campus Life Video Production',
         videoId: 'T_bIUw7GdTU',
         category: 'Institutional Film',
-        slug: 'imi-bhubaneswar-campus-life-video-production'
-      }
+        slug: 'imi-bhubaneswar-campus-life-video-production',
+      },
     ],
 
-    btsImages: ['/bts-imi-1.jpg', '/bts-imi-2.jpg']
+    // btsImages: ['/bts-imi-1.jpg', '/bts-imi-2.jpg'],
   },
 
   'irma-anand': {
@@ -480,43 +546,46 @@ const CLIENT_DATA = {
     subtitle: 'Rural Management Institute Documentation',
     description: 'Institute of Rural Management Anand',
     role: 'Cinematography / On-Ground Video Production',
-    overview: 'TND Films maintains an ongoing collaboration with IRMA through freelance producer Kuldeep Chauhan, creating comprehensive video content that reflects the unique rural management identity. Our work spans events, testimonials, and institutional highlights across multiple academic cycles.',
-    
+    overview:
+      'TND Films maintains an ongoing collaboration with IRMA through freelance producer Kuldeep Chauhan, creating comprehensive video content that reflects the unique rural management identity. Our work spans events, testimonials, and institutional highlights across multiple academic cycles.',
+
     team: [
       {
         name: 'Kuldeep Chauhan',
         role: 'Freelance Video Producer',
-        description: 'Leads on-ground video execution independently, managing entire shoot process from setup to delivery.'
+        description:
+          'Leads on-ground video execution independently, managing entire shoot process from setup to delivery.',
       },
       {
         name: 'Ayush (BrandHermit)',
         role: 'Creative Director',
-        description: 'Provides creative alignment and content strategy for all IRMA video requirements.'
-      }
+        description:
+          'Provides creative alignment and content strategy for all IRMA video requirements.',
+      },
     ],
 
     services: [
       'Event Coverage & Documentation',
       'Student & Alumni Testimonials',
-      'Social Media Content Creation'
+      'Social Media Content Creation',
     ],
 
     highlights: [
       'Ongoing Partnership: Continuous collaboration across multiple academic cycles and marketing campaigns.',
       'Diverse Content: From flagship events to intimate testimonial videos.',
-      'Digital Optimization: Content tailored for Instagram, YouTube, and LinkedIn presence.'
+      'Digital Optimization: Content tailored for Instagram, YouTube, and LinkedIn presence.',
     ],
 
     videos: [
       {
-        title: "IRMA – A Tribute to Shyam Benegal by IRMA Students",
+        title: 'IRMA – A Tribute to Shyam Benegal by IRMA Students',
         videoId: 'T_bIUw7GdTU',
         category: 'Event Documentation',
-        slug: 'irma-a-tribute-to-shyam-benegal-by-irma-students'
-      }
+        slug: 'irma-a-tribute-to-shyam-benegal-by-irma-students',
+      },
     ],
 
-    btsImages: ['/bts-irma-1.jpg', '/bts-irma-2.jpg', '/bts-irma-3.jpg']
+    // btsImages: ['/bts-irma-1.jpg', '/bts-irma-2.jpg', '/bts-irma-3.jpg'],
   },
 
   'adani-foundation': {
@@ -524,38 +593,40 @@ const CLIENT_DATA = {
     subtitle: 'CSR & Community Wellness Campaigns',
     description: 'Corporate social responsibility initiatives',
     role: 'Director of Photography (DOP)',
-    overview: 'TND Films partnered with Adani Foundation to create visually compelling campaigns promoting holistic well-being and community development. Our cinematographic approach focuses on capturing authentic moments that reflect the foundation\'s commitment to social transformation and wellness initiatives.',
-    
+    overview:
+      "TND Films partnered with Adani Foundation to create visually compelling campaigns promoting holistic well-being and community development. Our cinematographic approach focuses on capturing authentic moments that reflect the foundation's commitment to social transformation and wellness initiatives.",
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Shaped the visual narrative for wellness campaigns, emphasizing authenticity and community connection.'
-      }
+        description:
+          'Shaped the visual narrative for wellness campaigns, emphasizing authenticity and community connection.',
+      },
     ],
 
     services: [
       'CSR Campaign Cinematography',
       'Community Documentation',
-      'Wellness Initiative Films'
+      'Wellness Initiative Films',
     ],
 
     highlights: [
       'Social Impact Focus: Campaigns promoting yoga, wellness, and community development.',
       'Authentic Approach: Natural lighting and real community settings for genuine storytelling.',
-      'Cultural Sensitivity: Respectful documentation of spiritual and wellness practices.'
+      'Cultural Sensitivity: Respectful documentation of spiritual and wellness practices.',
     ],
 
     videos: [
       {
-        title: "Iss Yoga Diwas par #IndiaRahegaFit | Dwarkadhish Temple",
+        title: 'Iss Yoga Diwas par #IndiaRahegaFit | Dwarkadhish Temple',
         videoId: 'T_bIUw7GdTU',
         category: 'CSR Campaign',
-        slug: 'iss-yoga-diwas-par-indiarahegafit-dwarkadhish-temple'
-      }
+        slug: 'iss-yoga-diwas-par-indiarahegafit-dwarkadhish-temple',
+      },
     ],
 
-    btsImages: ['/bts-adani-1.jpg', '/bts-adani-2.jpg']
+    // btsImages: ['/bts-adani-1.jpg', '/bts-adani-2.jpg'],
   },
 
   'jindal-stainless': {
@@ -563,48 +634,52 @@ const CLIENT_DATA = {
     subtitle: 'Corporate Identity & Industrial Documentation',
     description: 'Leading stainless steel manufacturer',
     role: 'Cinematography',
-    overview: 'TND Films created a powerful corporate identity film for Jindal Stainless, showcasing their industrial strength, technological innovation, and manufacturing excellence. This high-production-value project required coordinated team effort across ground cinematography and aerial documentation.',
-    
+    overview:
+      'TND Films created a powerful corporate identity film for Jindal Stainless, showcasing their industrial strength, technological innovation, and manufacturing excellence. This high-production-value project required coordinated team effort across ground cinematography and aerial documentation.',
+
     team: [
       {
         name: 'Vipin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Led cinematography team, capturing industrial operations with cinematic precision and clarity.'
+        description:
+          'Led cinematography team, capturing industrial operations with cinematic precision and clarity.',
       },
       {
         name: 'Nitin Kumar Pal',
         role: 'Second DOP',
-        description: 'Handled supplementary coverage and multi-cam coordination in high-paced factory environment.'
+        description:
+          'Handled supplementary coverage and multi-cam coordination in high-paced factory environment.',
       },
       {
         name: 'Kuldeep Chauhan',
         role: 'Aerial Cinematographer',
-        description: 'Provided drone shots and aerial perspectives showcasing the scale of operations.'
-      }
+        description:
+          'Provided drone shots and aerial perspectives showcasing the scale of operations.',
+      },
     ],
 
     services: [
       'Corporate Identity Films',
       'Industrial Documentation',
-      'Aerial Cinematography'
+      'Aerial Cinematography',
     ],
 
     highlights: [
       'Team Collaboration: Coordinated effort across three cinematographers for comprehensive coverage.',
       'Industrial Expertise: Specialized approach to manufacturing and heavy industry documentation.',
-      'Technical Excellence: High-production-value cinematography aligned with corporate brand vision.'
+      'Technical Excellence: High-production-value cinematography aligned with corporate brand vision.',
     ],
 
     videos: [
       {
-        title: "Employee Value Proposition | Jindal Stainless",
+        title: 'Employee Value Proposition | Jindal Stainless',
         videoId: 'T_bIUw7GdTU',
         category: 'Corporate Film',
-        slug: 'employee-value-proposition-jindal-stainless'
-      }
+        slug: 'employee-value-proposition-jindal-stainless',
+      },
     ],
 
-    btsImages: ['/bts-jindal-1.jpg', '/bts-jindal-2.jpg', '/bts-jindal-3.jpg']
+    // btsImages: ['/bts-jindal-1.jpg', '/bts-jindal-2.jpg', '/bts-jindal-3.jpg'],
   },
 
   'infinix-india': {
@@ -612,38 +687,40 @@ const CLIENT_DATA = {
     subtitle: 'Product & Lifestyle Video Campaigns',
     description: 'Smart technology brand',
     role: 'Second DOP & Video Editor',
-    overview: 'During Kuldeep Chauhan\'s full-time tenure at Infinix India in 2022, TND Films provided comprehensive in-house video production services. This included product films, launch videos, social media content, and lifestyle promotions, with Kuldeep managing both cinematography and post-production.',
-    
+    overview:
+      "During Kuldeep Chauhan's full-time tenure at Infinix India in 2022, TND Films provided comprehensive in-house video production services. This included product films, launch videos, social media content, and lifestyle promotions, with Kuldeep managing both cinematography and post-production.",
+
     team: [
       {
         name: 'Kuldeep Chauhan',
         role: 'Second DOP & Lead Video Editor',
-        description: 'Dual role managing on-ground camera work and complete post-production for all brand campaigns.'
-      }
+        description:
+          'Dual role managing on-ground camera work and complete post-production for all brand campaigns.',
+      },
     ],
 
     services: [
       'Product Film Production',
       'Social Media Content',
-      'Brand Campaign Videos'
+      'Brand Campaign Videos',
     ],
 
     highlights: [
       'In-House Production: Full-time collaboration ensuring brand consistency across all formats.',
       'Multi-Format Content: From YouTube features to in-store displays and social media.',
-      'Fast-Paced Environment: Delivered high-energy, product-centric content on tight timelines.'
+      'Fast-Paced Environment: Delivered high-energy, product-centric content on tight timelines.',
     ],
 
     videos: [
       {
-        title: "Shiksha Ka Ghar: Ek Chidiyaghar || A Day in College by Infinix",
+        title: 'Shiksha Ka Ghar: Ek Chidiyaghar || A Day in College by Infinix',
         videoId: 'T_bIUw7GdTU',
         category: 'Lifestyle Campaign',
-        slug: 'shiksha-ka-ghar-ek-chidiyaghar-a-day-in-college-by-infinix'
-      }
+        slug: 'shiksha-ka-ghar-ek-chidiyaghar-a-day-in-college-by-infinix',
+      },
     ],
 
-    btsImages: ['/bts-infinix-1.jpg', '/bts-infinix-2.jpg']
+    // btsImages: ['/bts-infinix-1.jpg', '/bts-infinix-2.jpg'],
   },
 
   'music-videos': {
@@ -651,57 +728,74 @@ const CLIENT_DATA = {
     subtitle: 'Artist Collaborations & Music Cinematography',
     description: 'Music video production services',
     role: 'Director of Photography (DOP)',
-    overview: 'TND Films has collaborated with various music artists to create visually captivating music videos that blend storytelling, performance, and cinematic style. Our Director of Photography, Nitin Kumar Pal, specializes in music video cinematography, bringing creative vision and technical excellence to enhance the musical experience.',
-    
+    overview:
+      'TND Films has collaborated with various music artists to create visually captivating music videos that blend storytelling, performance, and cinematic style. Our Director of Photography, Nitin Kumar Pal, specializes in music video cinematography, bringing creative vision and technical excellence to enhance the musical experience.',
+
     team: [
       {
         name: 'Nitin Kumar Pal',
         role: 'Director of Photography',
-        description: 'Leads music video cinematography with expertise in performance capture, creative lighting, and visual storytelling that complements musical narratives.'
-      }
+        description:
+          'Leads music video cinematography with expertise in performance capture, creative lighting, and visual storytelling that complements musical narratives.',
+      },
     ],
 
     services: [
       'Music Video Cinematography',
       'Performance Documentation',
-      'Creative Visual Storytelling'
+      'Creative Visual Storytelling',
     ],
 
     highlights: [
       'Diverse Genres: Experience across hip-hop, Punjabi, indie, and commercial music videos.',
       'Artist Collaboration: Close coordination with artists, directors, and choreographers for unified artistic vision.',
-      'Technical Versatility: From intimate acoustic setups to high-energy performance pieces.'
+      'Technical Versatility: From intimate acoustic setups to high-energy performance pieces.',
     ],
 
     videos: [
       {
-        title: "Ameen | Muhfaad | AELAAN EP | Latest Rap 2020 | MAHARAJ",
+        title: 'Ameen | Muhfaad | AELAAN EP | Latest Rap 2020 | MAHARAJ',
         videoId: 'T_bIUw7GdTU',
         category: 'Hip-Hop Music Video',
-        slug: 'ameen-muhfaad-aelaan-ep-latest-rap-2020-maharaj'
+        slug: 'ameen-muhfaad-aelaan-ep-latest-rap-2020-maharaj',
       },
+      // {
+      //   title:
+      //     'Ignore - Official song | Indeep Bakshi | Ashnoor kaur | Ayush Talniya | Punjabi song 2021',
+      //   videoId: 'T_bIUw7GdTU',
+      //   category: 'Punjabi Music Video',
+      //   slug: 'ignore-official-song-indeep-bakshi-ashnoor-kaur-ayush-talniya-punjabi-song-2021',
+      // },
+      // {
+      //   title:
+      //     'Prabh Gill: Mera Good Luck (Video Song) Desi Routz | Esshanya S Maheshwari |Latest Punjabi Song 2021',
+      //   videoId: 'T_bIUw7GdTU',
+      //   category: 'Punjabi Music Video',
+      //   slug: 'prabh-gill-mera-good-luck-video-song-desi-routz-esshanya-s-maheshwari-latest-punjabi-song-2021',
+      // },
+      // {
+      //   title:
+      //     'Ik Din (Full Song) Rajat Sahani | Mitanshi Adhikari | Akshay Upadhayay | Latest Punjabi Songs',
+      //   videoId: 'T_bIUw7GdTU',
+      //   category: 'Punjabi Music Video',
+      //   slug: 'ik-din-full-song-rajat-sahani-mitanshi-adhikari-akshay-upadhayay-latest-punjabi-songs',
+      // },
+      // {
+      //   title: 'Music Video Project',
+      //   videoId: 'RTCcswAXtn0',
+      //   category: 'Professional Music Video',
+      //   slug: 'music-video-project',
+      // },
       {
-        title: "Ignore - Official song | Indeep Bakshi | Ashnoor kaur | Ayush Talniya | Punjabi song 2021",
-        videoId: 'T_bIUw7GdTU',
-        category: 'Punjabi Music Video',
-        slug: 'ignore-official-song-indeep-bakshi-ashnoor-kaur-ayush-talniya-punjabi-song-2021'
+        title: 'Music Production Vol. 2',
+        videoId: 'o21H1tiTKOM',
+        category: 'Professional Music Video',
+        slug: 'music-production-vol-2',
       },
-      {
-        title: "Prabh Gill: Mera Good Luck (Video Song) Desi Routz | Esshanya S Maheshwari |Latest Punjabi Song 2021",
-        videoId: 'T_bIUw7GdTU',
-        category: 'Punjabi Music Video',
-        slug: 'prabh-gill-mera-good-luck-video-song-desi-routz-esshanya-s-maheshwari-latest-punjabi-song-2021'
-      },
-      {
-        title: "Ik Din (Full Song) Rajat Sahani | Mitanshi Adhikari | Akshay Upadhayay | Latest Punjabi Songs",
-        videoId: 'T_bIUw7GdTU',
-        category: 'Punjabi Music Video',
-        slug: 'ik-din-full-song-rajat-sahani-mitanshi-adhikari-akshay-upadhayay-latest-punjabi-songs'
-      }
     ],
 
-    btsImages: ['/bts-music-1.jpg', '/bts-music-2.jpg', '/bts-music-3.jpg']
-  }
+    // btsImages: ['/bts-music-1.jpg', '/bts-music-2.jpg', '/bts-music-3.jpg'],
+  },
 };
 
 export default function ClientPage() {
@@ -889,14 +983,27 @@ export default function ClientPage() {
                 >
                   <div className='bg-white border-0 hover:shadow-lg transition-all duration-300 overflow-hidden'>
                     <div className='aspect-[4/3] relative overflow-hidden'>
-                      <img
-                        src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
-                        alt={video.title}
-                        className='w-full h-full object-cover'
-                        onError={(e) => {
-                          e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
-                        }}
-                      />
+                      {video.videoId.startsWith('LOCAL:') ? (
+                        <div className='w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center'>
+                          <div className='text-center text-white'>
+                            <Play
+                              size={32}
+                              className='mx-auto text-white/80 mb-2'
+                              fill='white'
+                            />
+                            <p className='text-xs text-gray-300'>Local Video</p>
+                          </div>
+                        </div>
+                      ) : (
+                        <img
+                          src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
+                          alt={video.title}
+                          className='w-full h-full object-cover'
+                          onError={(e) => {
+                            e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
+                          }}
+                        />
+                      )}
 
                       <div className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                         <div className='flex gap-3'>
@@ -946,14 +1053,14 @@ export default function ClientPage() {
                         {video.title}
                       </h3>
 
-                      {video.slug && (
+                      {/* {video.slug && (
                         <Link href={`/portfolio/${video.slug}`}>
                           <div className='text-xs text-red-500 hover:text-red-600 transition-colors duration-300 flex items-center gap-1 mt-2'>
                             <Eye size={12} />
                             <span>View Details</span>
                           </div>
                         </Link>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </motion.div>
@@ -961,29 +1068,45 @@ export default function ClientPage() {
             </div>
           </motion.div>
 
-          {/* BTS Photos Section */}
-          <motion.div
-            className="mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-          >
-            <h2 className="text-xl font-medium text-gray-900 mb-6">📸 Behind The Scenes</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {client.btsImages.map((image, index) => (
-                <motion.div
-                  key={index}
-                  className="aspect-square bg-gray-200 rounded-lg overflow-hidden"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                    <span className="text-gray-600 text-sm">BTS {index + 1}</span>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+          {/* BTS Photos Section - Only show for clients with actual BTS images */}
+          {client.btsImages && client.btsImages.length > 0 && (
+            <motion.div
+              className='mb-12'
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+            >
+              <h2 className='text-xl font-medium text-gray-900 mb-6'>
+                📸 Behind The Scenes
+              </h2>
+              <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                {client.btsImages.map((image, index) => (
+                  <motion.div
+                    key={index}
+                    className='aspect-square bg-gray-200 rounded-lg overflow-hidden'
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <img
+                      src={image}
+                      alt={`Behind the scenes ${index + 1}`}
+                      className='w-full h-full object-cover'
+                      onError={(e) => {
+                        // Fallback to placeholder if image fails to load
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className='w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 hidden items-center justify-center'>
+                      <span className='text-gray-600 text-sm'>
+                        BTS {index + 1}
+                      </span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
 
           {/* CTA Section */}
           <motion.div
@@ -1029,14 +1152,24 @@ export default function ClientPage() {
               ×
             </button>
 
-            <iframe
-              src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1`}
-              title={selectedVideo.title}
-              className='w-full h-full'
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowFullScreen
-            />
+            {selectedVideo.videoId.startsWith('LOCAL:') ? (
+              <video className='w-full h-full' controls autoPlay>
+                <source
+                  src={selectedVideo.videoId.replace('LOCAL:', '')}
+                  type='video/mp4'
+                />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <iframe
+                src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1`}
+                title={selectedVideo.title}
+                className='w-full h-full'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              />
+            )}
           </motion.div>
         </motion.div>
       )}
