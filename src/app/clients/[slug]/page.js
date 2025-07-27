@@ -279,9 +279,28 @@ const CLIENT_DATA = {
     videos: [
       {
         title: '#HeroStories from Vietnam | Tata Super Ace | Cargo',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'PmX_y3ApaDs',
         category: 'Global Campaign',
         slug: 'herostories-from-vietnam-tata-super-ace-cargo',
+      },
+      {
+        title:
+          'Hero Stories from Indonesia | Tata Prima | Mining & Construction',
+        videoId: '4P_0BSWME5E',
+        category: 'Brand Campaign',
+        slug: 'tata-motors-commercial-campaign',
+      },
+      {
+        title: '#HeroStories from Vietnam | Tata Super Ace | FMCG',
+        videoId: 'AT94cyerIPo',
+        category: 'Brand Film',
+        slug: 'tata-motors-brand-film',
+      },
+      {
+        title: '#HeroStories from Indonesia | Tata Prima | Mining',
+        videoId: '0BsWJDmjGWs',
+        category: 'Product Film',
+        slug: 'tata-motors-product-showcase',
       },
     ],
 
@@ -321,7 +340,7 @@ const CLIENT_DATA = {
       {
         title:
           "How One Man 'Bridged' the Dreams of Millions! - Ingenious Indians EP 1",
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'ea2oVP1U4Fw',
         category: 'Documentary',
         slug: 'how-one-man-bridged-the-dreams-of-millions-ingenious-indians-ep-1',
       },
@@ -496,7 +515,7 @@ const CLIENT_DATA = {
 
   'imi-international-management-institute': {
     name: 'IMI (International Management Institute)',
-    subtitle: 'Complete Video Production for India\'s Premier B-Schools',
+    subtitle: "Complete Video Production for India's Premier B-Schools",
     description: 'International Management Institute - All Campuses',
     role: 'Complete Video Production (Camera & Editing)',
     overview:
@@ -536,39 +555,46 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'mgfNKKeKrYc',
         category: 'Event Video',
         slug: 'campus-life-imi-bhubaneswar-kritva-2024',
       },
       {
-        title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
-        videoId: 'wTjB4bLzHKo',
+        title:
+          "IMI Insights Podcast | Ep 4 - HR: A Catalyst in India's Orange Economy",
+        videoId: 'nWRGCuiJMy8',
         category: 'Podcast Film',
         slug: 'imi-insights-podcast-ep-4-hr-catalyst-orange-economy',
       },
       {
         title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
-        videoId: 'PmX_y3ApaDs',
+        videoId: 'CwWf5C9PUJE',
         category: 'Event Documentation',
         slug: 'imi-delhi-41st-annual-convocation-ceremony-highlights',
       },
       {
         title: 'SIP Experience | Anjali Singh | PGDM',
-        videoId: 'YnkPGjlk71s',
+        videoId: 'ybMAVHPuuZo',
         category: 'Student Testimonial',
         slug: 'sip-experience-anjali-singh-pgdm',
       },
       {
         title: 'WELCOME BATCH OF 2023-25',
-        videoId: 'W27wOTPahDk',
+        videoId: 'HI4nY13qkkA',
         category: 'Institutional Film',
         slug: 'welcome-batch-of-2023-25',
       },
       {
         title: 'National Alumni Meet 2023',
-        videoId: 'lyBQYLtnKdM',
+        videoId: 'VUh78cxA_04',
         category: 'Event Documentation',
         slug: 'national-alumni-meet-2023',
+      },
+      {
+        title: 'IMI Additional Content',
+        videoId: '3xMRzd0VN_E',
+        category: 'Institutional Content',
+        slug: 'imi-additional-content',
       },
     ],
 
@@ -613,7 +639,7 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'IRMA – A Tribute to Shyam Benegal by IRMA Students',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'OVX7WipsO7o',
         category: 'Event Documentation',
         slug: 'irma-a-tribute-to-shyam-benegal-by-irma-students',
       },
@@ -654,7 +680,7 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Iss Yoga Diwas par #IndiaRahegaFit | Dwarkadhish Temple',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'N2auTayZ978',
         category: 'CSR Campaign',
         slug: 'iss-yoga-diwas-par-indiarahegafit-dwarkadhish-temple',
       },
@@ -707,7 +733,7 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Employee Value Proposition | Jindal Stainless',
-        videoId: 'T_bIUw7GdTU',
+        videoId: '_KWw7k4lptk',
         category: 'Corporate Film',
         slug: 'employee-value-proposition-jindal-stainless',
       },
@@ -748,9 +774,21 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Shiksha Ka Ghar: Ek Chidiyaghar || A Day in College by Infinix',
-        videoId: 'T_bIUw7GdTU',
+        videoId: '4ZXiuOQn7bw',
         category: 'Lifestyle Campaign',
         slug: 'shiksha-ka-ghar-ek-chidiyaghar-a-day-in-college-by-infinix',
+      },
+      {
+        title: 'Infinix Brand Campaign Video 1',
+        videoId: 'NVGPApf1-xA',
+        category: 'Brand Campaign',
+        slug: 'infinix-brand-campaign-video-1',
+      },
+      {
+        title: 'Infinix Brand Campaign Video 2',
+        videoId: 'JMrJR72wkes',
+        category: 'Brand Campaign',
+        slug: 'infinix-brand-campaign-video-2',
       },
     ],
 
@@ -789,9 +827,27 @@ const CLIENT_DATA = {
     videos: [
       {
         title: 'Ameen | Muhfaad | AELAAN EP | Latest Rap 2020 | MAHARAJ',
-        videoId: 'T_bIUw7GdTU',
+        videoId: 'RTCcswAXtn0',
         category: 'Hip-Hop Music Video',
         slug: 'ameen-muhfaad-aelaan-ep-latest-rap-2020-maharaj',
+      },
+      {
+        title: 'Music Production Vol. 2',
+        videoId: 'o21H1tiTKOM',
+        category: 'Professional Music Video',
+        slug: 'music-production-vol-2',
+      },
+      {
+        title: 'Music Video Production 3',
+        videoId: 'CdBX0NTjlII',
+        category: 'Professional Music Video',
+        slug: 'music-video-production-3',
+      },
+      {
+        title: 'Music Video Production 4',
+        videoId: '9hIyf0FyYZ0',
+        category: 'Professional Music Video',
+        slug: 'music-video-production-4',
       },
       // {
       //   title:
