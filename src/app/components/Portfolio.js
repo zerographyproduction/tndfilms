@@ -69,12 +69,18 @@ export default function PortfolioPreview() {
                   <div className='aspect-[4/3] relative overflow-hidden group-hover:scale-[1.02] transition-all duration-300'>
                     {/* YouTube Thumbnail */}
                     <img
-                      src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                      src={
+                        project.client === 'Gates Foundation'
+                          ? '/Gates_thumbnail.png'
+                          : `https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`
+                      }
                       alt={project.title}
                       className='w-full h-full object-cover'
                       onError={(e) => {
                         // Fallback to medium quality thumbnail if maxres fails
-                        e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                        if (project.client !== 'Gates Foundation') {
+                          e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                        }
                       }}
                     />
 

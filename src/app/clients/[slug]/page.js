@@ -494,51 +494,85 @@ const CLIENT_DATA = {
     btsImages: ['/bts-travnat-1.jpg', '/bts-travnat-2.jpg'],
   },
 
-  'imi-bhubaneswar': {
-    name: 'IMI Bhubaneswar',
-    subtitle: 'Campus Life & Institutional Branding',
-    description: 'International Management Institute',
-    role: 'Pre-Production | Camera | Editing',
+  'imi-international-management-institute': {
+    name: 'IMI (International Management Institute)',
+    subtitle: 'Complete Video Production for India\'s Premier B-Schools',
+    description: 'International Management Institute - All Campuses',
+    role: 'Complete Video Production (Camera & Editing)',
     overview:
-      "TND Films collaborated with IMI Bhubaneswar through freelance producer Kuldeep Chauhan to create authentic campus life documentation. This project showcased the vibrant student culture, academic excellence, and infrastructure of one of India's premier management institutes through engaging digital content.",
+      "TND Films has been entrusted with handling the entire video production journey for IMI's digital presence across all three campuses (Delhi, Bhubaneswar & Kolkata). Through freelance producer Kuldeep Chauhan and in partnership with Ripul Aggarwal from AVR Events, we've created a consistent visual voice spanning student testimonials, event coverage, placement success stories, and institutional branding films. Every video reflects a deep understanding of academic storytelling and campus energy, optimized for YouTube, Instagram, and LinkedIn platforms.",
 
     team: [
       {
         name: 'Kuldeep Chauhan',
-        role: 'Freelance Producer',
+        role: 'Video Producer & Editor',
         description:
-          'Handled complete production independently - from pre-production planning to final delivery.',
+          'Complete ownership of content creation from pre-shoot coordination to final delivery, working end-to-end with minimal supervision while ensuring brand-aligned, high-quality content.',
       },
       {
         name: 'Ripul Aggarwal',
-        role: 'Creative Partner (AVR Events)',
+        role: 'Agency Partner (AVR Events)',
         description:
-          'Provided creative alignment and project coordination for streamlined execution.',
+          'Leading event production and providing creative alignment for smooth workflow across all IMI campaigns.',
       },
     ],
 
     services: [
-      'Campus Documentation',
-      'Institutional Brand Films',
-      'Digital Content Creation',
+      'Cross-Campus Video Production',
+      'Student & Alumni Testimonials',
+      'Event Coverage & Documentation',
+      'Institutional Branding Films',
+      'Social Media Content Creation',
+      'Podcast Production',
     ],
 
     highlights: [
-      'Authentic Storytelling: Captured real student interactions and campus activities.',
-      'Complete Production: Handled independently from concept to final export.',
-      'Multi-Platform Optimization: Content tailored for YouTube and social media platforms.',
+      'Multi-Campus Consistency: Maintaining consistent visual tone and storytelling format across IMI Delhi, IMI Bhubaneswar, and IMI Kolkata.',
+      'Complete Production Pipeline: Solo/multi-cam shooting, full editing, color correction, audio treatment, graphics integration, and platform optimization.',
+      'Long-term Partnership: Ongoing freelance collaboration showcasing trust, reliability, and consistent high-quality delivery across multiple campaigns and student intakes.',
+      'Diverse Content Portfolio: From campus festivals and convocation ceremonies to student testimonials and professional podcasts.',
     ],
 
     videos: [
       {
-        title: 'IMI Bhubaneswar – Campus Life Video Production',
+        title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
         videoId: 'T_bIUw7GdTU',
+        category: 'Event Video',
+        slug: 'campus-life-imi-bhubaneswar-kritva-2024',
+      },
+      {
+        title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
+        videoId: 'wTjB4bLzHKo',
+        category: 'Podcast Film',
+        slug: 'imi-insights-podcast-ep-4-hr-catalyst-orange-economy',
+      },
+      {
+        title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
+        videoId: 'PmX_y3ApaDs',
+        category: 'Event Documentation',
+        slug: 'imi-delhi-41st-annual-convocation-ceremony-highlights',
+      },
+      {
+        title: 'SIP Experience | Anjali Singh | PGDM',
+        videoId: 'YnkPGjlk71s',
+        category: 'Student Testimonial',
+        slug: 'sip-experience-anjali-singh-pgdm',
+      },
+      {
+        title: 'WELCOME BATCH OF 2023-25',
+        videoId: 'W27wOTPahDk',
         category: 'Institutional Film',
-        slug: 'imi-bhubaneswar-campus-life-video-production',
+        slug: 'welcome-batch-of-2023-25',
+      },
+      {
+        title: 'National Alumni Meet 2023',
+        videoId: 'lyBQYLtnKdM',
+        category: 'Event Documentation',
+        slug: 'national-alumni-meet-2023',
       },
     ],
 
-    // btsImages: ['/bts-imi-1.jpg', '/bts-imi-2.jpg'],
+    // btsImages: ['/bts-imi-1.jpg', '/bts-imi-2.jpg', '/bts-imi-3.jpg'],
   },
 
   'irma-anand': {

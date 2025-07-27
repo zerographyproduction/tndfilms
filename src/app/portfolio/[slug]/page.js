@@ -454,15 +454,15 @@ const VIDEO_ITEMS = [
     client: 'Gates Foundation',
     featured: true,
   },
-  {
-    title: 'BMW Films',
-    videoId: 'wTjB4bLzHKo',
-    category: 'brands',
-    description: 'Premium motorcycle brand campaign',
-    year: '2024',
-    client: 'BMW',
-    featured: true,
-  },
+  // {
+  //   title: 'BMW Films',
+  //   videoId: 'wTjB4bLzHKo',
+  //   category: 'brands',
+  //   description: 'Premium motorcycle brand campaign',
+  //   year: '2024',
+  //   client: 'BMW',
+  //   featured: true,
+  // },
   {
     title: 'Premium Automotive',
     videoId: '1ZVsxIGs1Kg',
@@ -760,6 +760,92 @@ const VIDEO_ITEMS = [
   //   year: '2024',
   //   client: 'Marketing Client',
   // },
+  
+  // IMI (International Management Institute) Videos
+  {
+    title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
+    videoId: 'T_bIUw7GdTU',
+    category: 'documentary',
+    description: 'Event Video - Campus festival documentation showcasing vibrant student culture and academic excellence',
+    year: '2024',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Event Video',
+    scope: 'Complete Video Production (Camera & Editing)',
+    fullDescription:
+      "TND Films captured the essence of IMI Bhubaneswar's annual cultural festival Kritva 2024, showcasing the vibrant student culture, academic excellence, and campus energy. Through freelance producer Kuldeep Chauhan's complete production approach, we documented the festival's key moments, student performances, and institutional highlights, creating authentic content that reflects the dynamic spirit of one of India's premier management institutes.",
+    tags: ['Campus Life', 'Event', 'Student Culture', 'Academic Excellence', 'Festival'],
+  },
+  {
+    title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
+    videoId: 'wTjB4bLzHKo',
+    category: 'podcast',
+    description: 'Podcast Film - Professional academic discussion on HR and economic development',
+    year: '2024',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Podcast Film',
+    scope: 'Complete Production (Pre to Post)',
+    fullDescription:
+      "Professional podcast production featuring academic discourse on Human Resources as a catalyst in India's Orange Economy. Our team handled the complete production pipeline from setup to final delivery, ensuring crisp audio quality, professional cinematography, and engaging visual elements that enhance the educational content for IMI's digital platforms.",
+    tags: ['Podcast', 'HR', 'Economy', 'Academic Discussion', 'Professional Development'],
+  },
+  {
+    title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
+    videoId: 'PmX_y3ApaDs',
+    category: 'documentary',
+    description: 'Event Documentation - Annual convocation ceremony highlights showcasing academic achievements',
+    year: '2024',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Event Documentation',
+    scope: 'Ceremonial Coverage & Post-Production',
+    fullDescription:
+      "Comprehensive documentation of IMI Delhi's 41st Annual Convocation Ceremony, capturing the milestone moments of academic achievement and institutional pride. Our production team ensured every significant moment was preserved with dignity and professionalism, from graduate recognition to keynote speeches, creating lasting memories for students, faculty, and families.",
+    tags: ['Convocation', 'Academic Achievement', 'Graduation', 'Ceremony', 'Milestone'],
+  },
+  {
+    title: 'SIP Experience | Anjali Singh | PGDM',
+    videoId: 'YnkPGjlk71s',
+    category: 'documentary',
+    description: 'Student Testimonial - Summer Internship Program experience sharing and career insights',
+    year: '2024',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Student Testimonial',
+    scope: 'Interview Production & Editing',
+    fullDescription:
+      "Authentic student testimonial featuring Anjali Singh sharing her Summer Internship Program (SIP) experience as part of the PGDM curriculum. Through careful interview production and thoughtful editing, we captured genuine insights about career development, industry exposure, and the transformative impact of IMI's academic programs on student growth and professional readiness.",
+    tags: ['Student Testimonial', 'Internship', 'Career', 'PGDM', 'Professional Growth'],
+  },
+  {
+    title: 'WELCOME BATCH OF 2023-25',
+    videoId: 'W27wOTPahDk',
+    category: 'documentary',
+    description: 'Institutional Film - Welcome video for new student batch showcasing campus facilities and culture',
+    year: '2024',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Institutional Film',
+    scope: 'Campus Tour Production & Branding',
+    fullDescription:
+      "Welcoming video for the incoming PGDM batch of 2023-25, designed to introduce new students to IMI's campus culture, facilities, and academic environment. Our production approach balanced institutional branding with authentic student perspectives, creating an engaging orientation experience that helps new students feel connected to the IMI community from day one.",
+    tags: ['Welcome Video', 'New Students', 'Campus Tour', 'Institutional', 'Orientation'],
+  },
+  {
+    title: 'National Alumni Meet 2023',
+    videoId: 'lyBQYLtnKdM',
+    category: 'documentary',
+    description: 'Event Documentation - Alumni reunion showcasing professional networks and institutional legacy',
+    year: '2023',
+    client: 'IMI (International Management Institute)',
+    featured: false,
+    subtitle: 'Event Documentation',
+    scope: 'Alumni Event Coverage & Networking Documentation',
+    fullDescription:
+      "Documentation of IMI's National Alumni Meet 2023, capturing the reunion of successful graduates and celebrating the institution's legacy of excellence. Our coverage focused on professional networking moments, success stories, and the strong alumni-institution bond that defines IMI's continuing impact on business leadership across India and beyond.",
+    tags: ['Alumni', 'Networking', 'Professional Development', 'Legacy', 'Business Leadership'],
+  },
 ];
 
 // Helper function to create slug from title
@@ -1094,9 +1180,9 @@ export default function VideoDetailPage() {
                   ) {
                     clientSlug = 'itel-india';
                     clientName = 'itel';
-                  } else if (clientLower?.includes('gates')) {
-                    clientSlug = 'gates-foundation';
-                    clientName = 'Gates Foundation';
+                  // } else if (clientLower?.includes('gates')) {
+                  //   clientSlug = 'gates-foundation';
+                  //   clientName = 'Gates Foundation';
                   } else if (clientLower?.includes('jumpin')) {
                     clientSlug = 'jumpin-heights';
                     clientName = 'Jumpin Heights';

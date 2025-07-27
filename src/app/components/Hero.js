@@ -1,7 +1,13 @@
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Play, ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Play,
+  ArrowRight,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+} from 'lucide-react';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -16,7 +22,7 @@ export default function Hero() {
       description:
         'We craft visual narratives that captivate, inspire, and drive meaningful connections between brands and audiences.',
       video: '/Travel_1.mp4',
-      category: 'Travel & Adventure'
+      category: 'Travel & Adventure',
     },
     {
       title: 'Stories That',
@@ -24,23 +30,23 @@ export default function Hero() {
       description:
         'From concept to delivery, we bring unparalleled creativity and technical excellence to every frame.',
       video: '/Architectural Photography.mp4',
-      category: 'Architectural'
+      category: 'Architectural',
     },
     {
       title: 'Visual Excellence',
       subtitle: 'Redefined',
       description:
-        'Award-winning cinematography meets cutting-edge production in every project we undertake.',
+        'Photography meets cutting-edge production in every project we undertake.',
       video: '/Product_Photography.mp4',
-      category: 'Product Films'
+      category: 'Product Films',
     },
     {
-      title: 'Capturing Life\'s',
+      title: "Capturing Life's",
       subtitle: 'Greatest Moments',
       description:
         'Professional event documentation that preserves memories and tells compelling stories.',
       video: '/event_Photography.mp4',
-      category: 'Event Coverage'
+      category: 'Event Coverage',
     },
     {
       title: 'Portraits That',
@@ -48,19 +54,19 @@ export default function Hero() {
       description:
         'Intimate portraiture that captures the essence, character, and authenticity of our subjects.',
       video: '/potrait_photography.mp4',
-      category: 'Portrait Photography'
+      category: 'Portrait Photography',
     },
   ];
 
   // Auto-advance hero slides with progress
   useEffect(() => {
     if (isPaused) return;
-    
+
     const duration = 6000; // 6 seconds
     const interval = 50; // Update every 50ms
-    
+
     setProgress(0); // Reset progress when slide changes
-    
+
     const progressTimer = setInterval(() => {
       setProgress((prev) => {
         const newProgress = prev + (interval / duration) * 100;
@@ -83,7 +89,9 @@ export default function Hero() {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+    setCurrentSlide(
+      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
+    );
   };
 
   return (
@@ -95,14 +103,14 @@ export default function Hero() {
     >
       {/* Background Video Carousel */}
       <div className='absolute inset-0'>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode='wait'>
           <motion.div
             key={currentSlide}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
-            className="absolute inset-0"
+            className='absolute inset-0'
           >
             <video
               autoPlay
@@ -119,7 +127,7 @@ export default function Hero() {
         </AnimatePresence>
         <div className='absolute inset-0 bg-black/40' />
         <div className='absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-red-500/20' />
-        
+
         {/* Video Category Badge */}
         <motion.div
           key={`badge-${currentSlide}`}
@@ -127,10 +135,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="absolute top-24 left-6 md:left-12 z-10"
+          className='absolute top-24 left-6 md:left-12 z-10'
         >
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1 rounded-full">
-            <span className="text-white/90 text-xs font-medium tracking-wider uppercase">
+          <div className='bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1 rounded-full'>
+            <span className='text-white/90 text-xs font-medium tracking-wider uppercase'>
               {heroSlides[currentSlide].category}
             </span>
           </div>
@@ -152,17 +160,16 @@ export default function Hero() {
           transition={{ duration: 10, repeat: Infinity }}
         />
 
-
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:text-red-500 transition-all duration-300"
+          className='absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:text-red-500 transition-all duration-300'
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:text-red-500 transition-all duration-300"
+          className='absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:text-red-500 transition-all duration-300'
         >
           <ChevronRight size={20} />
         </button>
@@ -234,25 +241,25 @@ export default function Hero() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="relative w-12 h-1 bg-white/50 group-hover:bg-white/70 transition-all duration-300 overflow-hidden">
+              <div className='relative w-12 h-1 bg-white/50 group-hover:bg-white/70 transition-all duration-300 overflow-hidden'>
                 {index === currentSlide && (
                   <motion.div
-                    className="absolute top-0 left-0 h-full bg-red-500"
+                    className='absolute top-0 left-0 h-full bg-red-500'
                     style={{ width: `${progress}%` }}
                     transition={{ duration: 0.1 }}
                   />
                 )}
                 {index === currentSlide && progress === 0 && (
-                  <div className="absolute top-0 left-0 w-full h-full bg-red-500" />
+                  <div className='absolute top-0 left-0 w-full h-full bg-red-500' />
                 )}
               </div>
-              
+
               {/* Tooltip */}
-              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                <div className="bg-black/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+              <div className='absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none'>
+                <div className='bg-black/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded whitespace-nowrap'>
                   {slide.category}
                 </div>
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black/80"></div>
+                <div className='absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black/80'></div>
               </div>
             </motion.button>
           ))}
@@ -263,9 +270,10 @@ export default function Hero() {
           key={`counter-${currentSlide}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-white/60 text-xs font-medium tracking-wider mt-4"
+          className='text-white/60 text-xs font-medium tracking-wider mt-4'
         >
-          {String(currentSlide + 1).padStart(2, '0')} / {String(heroSlides.length).padStart(2, '0')}
+          {String(currentSlide + 1).padStart(2, '0')} /{' '}
+          {String(heroSlides.length).padStart(2, '0')}
         </motion.div>
       </div>
 

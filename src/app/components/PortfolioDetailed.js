@@ -115,15 +115,15 @@ export default function EnhancedPortfolio() {
       client: 'Gates Foundation',
       featured: true,
     },
-    {
-      title: 'BMW Films',
-      videoId: 'wTjB4bLzHKo',
-      category: 'brands',
-      description: 'Premium motorcycle brand campaign',
-      year: '2024',
-      client: 'BMW',
-      featured: true,
-    },
+    // {
+    //   title: 'BMW Films',
+    //   videoId: 'wTjB4bLzHKo',
+    //   category: 'brands',
+    //   description: 'Premium motorcycle brand campaign',
+    //   year: '2024',
+    //   client: 'BMW',
+    //   featured: true,
+    // },
     {
       title: 'Premium Automotive',
       videoId: '1ZVsxIGs1Kg',
@@ -421,6 +421,68 @@ export default function EnhancedPortfolio() {
     //   year: '2024',
     //   client: 'Marketing Client',
     // },
+    
+    // IMI (International Management Institute) Videos
+    {
+      title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
+      videoId: 'T_bIUw7GdTU',
+      category: 'documentary',
+      description: 'Event Video - Campus festival documentation showcasing vibrant student culture and academic excellence',
+      year: '2024',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Campus Life', 'Event', 'Student Culture', 'Academic Excellence'],
+    },
+    {
+      title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
+      videoId: 'wTjB4bLzHKo',
+      category: 'podcast',
+      description: 'Podcast Film - Professional academic discussion on HR and economic development',
+      year: '2024',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Podcast', 'HR', 'Economy', 'Academic Discussion'],
+    },
+    {
+      title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
+      videoId: 'PmX_y3ApaDs',
+      category: 'documentary',
+      description: 'Event Documentation - Annual convocation ceremony highlights showcasing academic achievements',
+      year: '2024',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Convocation', 'Academic Achievement', 'Graduation', 'Ceremony'],
+    },
+    {
+      title: 'SIP Experience | Anjali Singh | PGDM',
+      videoId: 'YnkPGjlk71s',
+      category: 'documentary',
+      description: 'Student Testimonial - Summer Internship Program experience sharing and career insights',
+      year: '2024',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Student Testimonial', 'Internship', 'Career', 'PGDM'],
+    },
+    {
+      title: 'WELCOME BATCH OF 2023-25',
+      videoId: 'W27wOTPahDk',
+      category: 'documentary',
+      description: 'Institutional Film - Welcome video for new student batch showcasing campus facilities and culture',
+      year: '2024',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Welcome Video', 'New Students', 'Campus Tour', 'Institutional'],
+    },
+    {
+      title: 'National Alumni Meet 2023',
+      videoId: 'lyBQYLtnKdM',
+      category: 'documentary',
+      description: 'Event Documentation - Alumni reunion showcasing professional networks and institutional legacy',
+      year: '2023',
+      client: 'IMI (International Management Institute)',
+      featured: false,
+      tags: ['Alumni', 'Networking', 'Professional Development', 'Legacy'],
+    },
   ];
 
   const portfolioItems = VIDEO_ITEMS;
@@ -695,14 +757,23 @@ export default function EnhancedPortfolio() {
                 >
                   <div className='bg-white rounded-3xl border border-gray-100 hover:shadow-2xl hover:shadow-gray-900/10 transition-all duration-500 overflow-hidden hover:-translate-y-3 hover:scale-[1.02] backdrop-blur-sm'>
                     <div className='aspect-[16/10] relative overflow-hidden rounded-t-3xl'>
-                      {/* YouTube Thumbnail */}
+                      {/* Video Thumbnail */}
                       <img
-                        src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                        src={
+                          project.client === 'Gates Foundation' 
+                            ? '/Gates_thumbnail.png'
+                            : `https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`
+                        }
                         alt={project.title}
                         className='w-full h-full object-cover'
                         onError={(e) => {
-                          // Fallback to medium quality thumbnail if maxres fails
-                          e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                          if (project.client === 'Gates Foundation') {
+                            // If Gates Foundation thumbnail fails, use a fallback
+                            e.target.src = '/Gates_thumbnail.png';
+                          } else {
+                            // Fallback to medium quality thumbnail if maxres fails
+                            e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                          }
                         }}
                       />
 
@@ -897,12 +968,18 @@ export default function EnhancedPortfolio() {
                     >
                       {/* YouTube Thumbnail */}
                       <img
-                        src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                        src={
+                          project.client === 'Gates Foundation'
+                            ? '/Gates_thumbnail.png'
+                            : `https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`
+                        }
                         alt={project.title}
                         className='w-full h-full object-cover'
                         onError={(e) => {
                           // Fallback to medium quality thumbnail if maxres fails
-                          e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                          if (project.client !== 'Gates Foundation') {
+                            e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`;
+                          }
                         }}
                       />
 
