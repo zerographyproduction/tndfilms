@@ -442,7 +442,8 @@ export default function EnhancedPortfolio() {
       title: 'Infinix Brand Campaign Video 1',
       videoId: 'NVGPApf1-xA',
       category: 'brands',
-      description: 'Brand Campaign - Lifestyle and technology integration showcase',
+      description:
+        'Brand Campaign - Lifestyle and technology integration showcase',
       year: '2022',
       client: 'Infinix India',
       featured: false,
@@ -452,7 +453,8 @@ export default function EnhancedPortfolio() {
       title: 'Infinix Brand Campaign Video 2',
       videoId: 'JMrJR72wkes',
       category: 'brands',
-      description: 'Brand Campaign - Product features and lifestyle integration',
+      description:
+        'Brand Campaign - Product features and lifestyle integration',
       year: '2022',
       client: 'Infinix India',
       featured: false,
@@ -622,11 +624,7 @@ export default function EnhancedPortfolio() {
       year: '2024',
       client: 'IMI (International Management Institute)',
       featured: false,
-      tags: [
-        'Academic Excellence',
-        'Institutional',
-        'Educational Content',
-      ],
+      tags: ['Academic Excellence', 'Institutional', 'Educational Content'],
     },
 
     // Additional Educational Institution Content

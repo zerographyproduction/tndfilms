@@ -256,7 +256,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'IMI Bhubaneswar – Campus Life Video Production',
-    videoId: 'T_bIUw7GdTU', // Replace with actual video ID
+    videoId: 'mgfNKKeKrYc',
     category: 'brands',
     description:
       'Institutional Brand Film - Showcasing vibrant student life and academic culture of premier B-School',
@@ -764,7 +764,7 @@ const VIDEO_ITEMS = [
   // IMI (International Management Institute) Videos
   {
     title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
-    videoId: 'T_bIUw7GdTU',
+    videoId: 'mgfNKKeKrYc',
     category: 'documentary',
     description: 'Event Video - Campus festival documentation showcasing vibrant student culture and academic excellence',
     year: '2024',
@@ -778,7 +778,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
-    videoId: 'wTjB4bLzHKo',
+    videoId: 'nWRGCuiJMy8',
     category: 'podcast',
     description: 'Podcast Film - Professional academic discussion on HR and economic development',
     year: '2024',
@@ -792,7 +792,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
-    videoId: 'PmX_y3ApaDs',
+    videoId: 'CwWf5C9PUJE',
     category: 'documentary',
     description: 'Event Documentation - Annual convocation ceremony highlights showcasing academic achievements',
     year: '2024',
@@ -806,7 +806,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'SIP Experience | Anjali Singh | PGDM',
-    videoId: 'YnkPGjlk71s',
+    videoId: 'ybMAVHPuuZo',
     category: 'documentary',
     description: 'Student Testimonial - Summer Internship Program experience sharing and career insights',
     year: '2024',
@@ -820,7 +820,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'WELCOME BATCH OF 2023-25',
-    videoId: 'W27wOTPahDk',
+    videoId: 'HI4nY13qkkA',
     category: 'documentary',
     description: 'Institutional Film - Welcome video for new student batch showcasing campus facilities and culture',
     year: '2024',
@@ -834,7 +834,7 @@ const VIDEO_ITEMS = [
   },
   {
     title: 'National Alumni Meet 2023',
-    videoId: 'lyBQYLtnKdM',
+    videoId: 'VUh78cxA_04',
     category: 'documentary',
     description: 'Event Documentation - Alumni reunion showcasing professional networks and institutional legacy',
     year: '2023',
@@ -1437,8 +1437,8 @@ export default function VideoDetailPage() {
                     clientLower?.includes('imi') ||
                     clientLower?.includes('bhubaneswar')
                   ) {
-                    clientSlug = 'imi-bhubaneswar';
-                    clientName = 'IMI Bhubaneswar';
+                    clientSlug = 'imi-international-management-institute';
+                    clientName = 'IMI';
                   } else if (clientLower?.includes('irma')) {
                     clientSlug = 'irma-anand';
                     clientName = 'IRMA';

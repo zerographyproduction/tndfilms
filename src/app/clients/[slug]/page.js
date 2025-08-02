@@ -849,20 +849,20 @@ const CLIENT_DATA = {
         category: 'Professional Music Video',
         slug: 'music-video-production-4',
       },
-      // {
-      //   title:
-      //     'Ignore - Official song | Indeep Bakshi | Ashnoor kaur | Ayush Talniya | Punjabi song 2021',
-      //   videoId: 'T_bIUw7GdTU',
-      //   category: 'Punjabi Music Video',
-      //   slug: 'ignore-official-song-indeep-bakshi-ashnoor-kaur-ayush-talniya-punjabi-song-2021',
-      // },
-      // {
-      //   title:
-      //     'Prabh Gill: Mera Good Luck (Video Song) Desi Routz | Esshanya S Maheshwari |Latest Punjabi Song 2021',
-      //   videoId: 'T_bIUw7GdTU',
-      //   category: 'Punjabi Music Video',
-      //   slug: 'prabh-gill-mera-good-luck-video-song-desi-routz-esshanya-s-maheshwari-latest-punjabi-song-2021',
-      // },
+      {
+        title:
+          'Ignore - Official song | Indeep Bakshi | Ashnoor kaur | Ayush Talniya | Punjabi song 2021',
+        videoId: 'T_bIUw7GdTU',
+        category: 'Punjabi Music Video',
+        slug: 'ignore-official-song-indeep-bakshi-ashnoor-kaur-ayush-talniya-punjabi-song-2021',
+      },
+      {
+        title:
+          'Prabh Gill: Mera Good Luck (Video Song) Desi Routz | Esshanya S Maheshwari |Latest Punjabi Song 2021',
+        videoId: 'T_bIUw7GdTU',
+        category: 'Punjabi Music Video',
+        slug: 'prabh-gill-mera-good-luck-video-song-desi-routz-esshanya-s-maheshwari-latest-punjabi-song-2021',
+      },
       // {
       //   title:
       //     'Ik Din (Full Song) Rajat Sahani | Mitanshi Adhikari | Akshay Upadhayay | Latest Punjabi Songs',
@@ -876,12 +876,12 @@ const CLIENT_DATA = {
       //   category: 'Professional Music Video',
       //   slug: 'music-video-project',
       // },
-      {
-        title: 'Music Production Vol. 2',
-        videoId: 'o21H1tiTKOM',
-        category: 'Professional Music Video',
-        slug: 'music-production-vol-2',
-      },
+      // {
+      //   title: 'Music Production Vol. 2',
+      //   videoId: 'o21H1tiTKOM',
+      //   category: 'Professional Music Video',
+      //   slug: 'music-production-vol-2',
+      // },
     ],
 
     // btsImages: ['/bts-music-1.jpg', '/bts-music-2.jpg', '/bts-music-3.jpg'],
