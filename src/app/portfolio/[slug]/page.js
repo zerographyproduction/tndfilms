@@ -760,13 +760,14 @@ const VIDEO_ITEMS = [
   //   year: '2024',
   //   client: 'Marketing Client',
   // },
-  
+
   // IMI (International Management Institute) Videos
   {
     title: 'Campus Life – IMI Bhubaneswar Kritva 2024',
     videoId: 'mgfNKKeKrYc',
     category: 'documentary',
-    description: 'Event Video - Campus festival documentation showcasing vibrant student culture and academic excellence',
+    description:
+      'Event Video - Campus festival documentation showcasing vibrant student culture and academic excellence',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -774,13 +775,21 @@ const VIDEO_ITEMS = [
     scope: 'Complete Video Production (Camera & Editing)',
     fullDescription:
       "TND Films captured the essence of IMI Bhubaneswar's annual cultural festival Kritva 2024, showcasing the vibrant student culture, academic excellence, and campus energy. Through freelance producer Kuldeep Chauhan's complete production approach, we documented the festival's key moments, student performances, and institutional highlights, creating authentic content that reflects the dynamic spirit of one of India's premier management institutes.",
-    tags: ['Campus Life', 'Event', 'Student Culture', 'Academic Excellence', 'Festival'],
+    tags: [
+      'Campus Life',
+      'Event',
+      'Student Culture',
+      'Academic Excellence',
+      'Festival',
+    ],
   },
   {
-    title: 'IMI Insights Podcast | Ep 4 - HR: A Catalyst in India\'s Orange Economy',
+    title:
+      "IMI Insights Podcast | Ep 4 - HR: A Catalyst in India's Orange Economy",
     videoId: 'nWRGCuiJMy8',
     category: 'podcast',
-    description: 'Podcast Film - Professional academic discussion on HR and economic development',
+    description:
+      'Podcast Film - Professional academic discussion on HR and economic development',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -788,13 +797,20 @@ const VIDEO_ITEMS = [
     scope: 'Complete Production (Pre to Post)',
     fullDescription:
       "Professional podcast production featuring academic discourse on Human Resources as a catalyst in India's Orange Economy. Our team handled the complete production pipeline from setup to final delivery, ensuring crisp audio quality, professional cinematography, and engaging visual elements that enhance the educational content for IMI's digital platforms.",
-    tags: ['Podcast', 'HR', 'Economy', 'Academic Discussion', 'Professional Development'],
+    tags: [
+      'Podcast',
+      'HR',
+      'Economy',
+      'Academic Discussion',
+      'Professional Development',
+    ],
   },
   {
     title: 'IMI Delhi | 41st Annual Convocation Ceremony Highlights',
     videoId: 'CwWf5C9PUJE',
     category: 'documentary',
-    description: 'Event Documentation - Annual convocation ceremony highlights showcasing academic achievements',
+    description:
+      'Event Documentation - Annual convocation ceremony highlights showcasing academic achievements',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -802,13 +818,20 @@ const VIDEO_ITEMS = [
     scope: 'Ceremonial Coverage & Post-Production',
     fullDescription:
       "Comprehensive documentation of IMI Delhi's 41st Annual Convocation Ceremony, capturing the milestone moments of academic achievement and institutional pride. Our production team ensured every significant moment was preserved with dignity and professionalism, from graduate recognition to keynote speeches, creating lasting memories for students, faculty, and families.",
-    tags: ['Convocation', 'Academic Achievement', 'Graduation', 'Ceremony', 'Milestone'],
+    tags: [
+      'Convocation',
+      'Academic Achievement',
+      'Graduation',
+      'Ceremony',
+      'Milestone',
+    ],
   },
   {
     title: 'SIP Experience | Anjali Singh | PGDM',
     videoId: 'ybMAVHPuuZo',
     category: 'documentary',
-    description: 'Student Testimonial - Summer Internship Program experience sharing and career insights',
+    description:
+      'Student Testimonial - Summer Internship Program experience sharing and career insights',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -816,13 +839,20 @@ const VIDEO_ITEMS = [
     scope: 'Interview Production & Editing',
     fullDescription:
       "Authentic student testimonial featuring Anjali Singh sharing her Summer Internship Program (SIP) experience as part of the PGDM curriculum. Through careful interview production and thoughtful editing, we captured genuine insights about career development, industry exposure, and the transformative impact of IMI's academic programs on student growth and professional readiness.",
-    tags: ['Student Testimonial', 'Internship', 'Career', 'PGDM', 'Professional Growth'],
+    tags: [
+      'Student Testimonial',
+      'Internship',
+      'Career',
+      'PGDM',
+      'Professional Growth',
+    ],
   },
   {
     title: 'WELCOME BATCH OF 2023-25',
     videoId: 'HI4nY13qkkA',
     category: 'documentary',
-    description: 'Institutional Film - Welcome video for new student batch showcasing campus facilities and culture',
+    description:
+      'Institutional Film - Welcome video for new student batch showcasing campus facilities and culture',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -830,13 +860,20 @@ const VIDEO_ITEMS = [
     scope: 'Campus Tour Production & Branding',
     fullDescription:
       "Welcoming video for the incoming PGDM batch of 2023-25, designed to introduce new students to IMI's campus culture, facilities, and academic environment. Our production approach balanced institutional branding with authentic student perspectives, creating an engaging orientation experience that helps new students feel connected to the IMI community from day one.",
-    tags: ['Welcome Video', 'New Students', 'Campus Tour', 'Institutional', 'Orientation'],
+    tags: [
+      'Welcome Video',
+      'New Students',
+      'Campus Tour',
+      'Institutional',
+      'Orientation',
+    ],
   },
   {
     title: 'National Alumni Meet 2023',
     videoId: 'VUh78cxA_04',
     category: 'documentary',
-    description: 'Event Documentation - Alumni reunion showcasing professional networks and institutional legacy',
+    description:
+      'Event Documentation - Alumni reunion showcasing professional networks and institutional legacy',
     year: '2023',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -844,7 +881,13 @@ const VIDEO_ITEMS = [
     scope: 'Alumni Event Coverage & Networking Documentation',
     fullDescription:
       "Documentation of IMI's National Alumni Meet 2023, capturing the reunion of successful graduates and celebrating the institution's legacy of excellence. Our coverage focused on professional networking moments, success stories, and the strong alumni-institution bond that defines IMI's continuing impact on business leadership across India and beyond.",
-    tags: ['Alumni', 'Networking', 'Professional Development', 'Legacy', 'Business Leadership'],
+    tags: [
+      'Alumni',
+      'Networking',
+      'Professional Development',
+      'Legacy',
+      'Business Leadership',
+    ],
   },
 
   // Additional Tata Motors Videos
@@ -852,7 +895,8 @@ const VIDEO_ITEMS = [
     title: 'Hero Stories from Indonesia | Tata Prima | Mining & Construction',
     videoId: '4P_0BSWME5E',
     category: 'brands',
-    description: 'Brand Campaign - Commercial vehicle showcase highlighting durability and performance in Indonesia mining sector',
+    description:
+      'Brand Campaign - Commercial vehicle showcase highlighting durability and performance in Indonesia mining sector',
     year: '2024',
     client: 'Tata Motors',
     featured: false,
@@ -860,13 +904,21 @@ const VIDEO_ITEMS = [
     scope: 'Director of Photography (DOP)',
     fullDescription:
       "Part of Tata Motors' global HeroStories campaign, this powerful brand film showcases the real-world impact of Tata Prima vehicles in Indonesia's challenging mining and construction environments. As Director of Photography, Vipin Kumar Pal captured authentic customer journeys, demonstrating how Tata Motors vehicles enable progress and reliability in demanding industrial settings.\n\nThe shoot demanded technical precision and adaptability in harsh mining environments, with handheld run-and-gun setups combined with carefully orchestrated cinematic sequences. The cinematography served as an emotional bridge between viewers and the featured operators who rely daily on Tata vehicles to drive their industrial operations forward.\n\nThis film celebrates not only the legacy of Tata Motors but also amplifies the voice of its global customer base with authenticity and heart, showcasing the durability and performance that define Tata's commercial vehicle excellence.",
-    tags: ['Automotive', 'Global Campaign', 'Customer Stories', 'Mining', 'Indonesia', 'Commercial Vehicles'],
+    tags: [
+      'Automotive',
+      'Global Campaign',
+      'Customer Stories',
+      'Mining',
+      'Indonesia',
+      'Commercial Vehicles',
+    ],
   },
   {
     title: '#HeroStories from Vietnam | Tata Super Ace | FMCG',
     videoId: 'AT94cyerIPo',
     category: 'brands',
-    description: 'Brand Film - Corporate storytelling showcasing Tata Motors heritage and innovation in Vietnam FMCG sector',
+    description:
+      'Brand Film - Corporate storytelling showcasing Tata Motors heritage and innovation in Vietnam FMCG sector',
     year: '2024',
     client: 'Tata Motors',
     featured: false,
@@ -874,13 +926,21 @@ const VIDEO_ITEMS = [
     scope: 'Director of Photography (DOP)',
     fullDescription:
       "Another compelling chapter in Tata Motors' global HeroStories campaign, this brand film explores how Tata Super Ace vehicles support Vietnam's FMCG (Fast-Moving Consumer Goods) distribution network. Through authentic customer storytelling, the film demonstrates the vehicle's reliability and efficiency in last-mile delivery operations.\n\nVipin Kumar Pal's cinematography captures the dynamic energy of Vietnam's bustling FMCG distribution system, from warehouse operations to street-level deliveries. The visual narrative focuses on human-centric moments while maintaining a polished, brand-aligned aesthetic that celebrates both the vehicle's capabilities and the entrepreneurial spirit of its operators.\n\nThe film stands as a testament to Tata Motors' commitment to enabling mobility and economic progress across diverse global markets, showcasing how their vehicles become integral partners in local business success stories.",
-    tags: ['Automotive', 'Global Campaign', 'Customer Stories', 'Vietnam', 'FMCG', 'Distribution'],
+    tags: [
+      'Automotive',
+      'Global Campaign',
+      'Customer Stories',
+      'Vietnam',
+      'FMCG',
+      'Distribution',
+    ],
   },
   {
     title: '#HeroStories from Indonesia | Tata Prima | Mining',
     videoId: '0BsWJDmjGWs',
     category: 'brands',
-    description: 'Product Film - Vehicle features and capabilities demonstration in Indonesian mining operations',
+    description:
+      'Product Film - Vehicle features and capabilities demonstration in Indonesian mining operations',
     year: '2024',
     client: 'Tata Motors',
     featured: false,
@@ -888,7 +948,14 @@ const VIDEO_ITEMS = [
     scope: 'Director of Photography (DOP)',
     fullDescription:
       "The third installment in Tata Motors' Indonesian HeroStories series, this product-focused film showcases the Tata Prima's exceptional performance in mining operations. The documentary-style narrative captures real operators and their daily reliance on Tata vehicles in one of the world's most demanding industrial environments.\n\nThe cinematography challenge involved documenting heavy machinery operations while maintaining safety protocols and capturing the scale of mining operations. Vipin Kumar Pal employed a combination of wide establishing shots and intimate operator profiles to tell a complete story of industrial partnership and reliability.\n\nThis film reinforces Tata Motors' position as a trusted partner in global heavy industry, demonstrating how their commercial vehicles are engineered to withstand extreme conditions while supporting the livelihoods of operators who depend on them daily.",
-    tags: ['Automotive', 'Product Demo', 'Mining Operations', 'Indonesia', 'Heavy Industry', 'Reliability'],
+    tags: [
+      'Automotive',
+      'Product Demo',
+      'Mining Operations',
+      'Indonesia',
+      'Heavy Industry',
+      'Reliability',
+    ],
   },
 
   // Additional Portfolio Videos
@@ -896,7 +963,8 @@ const VIDEO_ITEMS = [
     title: 'Super Guru 4G – Entertainment Ki Duniya Ka Baap',
     videoId: 'lyBQYLtnKdM',
     category: 'brands',
-    description: 'Brand Campaign - Entertainment power of itel Super Guru 4G feature phone',
+    description:
+      'Brand Campaign - Entertainment power of itel Super Guru 4G feature phone',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -904,13 +972,21 @@ const VIDEO_ITEMS = [
     scope: 'End-to-End Production',
     fullDescription:
       "This vibrant brand campaign for itel India celebrates the entertainment capabilities of the Super Guru 4G feature phone, positioning it as the ultimate entertainment device for India's feature phone market. The film showcases the device's multimedia capabilities while connecting with young, aspirational audiences through energetic storytelling.\n\nOur production team handled the complete creative and technical execution, from concept development to final delivery. The campaign required a balance of product demonstration and lifestyle messaging, ensuring the Super Guru 4G's entertainment features were highlighted within relatable usage scenarios.\n\nThe visual approach emphasized dynamic editing, vibrant color palettes, and engaging performance sequences that reflect the energy and entertainment value proposition of the itel Super Guru 4G.",
-    tags: ['Brand Campaign', 'Feature Phone', 'Entertainment', 'itel', 'Youth Marketing'],
+    tags: [
+      'Brand Campaign',
+      'Feature Phone',
+      'Entertainment',
+      'itel',
+      'Youth Marketing',
+    ],
   },
   {
-    title: 'Power your gadgets with itel VoltX 65 GaN charger | 65W Fast Charging',
+    title:
+      'Power your gadgets with itel VoltX 65 GaN charger | 65W Fast Charging',
     videoId: 'yW7DNblm2dg',
     category: 'product',
-    description: 'Product Film - Fast charging technology showcase demonstrating 65W GaN charger capabilities',
+    description:
+      'Product Film - Fast charging technology showcase demonstrating 65W GaN charger capabilities',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -918,13 +994,20 @@ const VIDEO_ITEMS = [
     scope: 'Studio Production & Technical Demo',
     fullDescription:
       "A technical product film showcasing the itel VoltX 65 GaN charger's fast charging capabilities and advanced technology. The production focused on demonstrating real-world charging performance while highlighting the compact design and multi-device compatibility of this innovative charging solution.\n\nOur studio setup was designed to capture the technical aspects of the charger while maintaining visual appeal. Close-up shots of the charging process, device compatibility tests, and thermal performance demonstrations were combined with clean product cinematography to create an informative yet engaging product showcase.\n\nThe film successfully communicates the technical advantages of GaN technology while positioning the itel VoltX as a premium charging solution for modern device users.",
-    tags: ['Product Film', 'Fast Charging', 'GaN Technology', 'itel', 'Technical Demo'],
+    tags: [
+      'Product Film',
+      'Fast Charging',
+      'GaN Technology',
+      'itel',
+      'Technical Demo',
+    ],
   },
   {
     title: 'Unboxing the itel Buds Ace 2 TWS Earbuds | 50 hrs Playback',
     videoId: 'YnkPGjlk71s',
     category: 'product',
-    description: 'Product Film - TWS earbuds unboxing and features demonstration',
+    description:
+      'Product Film - TWS earbuds unboxing and features demonstration',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -932,27 +1015,34 @@ const VIDEO_ITEMS = [
     scope: 'Unboxing Production & Feature Demo',
     fullDescription:
       "An engaging unboxing and product demonstration video for the itel Buds Ace 2 TWS earbuds, highlighting the impressive 50-hour playback capability and premium audio features. The production combined satisfying unboxing sequences with practical feature demonstrations to create compelling product content.\n\nOur filming approach emphasized the premium unboxing experience while showcasing key product features including battery life, audio quality, and ergonomic design. Clean studio lighting and precise camera movements enhanced the product's premium positioning within the competitive TWS market.\n\nThe video successfully demonstrates the value proposition of the itel Buds Ace 2, combining technical specifications with lifestyle usage scenarios to appeal to audio enthusiasts and everyday users alike.",
-    tags: ['Product Film', 'TWS Earbuds', 'Audio Technology', 'itel', 'Unboxing'],
+    tags: [
+      'Product Film',
+      'TWS Earbuds',
+      'Audio Technology',
+      'itel',
+      'Unboxing',
+    ],
   },
-  {
-    title: 'itel | Jode Bharat Ka Har Dil | Cricket World Cup | 2mins',
-    videoId: 'W27wOTPahDk',
-    category: 'brands',
-    description: 'Brand Campaign - Cricket World Cup celebration campaign connecting with Indian cricket fans',
-    year: '2024',
-    client: 'itel India',
-    featured: false,
-    subtitle: 'Sports Marketing Campaign',
-    scope: 'Campaign Production & Sports Marketing',
-    fullDescription:
-      "A patriotic brand campaign celebrating itel's connection with Indian cricket fans during the Cricket World Cup. The campaign 'Jode Bharat Ka Har Dil' (Connecting Every Heart of India) positioned itel as the brand that unites cricket-loving Indians across the nation.\n\nThe production captured the emotional connection between cricket and Indian identity, showcasing how itel devices enable fans to stay connected with matches and share their passion. Dynamic editing and emotional storytelling created a campaign that resonated with cricket enthusiasts nationwide.\n\nThis campaign successfully leveraged the Cricket World Cup's massive reach to strengthen itel's brand connection with Indian consumers, demonstrating the brand's understanding of local culture and national pride.",
-    tags: ['Brand Campaign', 'Cricket World Cup', 'Sports Marketing', 'itel', 'National Pride'],
-  },
+  // {
+  //   title: 'itel | Jode Bharat Ka Har Dil | Cricket World Cup | 2mins',
+  //   videoId: 'W27wOTPahDk',
+  //   category: 'brands',
+  //   description: 'Brand Campaign - Cricket World Cup celebration campaign connecting with Indian cricket fans',
+  //   year: '2024',
+  //   client: 'itel India',
+  //   featured: false,
+  //   subtitle: 'Sports Marketing Campaign',
+  //   scope: 'Campaign Production & Sports Marketing',
+  //   fullDescription:
+  //     "A patriotic brand campaign celebrating itel's connection with Indian cricket fans during the Cricket World Cup. The campaign 'Jode Bharat Ka Har Dil' (Connecting Every Heart of India) positioned itel as the brand that unites cricket-loving Indians across the nation.\n\nThe production captured the emotional connection between cricket and Indian identity, showcasing how itel devices enable fans to stay connected with matches and share their passion. Dynamic editing and emotional storytelling created a campaign that resonated with cricket enthusiasts nationwide.\n\nThis campaign successfully leveraged the Cricket World Cup's massive reach to strengthen itel's brand connection with Indian consumers, demonstrating the brand's understanding of local culture and national pride.",
+  //   tags: ['Brand Campaign', 'Cricket World Cup', 'Sports Marketing', 'itel', 'National Pride'],
+  // },
   {
     title: 'itel | itel Smartphone | unboxing P40+',
     videoId: 'QHD_BJmJtn0',
     category: 'product',
-    description: 'Product Film - Smartphone unboxing and features showcase for P40+ model',
+    description:
+      'Product Film - Smartphone unboxing and features showcase for P40+ model',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -960,13 +1050,20 @@ const VIDEO_ITEMS = [
     scope: 'Product Cinematography & Demo',
     fullDescription:
       "A comprehensive unboxing and product showcase video for the itel P40+ smartphone, highlighting key features and value proposition within the competitive budget smartphone segment. The production focused on demonstrating practical usage scenarios while showcasing the device's design and capabilities.\n\nOur cinematography approach combined satisfying unboxing sequences with real-world usage demonstrations, ensuring viewers could appreciate both the product's physical qualities and functional capabilities. Clean studio work and practical lighting showcased the smartphone's design and interface effectively.\n\nThe video successfully positions the itel P40+ as an accessible yet feature-rich smartphone option, appealing to budget-conscious consumers without compromising on quality presentation.",
-    tags: ['Product Film', 'Smartphone', 'Unboxing', 'itel', 'Budget Technology'],
+    tags: [
+      'Product Film',
+      'Smartphone',
+      'Unboxing',
+      'itel',
+      'Budget Technology',
+    ],
   },
   {
     title: 'itel Smartwatch 2ES | Smartwatch | Fitness Watch',
     videoId: '4jN9Yb2MqK0',
     category: 'product',
-    description: 'Product Film - Smartwatch and fitness features showcase highlighting health monitoring capabilities',
+    description:
+      'Product Film - Smartwatch and fitness features showcase highlighting health monitoring capabilities',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -974,13 +1071,20 @@ const VIDEO_ITEMS = [
     scope: 'Lifestyle Product Demo',
     fullDescription:
       "A lifestyle-focused product film showcasing the itel Smartwatch 2ES and its comprehensive fitness tracking capabilities. The production demonstrated real-world usage scenarios while highlighting the watch's health monitoring features, design aesthetics, and user interface.\n\nOur approach combined product cinematography with lifestyle demonstrations, showing the smartwatch in various fitness and daily life contexts. The visual narrative emphasized the device's role as a comprehensive health and lifestyle companion rather than just a tech accessory.\n\nThe video effectively communicates the value proposition of the itel Smartwatch 2ES, positioning it as an accessible entry point into smart wearables for health-conscious consumers.",
-    tags: ['Product Film', 'Smartwatch', 'Fitness Technology', 'itel', 'Health Monitoring'],
+    tags: [
+      'Product Film',
+      'Smartwatch',
+      'Fitness Technology',
+      'itel',
+      'Health Monitoring',
+    ],
   },
   {
     title: 'Stunning TV Ads Shot with Excellence! | Itel | 55Inch',
     videoId: '-rZnKxE-Af4',
     category: 'brands',
-    description: 'TV Commercial - Television advertisement showcase highlighting itel TV excellence',
+    description:
+      'TV Commercial - Television advertisement showcase highlighting itel TV excellence',
     year: '2024',
     client: 'itel India',
     featured: false,
@@ -988,7 +1092,13 @@ const VIDEO_ITEMS = [
     scope: 'Commercial Production',
     fullDescription:
       "A high-impact television commercial showcasing itel's 55-inch TV excellence and visual quality. The campaign emphasized the superior viewing experience and value proposition of itel's large-screen television offerings within the competitive smart TV market.\n\nThe production utilized dynamic visual techniques to demonstrate screen quality, smart features, and entertainment capabilities. Professional lighting and cinematography ensured the TV's visual capabilities were effectively communicated while maintaining commercial advertising standards.\n\nThis commercial successfully positioned itel TVs as premium yet accessible entertainment solutions, appealing to families and entertainment enthusiasts seeking quality large-screen experiences.",
-    tags: ['TV Commercial', 'Large Screen TV', 'Entertainment', 'itel', 'Visual Excellence'],
+    tags: [
+      'TV Commercial',
+      'Large Screen TV',
+      'Entertainment',
+      'itel',
+      'Visual Excellence',
+    ],
   },
 
   // Music Videos
@@ -996,7 +1106,8 @@ const VIDEO_ITEMS = [
     title: 'Music Production Vol. 2',
     videoId: 'o21H1tiTKOM',
     category: 'music',
-    description: 'Professional Music Video - High-quality music video production with cinematic storytelling',
+    description:
+      'Professional Music Video - High-quality music video production with cinematic storytelling',
     year: '2024',
     client: 'Music Video Productions',
     featured: false,
@@ -1004,7 +1115,13 @@ const VIDEO_ITEMS = [
     scope: 'Music Video Production & Direction',
     fullDescription:
       "A professionally produced music video showcasing TND Films' expertise in music video production. The project combined dynamic cinematography with creative storytelling to create visually compelling content that enhances the musical narrative.\n\nOur production approach integrated performance sequences with cinematic storytelling, using professional lighting, camera movement, and post-production techniques to create a high-impact visual experience. The music video demonstrates our capability to work across different musical genres while maintaining visual excellence.\n\nThis production stands as an example of TND Films' versatility in music video creation, combining technical expertise with creative vision to deliver professional music content.",
-    tags: ['Music Video', 'Professional Production', 'Cinematography', 'Creative Direction', 'Performance'],
+    tags: [
+      'Music Video',
+      'Professional Production',
+      'Cinematography',
+      'Creative Direction',
+      'Performance',
+    ],
   },
 
   // Additional Missing Videos from PortfolioDetailed.js
@@ -1012,7 +1129,8 @@ const VIDEO_ITEMS = [
     title: 'Infinix Brand Campaign Video 1',
     videoId: 'NVGPApf1-xA',
     category: 'brands',
-    description: 'Brand Campaign - Lifestyle and technology integration showcase',
+    description:
+      'Brand Campaign - Lifestyle and technology integration showcase',
     year: '2022',
     client: 'Infinix India',
     featured: false,
@@ -1068,7 +1186,8 @@ const VIDEO_ITEMS = [
     title: 'IMI Additional Content',
     videoId: '3xMRzd0VN_E',
     category: 'documentary',
-    description: 'Institutional Content - Additional IMI video content showcasing academic excellence',
+    description:
+      'Institutional Content - Additional IMI video content showcasing academic excellence',
     year: '2024',
     client: 'IMI (International Management Institute)',
     featured: false,
@@ -1412,9 +1531,9 @@ export default function VideoDetailPage() {
                   ) {
                     clientSlug = 'itel-india';
                     clientName = 'itel';
-                  // } else if (clientLower?.includes('gates')) {
-                  //   clientSlug = 'gates-foundation';
-                  //   clientName = 'Gates Foundation';
+                    // } else if (clientLower?.includes('gates')) {
+                    //   clientSlug = 'gates-foundation';
+                    //   clientName = 'Gates Foundation';
                   } else if (clientLower?.includes('jumpin')) {
                     clientSlug = 'jumpin-heights';
                     clientName = 'Jumpin Heights';

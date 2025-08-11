@@ -92,12 +92,12 @@ const CLIENT_DATA = {
         category: 'Product Film',
         slug: 'unboxing-the-itel-buds-ace-2-tws-earbuds-50-hrs-playback',
       },
-      {
-        title: 'itel | Jode Bharat Ka Har Dil | Cricket World Cup | 2mins',
-        videoId: 'W27wOTPahDk',
-        category: 'Brand Campaign',
-        slug: 'itel-jode-bharat-ka-har-dil-cricket-world-cup-2mins',
-      },
+      // {
+      //   title: 'itel | Jode Bharat Ka Har Dil | Cricket World Cup | 2mins',
+      //   videoId: 'W27wOTPahDk',
+      //   category: 'Brand Campaign',
+      //   slug: 'itel-jode-bharat-ka-har-dil-cricket-world-cup-2mins',
+      // },
       {
         title: 'itel | itel Smartphone | unboxing P40+',
         videoId: 'QHD_BJmJtn0',
