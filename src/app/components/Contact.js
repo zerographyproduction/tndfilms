@@ -78,7 +78,7 @@ export default function Contact() {
     {
       name: 'Nitin Kumar Pal',
       email: 'Nitinkumarpal@tndfilms.com',
-      phone: '+91 9899591626',
+      phone: '+91 9871468120',
       role: 'Creative Director',
       icon: <User size={20} />,
       description: 'Creative direction and strategic storytelling',
