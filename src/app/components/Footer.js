@@ -22,7 +22,7 @@ export default function Footer() {
     },
     {
       icon: <Linkedin size={20} />,
-      href: 'ttps://www.linkedin.com/company/108711961/admin/dashboard/',
+      href: 'https://www.linkedin.com/company/108711961/admin/dashboard/',
       label: 'LinkedIn',
     },
     {
