@@ -64,25 +64,22 @@ export default function Footer() {
     {
       name: 'General Inquiries',
       email: 'Info@tndfilms.com',
-      phone: '+91 9013218028',
+      phone: '+91-9625959360',
       role: 'Main Contact',
     },
     {
       name: 'Kuldeep Chauhan',
       email: 'Kuldeepchauhan@tndfilms.com',
-      phone: '+91 9013218028',
       role: 'Post-Production Head',
     },
     {
       name: 'Nitin Kumar Pal',
       email: 'Nitinkumarpal@tndfilms.com',
-      phone: '+91 9871468120',
       role: 'Creative Director',
     },
     {
       name: 'Vipin Kumar Pal',
       email: 'Vipinkumarpal@tndfilms.com',
-      phone: '+91 9540998320',
       role: 'Director of Photography',
     },
   ];
