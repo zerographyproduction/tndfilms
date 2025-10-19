@@ -62,7 +62,7 @@ export default function Contact() {
     {
       name: 'General Inquiries',
       email: 'Info@tndfilms.com',
-      phone: '+91-9625959360', 
+      phone: '+91 9625959360', 
       role: 'Main Contact',
       icon: <Users size={20} />,
       description: 'For general inquiries and project discussions',
