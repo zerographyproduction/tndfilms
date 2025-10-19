@@ -62,7 +62,7 @@ export default function Contact() {
     {
       name: 'General Inquiries',
       email: 'Info@tndfilms.com',
-      phone: '+91 9013218028',
+      phone: '+91-9625959360',
       role: 'Main Contact',
       icon: <Users size={20} />,
       description: 'For general inquiries and project discussions',
@@ -70,7 +70,6 @@ export default function Contact() {
     {
       name: 'Kuldeep Chauhan',
       email: 'Kuldeepchauhan@tndfilms.com',
-      phone: '+91 9013218028',
       role: 'Post-Production Head',
       icon: <User size={20} />,
       description: 'Editing, color grading, and post-production services',
@@ -78,7 +77,6 @@ export default function Contact() {
     {
       name: 'Nitin Kumar Pal',
       email: 'Nitinkumarpal@tndfilms.com',
-      phone: '+91 9871468120',
       role: 'Creative Director',
       icon: <User size={20} />,
       description: 'Creative direction and strategic storytelling',
@@ -86,7 +84,6 @@ export default function Contact() {
     {
       name: 'Vipin Kumar Pal',
       email: 'Vipinkumarpal@tndfilms.com',
-      phone: '+91 9540998320',
       role: 'Director of Photography',
       icon: <User size={20} />,
       description: 'Cinematography and visual direction',
@@ -105,7 +102,7 @@ export default function Contact() {
       icon: <Phone size={24} />,
       title: 'Phone',
       description: 'Call us for immediate assistance',
-      action: '+91 9013218028',
+      action: '+91-9625959360',
     },
     {
       icon: <MessageCircle size={24} />,
