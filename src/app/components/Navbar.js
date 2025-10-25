@@ -26,6 +26,7 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Development', href: '/development' },
     { name: 'Contact', href: '/#contact' },
   ];
 
@@ -74,7 +75,8 @@ export default function Navbar() {
                 (pathname === '/' && item.href === '/#contact') ||
                 (pathname === '/about' && item.href === '/about') ||
                 (pathname === '/services' && item.href === '/services') ||
-                (pathname === '/portfolio' && item.href === '/portfolio');
+                (pathname === '/portfolio' && item.href === '/portfolio') ||
+                (pathname === '/development' && item.href === '/development');
 
               return (
                 <motion.div key={item.name} className='relative'>
@@ -164,7 +166,8 @@ export default function Navbar() {
                     (pathname === '/' && item.href === '/#contact') ||
                     (pathname === '/about' && item.href === '/about') ||
                     (pathname === '/services' && item.href === '/services') ||
-                    (pathname === '/portfolio' && item.href === '/portfolio');
+                    (pathname === '/portfolio' && item.href === '/portfolio') ||
+                    (pathname === '/development' && item.href === '/development');
 
                   return item.href.startsWith('#') ? (
                     <button

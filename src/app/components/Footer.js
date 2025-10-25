@@ -249,12 +249,14 @@ export default function Footer() {
                           >
                             {contact.email}
                           </a>
-                          <a
-                            href={`tel:${contact.phone.replace(/\s/g, '')}`}
-                            className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-xs block'
-                          >
-                            {contact.phone}
-                          </a>
+                          {contact.phone && (
+                            <a
+                              href={`tel:${contact.phone.replace(/\s/g, '')}`}
+                              className='text-gray-600 hover:text-red-500 transition-colors duration-300 text-xs block'
+                            >
+                              {contact.phone}
+                            </a>
+                          )}
                         </div>
                       </div>
                     ))}
