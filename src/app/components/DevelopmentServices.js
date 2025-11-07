@@ -126,7 +126,7 @@ export default function DevelopmentServices() {
               className='border border-neutral-300 hover:bg-neutral-200 hover:text-neutral-900 text-neutral-700 px-8 py-4 rounded-lg font-semibold transition-colors flex items-center gap-2'
             >
               <ExternalLink className='w-5 h-5' />
-              Get Started
+              See Portfolio
             </a>
           </motion.div>
         </div>
@@ -358,7 +358,7 @@ export default function DevelopmentServices() {
                 className='border-2 border-white hover:bg-white hover:text-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center gap-2 justify-center'
               >
                 <ExternalLink className='w-5 h-5' />
-                Get Started
+                See Portfolio
               </a>
             </div>
           </motion.div>
